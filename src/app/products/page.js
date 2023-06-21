@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const About = () => {
+const Products = () => {
   return (
     <div>
       <Link href="/">Dashboard</Link>
@@ -8,4 +8,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Products
