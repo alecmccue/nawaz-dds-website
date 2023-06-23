@@ -1,7 +1,6 @@
 'use client'
-import Navbar from "@/components/Navbar";
 import { Inter } from "next/font/google";
-import styles from "../styles/styles.css";
+import Navbar from "../Components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
