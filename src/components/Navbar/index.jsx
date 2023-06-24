@@ -1,4 +1,11 @@
-import { AppBar, Button, Container, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import AdbIcon from "@mui/icons-material/Adb";
 import Link from "next/link";
 
@@ -24,21 +31,29 @@ const Navbar = () => {
         >
           LOGO
         </Typography>
+        <Box className=" flex w-full justify-center gap-5">
+          <Link href="/">
+            <Button variant="quiet">Home</Button>
+          </Link>
 
           <Link href="/about">
-            <Button variant="contained">About</Button>
+            <Button variant="quiet">About Us</Button>
           </Link>
 
           <Link href="/services">
-            <Button variant="contained">Services</Button>
+            <Button variant="quiet">Services</Button>
           </Link>
 
           <Link href="/products">
-            <Button variant="contained">Products</Button>
+            <Button variant="quiet">Products</Button>
           </Link>
+        </Box>
+        <Box>
+          
+        </Box>
       </Toolbar>
     </AppBar>
   );
 };
 
-export default Navbar
+export default Navbar;

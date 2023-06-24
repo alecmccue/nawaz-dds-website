@@ -9,11 +9,11 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <Box
-      className="w-full mt-6"
+      className="mt-6"
       component="footer"
     >
-      <Container className="flex border-t-2 border-orange-400">
-        <Container className="flex mt-8" disableGutters>
+      <Box className="flex border-t-2 border-orange-400">
+        <Container className="flex mt-8 justify-center" disableGutters>
           <AbcIcon className="flex" sx={{ height: "10rem", width: "10rem" }} />
         </Container>
         <Container className="flex mt-8" disableGutters>
@@ -24,13 +24,13 @@ const Footer = () => {
             <Instagram />
           </Stack>
         </Container>
-      </Container>
-      <Container className="flex mt-12 border-t-2 border-gray-200" disableGutters>
-        <Container className="flex mt-3 justify-between" disableGutters>
+      </Box>
+      <Box className="flex mt-12 border-t-2 border-gray-200">
+        <Container className="flex max-w-full mt-3 justify-between">
             <Link href="/privacy-policy">PRIVACY POLICY</Link>
             <Typography> &copy; 2023 Family & Cosmetic Densistry. All rights reserved. </Typography>
         </Container>
-      </Container>
+      </Box>
     </Box>
   );
 };
