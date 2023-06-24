@@ -1,6 +1,8 @@
 'use client'
 import { Inter } from "next/font/google";
 import Navbar from "../components/Navbar";
+import style from "../styles/styles.module.css";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,7 @@ export default function RootLayout({ children }) {
         <div className="bodyContainer">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
