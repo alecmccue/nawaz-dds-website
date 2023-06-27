@@ -26,7 +26,7 @@ const Footer = () => {
       <LowerBox>
         <LowerContainer>
             <Link href="/privacy-policy"> PRIVACY POLICY </Link>
-            <Typography> &copy; 2023 Family & Cosmetic Densistry. All rights reserved. </Typography>
+            <div> &copy; 2023 Family & Cosmetic Densistry. All rights reserved. </div>
         </LowerContainer>
       </LowerBox>
     </FooterWrapper>

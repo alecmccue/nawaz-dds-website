@@ -2,34 +2,22 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  useTheme,
 } from "@mui/material";
-import AdbIcon from "@mui/icons-material/Adb";
 import LinkButton from "../LinkButton";
-import { NavbarButtonsWrapper } from "./styles";
+import { NavbarButtonsWrapper, Title } from "./styles";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <AppBar position="static" color="aqua">
       <Toolbar>
-        <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-        <Typography
-          variant="h6"
-          noWrap
-          component="a"
-          href="/"
-          sx={{
-            mr: 2,
-            display: { xs: "none", md: "flex" },
-            fontFamily: "monospace",
-            fontWeight: 700,
-            letterSpacing: ".3rem",
-            color: "inherit",
-            textDecoration: "none",
-          }}
-        >
-          LOGO
-        </Typography>
+        <Image 
+          src="/tooth-logo.png"
+          height={30}
+          width={30}
+          alt="tooth"
+        />
+        <Title>Family & Cosmetic Denistry</Title>
         <NavbarButtonsWrapper>
           <LinkButton to="/" label="Home" />
           <LinkButton to="/about" label="About Us" />
