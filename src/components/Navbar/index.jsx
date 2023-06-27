@@ -1,16 +1,16 @@
 import {
   AppBar,
-  Box,
-  Button,
   Toolbar,
   Typography,
+  useTheme,
 } from "@mui/material";
 import AdbIcon from "@mui/icons-material/Adb";
-import Link from "next/link";
+import LinkButton from "../LinkButton";
+import { NavbarButtonsWrapper } from "./styles";
 
 const Navbar = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="aqua">
       <Toolbar>
         <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
         <Typography
@@ -30,26 +30,12 @@ const Navbar = () => {
         >
           LOGO
         </Typography>
-        <Box className=" flex w-full justify-center gap-5">
-          <Link href="/">
-            <Button variant="quiet">Home</Button>
-          </Link>
-
-          <Link href="/about">
-            <Button variant="quiet">About Us</Button>
-          </Link>
-
-          <Link href="/services">
-            <Button variant="quiet">Services</Button>
-          </Link>
-
-          <Link href="/products">
-            <Button variant="quiet">Products</Button>
-          </Link>
-        </Box>
-        <Box>
-          
-        </Box>
+        <NavbarButtonsWrapper>
+          <LinkButton to="/" label="Home" />
+          <LinkButton to="/about" label="About Us" />
+          <LinkButton to="/services" label="Services" />
+          <LinkButton to="/products" label="Products" />
+        </NavbarButtonsWrapper>
       </Toolbar>
     </AppBar>
   );
