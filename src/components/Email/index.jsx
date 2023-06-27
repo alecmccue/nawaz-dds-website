@@ -1,14 +1,14 @@
-import { Typography } from "@mui/material";
+import { StackItemText, StackItemWrapper } from "../styles";
 import EmailIcon from "@mui/icons-material/Email";
 
 const Email = () => {
   return (
-    <div className="flex flex-row align-middle">
+    <StackItemWrapper>
       <EmailIcon />
-      <Typography className="flex align-middle ml-2">
+      <StackItemText>
         Info@nawazdds.com
-      </Typography>
-    </div>
+      </StackItemText>
+    </StackItemWrapper>
   );
 };
 

@@ -1,14 +1,14 @@
-import { Typography } from "@mui/material";
+import { StackItemText, StackItemWrapper } from "../styles";
 import PlaceIcon from "@mui/icons-material/Place";
 
 const Address = () => {
   return (
-    <div className="flex flex-row align-middle">
+    <StackItemWrapper>
       <PlaceIcon />
-      <Typography className="flex align-middle ml-2">
+      <StackItemText>
         46179 Westlake Drive, Suite 230, Sterling, VA 20165
-      </Typography>
-    </div>
+      </StackItemText>
+    </StackItemWrapper>
   );
 };
 

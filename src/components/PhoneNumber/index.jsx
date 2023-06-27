@@ -1,12 +1,14 @@
-import { Typography } from "@mui/material";
+import { StackItemText, StackItemWrapper } from "../styles";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 const Address = () => {
   return (
-    <div className="flex flex-row align-middle">
+    <StackItemWrapper>
       <PhoneIcon />
-      <Typography className="flex ml-2">(703) 430 3838</Typography>
-    </div>
+      <StackItemText>
+        (703) 430 3838
+      </StackItemText>
+    </StackItemWrapper>
   );
 };
 
