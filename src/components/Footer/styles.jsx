@@ -15,7 +15,7 @@ export const LowerBox = styled(Box)`
   display: flex;
   margin-top: 3rem;
   max-width: full;
-  border-top: thin solid rgb(229 231 235);
+  border-top: thin solid #D5E4E6;
 `
 
 export const LowerContainer = styled(Container)`
@@ -32,5 +32,5 @@ export const StackContainer = styled(Container)`
 
 export const UpperBox = styled(Box)`
   display: flex;
-  border-top: thin solid orange;
+  border-top: thin solid #015D67;
 `
