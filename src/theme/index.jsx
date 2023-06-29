@@ -2,7 +2,7 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   typography: {
-    fontFamily: `"Roboto"`,
+    fontFamily: `Roboto`,
     fontSize: 14,
     fontWeightLight: 300,
     fontWeightRegular: 400,
