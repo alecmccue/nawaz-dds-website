@@ -8,12 +8,12 @@ export const HomeWrapper = styled(Box)`
 `
 
 export const MainOuterContainer = styled(Box)`
-    border-radius: 5rem 5rem 15rem 5rem;
-    background-color: turquoise;
-    display: flex;
     align-items: center;
-    margin: 0 1rem 0 1rem;
+    background: linear-gradient(150deg, #015D67, #87E4DB);
+    border-radius: 5rem 5rem 15rem 5rem;
+    display: flex;
     justify-content: center;
+    margin: 0 1rem 0 1rem;
     padding: 1rem;
     width: fit-content;
 `
@@ -22,14 +22,18 @@ export const MainContainerWrapper = styled(Box)`
     justify-content: center;
 `
 export const MainInnerContainer = styled(Box)`
+    align-items: center;
     border-radius: 5rem 5rem 15rem 5rem;
     display: flex;
-    overflow: hidden;
-    align-items: center;
-    width: fit-content;
     gap: 2rem;
+    justify-content: center;
+    overflow: hidden;
+    width: fit-content;
 `
 
 export const MainText = styled.div`
+    color: white;
     font-size: 3rem;
+    font-size: 3rem;
+    max-width: 50%;
 `

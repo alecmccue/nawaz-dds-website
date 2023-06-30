@@ -2,7 +2,13 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { MainOuterContainer, MainText, HomeWrapper, MainContainerWrapper, MainInnerContainer } from './styles'
+import { 
+  MainOuterContainer, 
+  MainText, 
+  HomeWrapper, 
+  MainContainerWrapper, 
+  MainInnerContainer 
+} from './styles'
 import { open_sans } from '@/utility/fonts'
 
 const Home = () => {
