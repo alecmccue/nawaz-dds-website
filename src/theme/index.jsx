@@ -10,7 +10,7 @@ const theme = createTheme({
     fontWeightMedium: 500,
   },
   palette: {
-    turquoise: {
+    primary: {
       main: "#015D67",
     },
     cyan: {

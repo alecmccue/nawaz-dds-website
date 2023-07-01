@@ -1,6 +1,5 @@
 'use client'
 
-import { open_sans } from '@/utility/fonts'
 import Image from 'next/image'
 import InformationCards from '@/components/InformationCards'
 import { 
@@ -15,7 +14,7 @@ const Home = () => {
   return (
     <HomeWrapper>
       <MainContainerWrapper>
-        <MainOuterContainer>
+        <MainOuterContainer raised>
           <MainInnerContainer>
             <MainText>
               Feel good about your smile

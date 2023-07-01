@@ -11,6 +11,7 @@ export const LowerBox = styled(Box)`
   display: flex;
   margin-top: 3rem;
   max-width: full;
+  padding: 0.5rem;
   border-top: thin solid #D5E4E6;
 `
 
@@ -18,7 +19,7 @@ export const LowerContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   margin-top: 0.75rem;
-  max-width: full;
+  min-width: 100%;
 `
 
 export const StackContainer = styled(Container)`

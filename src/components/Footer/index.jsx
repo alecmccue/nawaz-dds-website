@@ -1,8 +1,14 @@
-import { FooterWrapper, IconContainer, LowerBox, LowerContainer, StackContainer, UpperBox } from "./styles";
 import { Box, Stack } from "@mui/material";
 import AbcIcon from "@mui/icons-material/Abc";
 import Address from "./components/Address";
 import Email from "./components/Email";
+import { 
+  IconContainer, 
+  LowerBox, 
+  LowerContainer, 
+  StackContainer, 
+  UpperBox,
+} from "./styles";
 import Instagram from "./components/Instagram";
 import Link from "next/link";
 import PhoneNumber from "./components/PhoneNumber";
@@ -25,8 +31,8 @@ const Footer = () => {
       </UpperBox>
       <LowerBox>
         <LowerContainer>
-            <Link href="/privacy-policy"> PRIVACY POLICY </Link>
-            <div> &copy; 2023 Family & Cosmetic Densistry. All rights reserved. </div>
+            <Link href="/privacy-policy"> Privacy Policy </Link>
+            <div> &copy; 2023 Family & Cosmetic Densistry </div>
         </LowerContainer>
       </LowerBox>
     </Box>
