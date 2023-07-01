@@ -1,4 +1,4 @@
-import { StackItemText, StackItemWrapper } from "../styles";
+import { StackItemText, StackItemWrapper } from "../../../styles";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from "next/link";
 

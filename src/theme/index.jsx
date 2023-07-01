@@ -1,8 +1,9 @@
 import { createTheme } from "@mui/material/styles";
+import { open_sans } from "@/utility/fonts";
 
 const theme = createTheme({
   typography: {
-    fontFamily: `Roboto`,
+    fontFamily: open_sans,
     fontSize: 14,
     fontWeightLight: 300,
     fontWeightRegular: 400,

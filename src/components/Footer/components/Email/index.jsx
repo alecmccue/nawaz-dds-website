@@ -1,4 +1,4 @@
-import { StackItemText, StackItemWrapper } from "../styles";
+import { StackItemText, StackItemWrapper } from "../../../styles";
 import EmailIcon from "@mui/icons-material/Email";
 
 const Email = () => {

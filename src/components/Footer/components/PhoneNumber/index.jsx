@@ -1,4 +1,4 @@
-import { StackItemText, StackItemWrapper } from "../styles";
+import { StackItemText, StackItemWrapper } from "../../../styles";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 const Address = () => {

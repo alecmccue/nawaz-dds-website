@@ -1,4 +1,4 @@
-import { StackItemText, StackItemWrapper } from "../styles";
+import { StackItemText, StackItemWrapper } from "../../../styles";
 import PlaceIcon from "@mui/icons-material/Place";
 
 const Address = () => {

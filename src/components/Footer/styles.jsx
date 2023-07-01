@@ -7,10 +7,6 @@ export const IconContainer = styled(Container)`
   margin-top: 2rem;
 `
 
-export const FooterWrapper = styled(Box)`
-  margin-top: 1.5rem;
-`
-
 export const LowerBox = styled(Box)`
   display: flex;
   margin-top: 3rem;

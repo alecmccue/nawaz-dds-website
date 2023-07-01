@@ -1,15 +1,15 @@
 import { FooterWrapper, IconContainer, LowerBox, LowerContainer, StackContainer, UpperBox } from "./styles";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import AbcIcon from "@mui/icons-material/Abc";
-import Address from "../Address";
-import Email from "../Email";
-import Instagram from "../Instagram";
+import Address from "./components/Address";
+import Email from "./components/Email";
+import Instagram from "./components/Instagram";
 import Link from "next/link";
-import PhoneNumber from "../PhoneNumber";
+import PhoneNumber from "./components/PhoneNumber";
 
 const Footer = () => {
   return (
-    <FooterWrapper component="footer">
+    <Box component="footer">
       <UpperBox>
         <IconContainer disableGutters>
           <AbcIcon sx={{ height: "10rem", width: "10rem" }} />
@@ -29,7 +29,7 @@ const Footer = () => {
             <div> &copy; 2023 Family & Cosmetic Densistry. All rights reserved. </div>
         </LowerContainer>
       </LowerBox>
-    </FooterWrapper>
+    </Box>
   );
 };
 

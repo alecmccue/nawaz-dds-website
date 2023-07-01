@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
-import { Box } from "@mui/material";
-
+import { Box, Typography } from "@mui/material";
 
 export const HomeWrapper = styled(Box)`
     display: flex;
@@ -31,9 +30,8 @@ export const MainInnerContainer = styled(Box)`
     width: fit-content;
 `
 
-export const MainText = styled.div`
+export const MainText = styled(Typography)`
     color: white;
-    font-size: 3rem;
     font-size: 3rem;
     max-width: 50%;
 `

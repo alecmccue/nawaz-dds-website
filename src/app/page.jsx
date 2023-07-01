@@ -1,7 +1,8 @@
 'use client'
 
+import { open_sans } from '@/utility/fonts'
 import Image from 'next/image'
-import Link from 'next/link'
+import InformationCards from '@/components/InformationCards'
 import { 
   MainOuterContainer, 
   MainText, 
@@ -9,16 +10,14 @@ import {
   MainContainerWrapper, 
   MainInnerContainer 
 } from './styles'
-import { open_sans } from '@/utility/fonts'
 
 const Home = () => {
   return (
     <HomeWrapper>
-      <Link href="/about">About</Link>
       <MainContainerWrapper>
         <MainOuterContainer>
           <MainInnerContainer>
-            <MainText className={open_sans.className}>
+            <MainText>
               Feel good about your smile
             </MainText>
 
@@ -31,6 +30,8 @@ const Home = () => {
           </MainInnerContainer>
         </MainOuterContainer>
       </MainContainerWrapper>
+
+      <InformationCards />
     </HomeWrapper>
   )
 }
