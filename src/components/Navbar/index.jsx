@@ -5,7 +5,7 @@ import LinkButton from "../LinkButton";
 
 const Navbar = () => {
   return (
-    <AppBar position="static" color="cyan">
+    <AppBar position="sticky" color="azure">
       <Toolbar>
         <Image src="/tooth-logo.png" height={30} width={30} alt="tooth" />
         <Title>Family & Cosmetic Denistry</Title>

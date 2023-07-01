@@ -15,6 +15,7 @@ export const CardWrapper = styled.div`
 `
 
 export const InformationCard = styled(Card)`
+    background-color: azure;
     display: flex;
     flex: 1;
     flex-direction: column;

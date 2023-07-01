@@ -10,11 +10,11 @@ const OfficeHoursCard = () => {
       <CardTitleText> Office hours </CardTitleText>
       <Box>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-            <div> MON - THU </div>
+            <div> Mon - Thu </div>
             <div> 10:00am - 6:00pm </div>
         </Box>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-            <div> FRI - SUN </div>
+            <div> Fri - Sun </div>
             <div> Closed </div>
         </Box>
       </Box>
