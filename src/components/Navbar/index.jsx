@@ -11,7 +11,7 @@ const Navbar = () => {
         <Title>Family & Cosmetic Denistry</Title>
         <NavbarButtonsWrapper>
           <LinkButton to="/" label="Home" />
-          <LinkButton to="/about" label="About Us" />
+          <LinkButton to="/about" label="About" />
           <LinkButton to="/services" label="Services" />
           <LinkButton to="/products" label="Products" />
         </NavbarButtonsWrapper>

@@ -3,10 +3,9 @@ import { Box } from "@mui/material";
 
 export const ModalBox = styled(Box)`
     background-color: white;
-    border: 2px solid #000;
+    border-color: white;
     box-shadow: 24;
     left: 50%;
-    padding: 1rem;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);

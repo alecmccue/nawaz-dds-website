@@ -28,14 +28,10 @@ const Footer = () => (
       <ColumnWrapper>
         <ColumnHeader>Office Hours</ColumnHeader>
         <ColumnBody>
-          Mon 10:00am - 6:00pm
-          <br />
-          Tue 10:00am - 6:00pm
-          <br />
-          Wed 10:00am - 6:00pm
-          <br />
-          Thu 10:00am - 6:00pm
-          <br />
+          <div>Mon 10:00am - 6:00pm</div>
+          <div>Tue 10:00am - 6:00pm</div>
+          <div>Wed 10:00am - 6:00pm</div>
+          <div>Thu 10:00am - 6:00pm</div>
         </ColumnBody>
       </ColumnWrapper>
 
