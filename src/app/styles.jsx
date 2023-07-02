@@ -74,23 +74,3 @@ export const MainOuterContainer = styled(Card)`
   padding: 1rem;
   min-width: 70%;
 `;
-
-export const WelcomeLeftColumn = styled(Box)`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-`;
-
-export const WelcomeRightColumn = styled(Box)`
-  display: flex;
-  flex: 1;
-  height: 100%;
-  justify-content: center;
-`;
-
-export const WelcomeWrapper = styled(Box)`
-  display: flex;
-  padding: 2rem;
-  width: fit-content;
-`;

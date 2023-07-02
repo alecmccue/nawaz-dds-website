@@ -21,34 +21,6 @@ import Landing from "@/components/Landing";
 const Home = () => {
   return (
     <HomeWrapper>
-      {/* <WelcomeWrapper>
-        <WelcomeLeftColumn>
-          <Typography
-            style={{ color: "#00ACB1", fontSize: "1.5rem", fontWeight: "600" }}
-          >
-            Professional. Clean. Welcoming.
-          </Typography>
-          <Typography style={{ fontSize: "3rem" }}>
-            Trusted Northern Virginia Dentist
-          </Typography>
-          <CallButton>
-            <PhoneIcon style={{ marginRight: "0.25rem" }} />
-            (703) 430 3838
-            </CallButton>
-          <DirectionsButton>
-            <MapIcon style={{ marginRight: "0.25rem" }} />
-            Get Directions
-          </DirectionsButton>
-        </WelcomeLeftColumn>
-        <WelcomeRightColumn>
-          <Image
-            src="/nawaz-profilepicture.jpg"
-            height={300}
-            width={300}
-            alt="dr-nawaz"
-          />
-        </WelcomeRightColumn>
-      </WelcomeWrapper> */}
       <Landing/>
       <MainContainerWrapper>
         <MainOuterContainer raised>
