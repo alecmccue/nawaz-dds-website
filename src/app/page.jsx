@@ -14,13 +14,14 @@ import {
   DirectionsButton,
 } from "./styles";
 import { Box, Typography } from "@mui/material";
-import MapIcon from '@mui/icons-material/Map';
+import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
+import Landing from "@/components/Landing";
 
 const Home = () => {
   return (
     <HomeWrapper>
-      <WelcomeWrapper>
+      {/* <WelcomeWrapper>
         <WelcomeLeftColumn>
           <Typography
             style={{ color: "#00ACB1", fontSize: "1.5rem", fontWeight: "600" }}
@@ -47,8 +48,8 @@ const Home = () => {
             alt="dr-nawaz"
           />
         </WelcomeRightColumn>
-      </WelcomeWrapper>
-
+      </WelcomeWrapper> */}
+      <Landing/>
       <MainContainerWrapper>
         <MainOuterContainer raised>
           <MainInnerContainer>
