@@ -1,12 +1,16 @@
-import { StackItemText, StackItemWrapper } from "../../../styles";
+import { IconWrapper, StackItemText, StackItemWrapper } from "../../../styles";
 import PlaceIcon from "@mui/icons-material/Place";
 
 const Address = () => {
   return (
     <StackItemWrapper>
-      <PlaceIcon />
+      <IconWrapper>
+        <PlaceIcon />
+      </IconWrapper>
       <StackItemText>
-        46179 Westlake Drive, Suite 230, Sterling, VA 20165
+        46179 Westlake Drive, Suite 230, 
+        <br/>
+        Sterling, VA 20165
       </StackItemText>
     </StackItemWrapper>
   );

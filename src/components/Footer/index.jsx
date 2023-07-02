@@ -1,42 +1,63 @@
-import { Box, Stack } from "@mui/material";
-import AbcIcon from "@mui/icons-material/Abc";
 import Address from "./components/Address";
 import Email from "./components/Email";
-import { 
-  IconContainer, 
-  LowerBox, 
-  LowerContainer, 
-  StackContainer, 
+import {
+  ColumnBody,
+  ColumnHeader,
+  ColumnWrapper,
+  FooterWraper,
+  LowerBox,
+  LowerContainer,
   UpperBox,
 } from "./styles";
 import Instagram from "./components/Instagram";
 import Link from "next/link";
 import PhoneNumber from "./components/PhoneNumber";
 
-const Footer = () => {
-  return (
-    <Box component="footer">
-      <UpperBox>
-        <IconContainer disableGutters>
-          <AbcIcon sx={{ height: "10rem", width: "10rem" }} />
-        </IconContainer>
-        <StackContainer disableGutters>
-          <Stack spacing={2} justifyContent="center">
-            <Address />
-            <PhoneNumber />
-            <Email />
-            <Instagram />
-          </Stack>
-        </StackContainer>
-      </UpperBox>
-      <LowerBox>
-        <LowerContainer>
-            <Link href="/privacy-policy"> Privacy Policy </Link>
-            <div> &copy; 2023 Family & Cosmetic Densistry </div>
-        </LowerContainer>
-      </LowerBox>
-    </Box>
-  );
-};
+const Footer = () => (
+  <FooterWraper component="footer">
+    <UpperBox>
+      <ColumnWrapper>
+        <ColumnHeader>Contact Us</ColumnHeader>
+        <ColumnBody>
+          <Address />
+          <PhoneNumber />
+          <Email />
+        </ColumnBody>
+      </ColumnWrapper>
+
+      <ColumnWrapper>
+        <ColumnHeader>Office Hours</ColumnHeader>
+        <ColumnBody>
+          Mon 10:00am - 6:00pm
+          <br />
+          Tue 10:00am - 6:00pm
+          <br />
+          Wed 10:00am - 6:00pm
+          <br />
+          Thu 10:00am - 6:00pm
+          <br />
+        </ColumnBody>
+      </ColumnWrapper>
+
+      <ColumnWrapper>
+        <ColumnHeader>Services</ColumnHeader>
+      </ColumnWrapper>
+
+      <ColumnWrapper>
+        <ColumnHeader>Instagram</ColumnHeader>
+        <ColumnBody sx={{ alignItems: "center" }} >
+          <Instagram />
+        </ColumnBody>
+      </ColumnWrapper>
+    </UpperBox>
+
+    <LowerBox>
+      <LowerContainer>
+        <Link href="/privacy-policy"> Privacy Policy </Link>
+        <div> &copy; 2023 Family & Cosmetic Densistry </div>
+      </LowerContainer>
+    </LowerBox>
+  </FooterWraper>
+);
 
 export default Footer;

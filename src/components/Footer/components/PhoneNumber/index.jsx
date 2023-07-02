@@ -1,10 +1,12 @@
-import { StackItemText, StackItemWrapper } from "../../../styles";
+import { IconWrapper, StackItemText, StackItemWrapper } from "../../../styles";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 const Address = () => {
   return (
     <StackItemWrapper>
-      <PhoneIcon />
+      <IconWrapper>
+        <PhoneIcon />
+      </IconWrapper>
       <StackItemText>
         (703) 430 3838
       </StackItemText>
