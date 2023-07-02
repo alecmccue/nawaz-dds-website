@@ -14,10 +14,16 @@ import {
   DirectionsButton,
 } from "./styles";
 import { Box, Typography } from "@mui/material";
-import MapIcon from '@mui/icons-material/Map';
+import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
+import { useState } from "react";
+import GoogleMapModal from "@/components/GoogleMapModal";
 
 const Home = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <HomeWrapper>
       <WelcomeWrapper>
@@ -33,8 +39,8 @@ const Home = () => {
           <CallButton>
             <PhoneIcon style={{ marginRight: "0.25rem" }} />
             (703) 430 3838
-            </CallButton>
-          <DirectionsButton>
+          </CallButton>
+          <DirectionsButton onClick={handleOpen}>
             <MapIcon style={{ marginRight: "0.25rem" }} />
             Get Directions
           </DirectionsButton>
@@ -77,6 +83,7 @@ const Home = () => {
       </MainContainerWrapper>
 
       <InformationCards />
+      <GoogleMapModal open={open} handleClose={handleClose} />
     </HomeWrapper>
   );
 };
