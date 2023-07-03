@@ -6,6 +6,8 @@ export const LandingWrapper = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
+    display:flex;
+    flex-direction:column;
 
     @media (max-width: 1024px) {
         flex-direction: column;
@@ -88,4 +90,107 @@ export const BannerImg = styled.div`
     background: url(/imgbanner.png), 100% / cover no-repeat;
     margin-top: 6rem;
     margin-right:5rem;
+`
+
+export const MainDiv = styled.div`
+    width:100%;
+    height:700px;
+    padding-left:6rem;
+    padding-right:6rem;
+    padding-top:2.5rem;
+    padding-bottom:2.5rem;
+    background: #FAFCFC;
+    display:flex;
+    position: relative;
+`
+
+export const NawazImg = styled.div`
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    flex-shrink: 0;
+    background: url(/nawaz-profilepicture.jpg), no-repeat;
+    background-size: cover;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    background-color: transparent;
+
+`
+export const ColoredDiv = styled.div`
+    width: 500px;
+    height: 500px;
+    margin-left: 5rem;
+    margin-top:10rem;
+    flex-shrink: 0;
+    background: #D5E4E6;
+
+`
+
+export const DescriptionDiv = styled.div`
+    padding-left: 10rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+`
+export const DescriptionTitle = styled(Typography)`
+    height: 31px;
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 95px;
+    text-transform: uppercase;
+`
+export const DescriptionTitle2 = styled(Typography)`
+    height: 31px;
+    color: #00ACB1;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 95px;
+    text-transform: uppercase;
+`
+
+export const Description = styled(Typography)`
+    margin-top:5rem;
+    display: flex;
+    width: 688px;
+    height: 209px;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+`
+export const DescriptionLists = styled(Typography)`
+    width: 620px;
+    display: flex;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+`
+export const MainButton = styled(Box)`
+    background-color: #00ACB1;
+    border-radius: 1rem;
+    border: 3px solid #00ACB1;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 2rem;
+    margin-bottom:4rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.2rem; 
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: #000;
+        background-color: transparent;
+    }
 `
