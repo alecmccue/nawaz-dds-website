@@ -11,7 +11,7 @@ const About = () => {
           About Family & Cosmetic Dentistry
         </Typography>
         <Typography style={{ fontSize: "1.5rem" }}>
-          Meet our excellent team
+          Meet our excellent team.
         </Typography>
       </IntroWrapper>
     </AboutWrapper>
