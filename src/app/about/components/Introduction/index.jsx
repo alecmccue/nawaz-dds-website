@@ -1,27 +1,25 @@
 import React from "react";
 import {
   BackgroundImage,
-  LeftColumn,
-  RightColumn,
   IntroWrapper,
-  OverlayImage,
+  OverlayText,
 } from "./styles";
 import { Typography } from "@mui/material";
 
 const Introduction = () => (
   <IntroWrapper>
-    <LeftColumn>
-      <BackgroundImage src="/office-stock.jpg" alt="dr-nawaz" />
-      <OverlayImage src="/nawaz-profilepicture.jpg" alt="dr-nawaz" />
-    </LeftColumn>
-    <RightColumn>
-      <Typography style={{ fontSize: "1.5rem" }}>
-        About Family & Cosmetic Dentistry
-      </Typography>
+    <BackgroundImage src="/nawaz-profilepicture.jpg" alt="dr-nawaz" />
+    <OverlayText>
       <Typography style={{ fontSize: "3rem" }}>
-        A Dentist You Can Trust
+        Dr. Mirweiss Nawaz, DDS
       </Typography>
-    </RightColumn>
+      <Typography style={{ fontSize: "1.5rem" }}>
+        Personalized & High-Tech NOVA Dentist
+      </Typography>
+      <Typography style={{ fontSize: "1.1rem" }}>
+        Since [YEAR], Dr. Nawaz has served the Northern Virginia community. He helps patients take control of their dental health and achieve the smiles they've always wanted.
+      </Typography>
+    </OverlayText>
   </IntroWrapper>
 );
 

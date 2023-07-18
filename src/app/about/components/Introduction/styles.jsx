@@ -6,23 +6,6 @@ export const BackgroundImage = styled.img`
   width: 100%;
 `;
 
-export const LeftColumn = styled.div`
-  align-items: center;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  position: relative;
-`;
-
-export const RightColumn = styled.div`
-  background-color: #87e4db;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  padding-left: 3rem;
-`;
-
 export const IntroWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -30,11 +13,14 @@ export const IntroWrapper = styled.div`
   width: 100%;
 `;
 
-export const OverlayImage = styled.img`
-  height: 18rem;
-  left: 50%;
+export const OverlayText = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 20rem;
+  left: 35rem;
   position: absolute;
-  top: 50%;
+  top: 28rem;
   transform: translate(-50%, -50%);
-  width: 30rem;
+  width: fit-content;
 `;

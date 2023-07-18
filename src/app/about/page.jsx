@@ -11,10 +11,10 @@ const About = () => {
   return (
     <AboutWrapper>
       <Introduction />
-      <MarketingStatement />
-      <MissionStatement />
       <MeetNawaz />
       <MeetTeam />
+      <MarketingStatement />
+      <MissionStatement />
     </AboutWrapper>
   );
 };

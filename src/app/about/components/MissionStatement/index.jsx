@@ -29,9 +29,9 @@ const MissionStatement = () => (
       </Typography>
       <Typography style={{ fontSize: "1.5rem", color: "#00ACB1" }}>
         Dr. Mirweiss Nawaz
-        <Typography style={{ fontSize: "1.2rem", color: "#015D67" }}>
-          Founder
-        </Typography>
+      </Typography>
+      <Typography style={{ fontSize: "1.2rem", color: "#015D67" }}>
+        Founder
       </Typography>
     </OverlayCard>
   </MissionStatementWrapper>
