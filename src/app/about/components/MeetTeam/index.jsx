@@ -3,7 +3,6 @@ import { LeftColumn, MeetTeamWrapper, RightColumn } from "./styles";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 
-
 const MeetTeam = () => (
   <MeetTeamWrapper>
     <LeftColumn>

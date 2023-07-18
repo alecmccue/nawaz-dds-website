@@ -1,7 +1,7 @@
 import React from "react";
 import { LeftColumn, MeetNawazWrapper, RightColumn } from "./styles";
-import Image from "next/image";
 import { Typography } from "@mui/material";
+import Image from "next/image";
 
 const MeetNawaz = () => (
   <MeetNawazWrapper>
