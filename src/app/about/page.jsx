@@ -1,19 +1,20 @@
 "use client";
 
-import { Typography } from "@mui/material";
-import { AboutWrapper, IntroWrapper, OfficeImage } from "./styles";
+import { AboutWrapper } from "./styles";
+import Introduction from "./components/Introduction";
+import MarketingStatement from "./components/MarketingStatement";
+import MissionStatement from "./components/MissionStatement";
+import MeetNawaz from "./components/MeetNawaz";
+import MeetTeam from "./components/MeetTeam";
 
 const About = () => {
   return (
     <AboutWrapper>
-      <IntroWrapper>
-        <Typography style={{ fontSize: "3rem" }}>
-          About Family & Cosmetic Dentistry
-        </Typography>
-        <Typography style={{ fontSize: "1.5rem" }}>
-          Meet our excellent team
-        </Typography>
-      </IntroWrapper>
+      <Introduction />
+      <MeetNawaz />
+      <MeetTeam />
+      <MarketingStatement />
+      <MissionStatement />
     </AboutWrapper>
   );
 };
