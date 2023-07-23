@@ -8,22 +8,24 @@ import {
   ServiceWrapper,
 } from "../../styles";
 
-const GeneralDentistry = () => (
+const PartialDentures = () => (
   <ServiceWrapper>
     <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>
-          <ServiceImage alt="General Dentistry" src="/general_dentistry.jpg" />
+          <ServiceImage alt="Partial Dentures" src="/partial_dentures.jpg" />
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
-              General & Family Dentistry
+              Partial Dentures
             </Typography>
             <Typography style={{ fontSize: "1.3rem" }}>
-              General dentistry services encompass a wide range of procedures
-              designed to promote oral health, address dental issues, and
-              enhance smiles. Regular visits to a general dentist play a vital
-              role in keeping teeth and gums healthy, preventing potential
-              complications, and ensuring a confident and radiant smile.
+              Partial dentures are removable dental prosthetics used to replace
+              missing teeth when some natural teeth remain in the upper or lower
+              jaw. These custom-made appliances consist of a metal or acrylic
+              framework that attaches to the remaining teeth for stability.
+              Partial dentures not only restore aesthetics and function but also
+              prevent neighboring teeth from shifting, ensuring a balanced bite
+              and improving overall oral health.
             </Typography>
           </AccordionSummaryTextWrapper>
         </AccordionSummaryContentWrapper>
@@ -33,4 +35,4 @@ const GeneralDentistry = () => (
   </ServiceWrapper>
 );
 
-export default GeneralDentistry;
+export default PartialDentures;

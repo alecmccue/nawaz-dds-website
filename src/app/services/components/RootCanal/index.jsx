@@ -8,22 +8,25 @@ import {
   ServiceWrapper,
 } from "../../styles";
 
-const GeneralDentistry = () => (
+const RootCanal = () => (
   <ServiceWrapper>
     <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>
-          <ServiceImage alt="General Dentistry" src="/general_dentistry.jpg" />
+          <ServiceImage alt="Root Canal" src="/root_canal.jpg" />
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
-              General & Family Dentistry
+              Root Canal
             </Typography>
             <Typography style={{ fontSize: "1.3rem" }}>
-              General dentistry services encompass a wide range of procedures
-              designed to promote oral health, address dental issues, and
-              enhance smiles. Regular visits to a general dentist play a vital
-              role in keeping teeth and gums healthy, preventing potential
-              complications, and ensuring a confident and radiant smile.
+              Root canals are dental procedures performed to save severely
+              damaged or infected teeth from extraction. During the treatment,
+              the dentist removes the infected or inflamed dental pulp from the
+              tooth's interior, cleans and disinfects the root canal system, and
+              seals it with a biocompatible material. Afterward, a dental crown
+              is typically placed over the treated tooth to protect and restore
+              its function, allowing patients to retain their natural teeth and
+              alleviate pain caused by dental infections.
             </Typography>
           </AccordionSummaryTextWrapper>
         </AccordionSummaryContentWrapper>
@@ -33,4 +36,4 @@ const GeneralDentistry = () => (
   </ServiceWrapper>
 );
 
-export default GeneralDentistry;
+export default RootCanal;

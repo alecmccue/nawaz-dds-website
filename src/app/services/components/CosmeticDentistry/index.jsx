@@ -1,27 +1,21 @@
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Typography,
-} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import {
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
 } from "../../styles";
 
 const CosmeticDentistry = () => (
   <ServiceWrapper>
-    <Accordion style={{ padding: "2rem" }}>
+    <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>
           <ServiceImage
             alt="Cosmetic Dentistry"
-            height={100}
             src="/cosmetic_dentistry.jpg"
-            width={400}
           />
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
@@ -39,7 +33,7 @@ const CosmeticDentistry = () => (
         </AccordionSummaryContentWrapper>
       </AccordionSummary>
       <AccordionDetails>PLACEHOLDER</AccordionDetails>
-    </Accordion>
+    </ServiceAccordion>
   </ServiceWrapper>
 );
 

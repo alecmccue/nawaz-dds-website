@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Accordion } from "@mui/material";
 import Image from "next/image";
 
 export const AccordionSummaryContentWrapper = styled.div`
@@ -13,8 +14,18 @@ export const AccordionSummaryTextWrapper = styled.div`
   gap: 1rem;
 `;
 
-export const ServiceImage = styled(Image)`
+export const ServiceAccordion = styled(Accordion)`
+  padding: 2rem;
+  
+  &:hover {
+    background-color: #ebf2f3;
+  }
+`;
+
+export const ServiceImage = styled.img`
   border-radius: 2rem;
+  height: auto;
+  width: 25rem;
 `;
 
 export const ServiceWrapper = styled.div`
@@ -22,7 +33,7 @@ export const ServiceWrapper = styled.div`
   height: fit-content;
   justify-content: center;
   max-width: 80rem;
-  padding: 2rem;
+  padding: 1rem;
 `;
 
 export const ServicesWrapper = styled.div`

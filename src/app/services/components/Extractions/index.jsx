@@ -8,22 +8,25 @@ import {
   ServiceWrapper,
 } from "../../styles";
 
-const GeneralDentistry = () => (
+const Extractions = () => (
   <ServiceWrapper>
     <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>
-          <ServiceImage alt="General Dentistry" src="/general_dentistry.jpg" />
+          <ServiceImage alt="Extraction" src="/dental_extraction.jpg" />
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
-              General & Family Dentistry
+              Extractions
             </Typography>
             <Typography style={{ fontSize: "1.3rem" }}>
-              General dentistry services encompass a wide range of procedures
-              designed to promote oral health, address dental issues, and
-              enhance smiles. Regular visits to a general dentist play a vital
-              role in keeping teeth and gums healthy, preventing potential
-              complications, and ensuring a confident and radiant smile.
+              Dental extractions, also known as tooth extractions, are dental
+              procedures in which a dentist removes a tooth from its socket in
+              the jawbone. Extractions may be necessary due to various reasons,
+              such as severe tooth decay, advanced gum disease, dental trauma,
+              or to create space for orthodontic treatment. The procedure is
+              performed under local anesthesia to ensure patient comfort, and
+              aftercare instructions are provided to promote proper healing and
+              minimize potential complications.
             </Typography>
           </AccordionSummaryTextWrapper>
         </AccordionSummaryContentWrapper>
@@ -33,4 +36,4 @@ const GeneralDentistry = () => (
   </ServiceWrapper>
 );
 
-export default GeneralDentistry;
+export default Extractions;

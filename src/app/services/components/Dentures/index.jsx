@@ -8,22 +8,25 @@ import {
   ServiceWrapper,
 } from "../../styles";
 
-const GeneralDentistry = () => (
+const Dentures = () => (
   <ServiceWrapper>
     <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>
-          <ServiceImage alt="General Dentistry" src="/general_dentistry.jpg" />
+          <ServiceImage alt="Dentures" src="/dentures.jpg" />
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
-              General & Family Dentistry
+              Dentures
             </Typography>
             <Typography style={{ fontSize: "1.3rem" }}>
-              General dentistry services encompass a wide range of procedures
-              designed to promote oral health, address dental issues, and
-              enhance smiles. Regular visits to a general dentist play a vital
-              role in keeping teeth and gums healthy, preventing potential
-              complications, and ensuring a confident and radiant smile.
+              Dentures are removable dental appliances designed to replace
+              missing teeth and surrounding tissues. They come in two main
+              types: complete dentures, which replace all teeth in the upper or
+              lower jaw, and partial dentures, which fill gaps left by a few
+              missing teeth. Dentures are custom-made to ensure a comfortable
+              fit and natural appearance, allowing individuals to eat, speak,
+              and smile with confidence while restoring their oral
+              functionality.
             </Typography>
           </AccordionSummaryTextWrapper>
         </AccordionSummaryContentWrapper>
@@ -33,4 +36,4 @@ const GeneralDentistry = () => (
   </ServiceWrapper>
 );
 
-export default GeneralDentistry;
+export default Dentures;
