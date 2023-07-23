@@ -1,4 +1,4 @@
-import { StackItemText, StackItemWrapper } from "../../../styles";
+import { IconWrapper, StackItemText, StackItemWrapper } from "../../../styles";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from "next/link";
 
@@ -10,10 +10,9 @@ const Instagram = () => {
         href="https://www.instagram.com/familyandcosmetics_dentistry/"
         target="_blank"
       >
-        <InstagramIcon />
-        <StackItemText>
-          Follow us on Instagram!
-        </StackItemText>
+        <IconWrapper>
+          <InstagramIcon />
+        </IconWrapper>
       </Link>
     </StackItemWrapper>
   );
