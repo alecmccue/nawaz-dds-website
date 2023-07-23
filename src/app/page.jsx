@@ -16,6 +16,7 @@ import {
 import { Box, Typography } from "@mui/material";
 import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
+import Landing from "@/components/Landing";
 import { useState } from "react";
 import GoogleMapModal from "@/components/GoogleMapModal";
 
@@ -26,35 +27,7 @@ const Home = () => {
 
   return (
     <HomeWrapper>
-      <WelcomeWrapper>
-        <WelcomeLeftColumn>
-          <Typography
-            style={{ color: "#00ACB1", fontSize: "1.5rem", fontWeight: "600" }}
-          >
-            Professional. Clean. Welcoming.
-          </Typography>
-          <Typography style={{ fontSize: "3rem" }}>
-            Trusted Northern Virginia Dentist
-          </Typography>
-          <CallButton>
-            <PhoneIcon style={{ marginRight: "0.25rem" }} />
-            (703) 430 3838
-          </CallButton>
-          <DirectionsButton onClick={handleOpen}>
-            <MapIcon style={{ marginRight: "0.25rem" }} />
-            Get Directions
-          </DirectionsButton>
-        </WelcomeLeftColumn>
-        <WelcomeRightColumn>
-          <Image
-            src="/nawaz-profilepicture.jpg"
-            height={300}
-            width={300}
-            alt="dr-nawaz"
-          />
-        </WelcomeRightColumn>
-      </WelcomeWrapper>
-
+      <Landing/>
       <MainContainerWrapper>
         <MainOuterContainer raised>
           <MainInnerContainer>
