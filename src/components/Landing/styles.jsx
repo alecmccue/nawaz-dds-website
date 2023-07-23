@@ -49,86 +49,94 @@ export const IntroTitleText2 = styled(Typography)`
     margin-left: 12.5rem;
     margin-top: .5rem;
 `
-//change later on to styled button
 export const CallButton = styled(Box)`
-    background-color: #00ACB1;
     border-radius: .5rem;
     border: 2px solid #00ACB1;
-    color: white;
+    color: #FEFEFE;
+    background-color: #00ACB1;
     font-size: 1.25rem;
     font-weight: 500;
     margin-top: 3rem;
     margin-left: 12.5rem;
-    padding: 0.5rem 1rem 0.5rem 1rem; 
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
     width: fit-content;
     display: flex;
     align-items: center;
-
     &:hover {
-        background-color:transparent
+        background-color: transparent;
     }
 `
-//change later on to styled button
+
 export const DirectionsButton = styled(Box)`
-    background-color: #00ACB1;
     border-radius: .5rem;
     border: 2px solid #00ACB1;
-    color: white;
+    color: #FEFEFE;
+    background-color: #00ACB1;
     font-size: 1.25rem;
     font-weight: 500;
     margin-top: 3rem;
     margin-left: 6rem;
-    padding: 0.5rem 1rem 0.5rem 1rem; 
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
     width: fit-content;
     display: flex;
     align-items: center;
-
     &:hover {
-        background-color:transparent
+        background-color: transparent;
     }
 `
+export const BannerImg = styled.div`
+    flex-shrink: 0;
+    width: 530px;
+    height: 485px;
+    background: url(/imgbanner.png), 100% / cover no-repeat;
+    margin-top: 6rem;
+    margin-right:5rem;
+`
+
 export const MainDiv = styled.div`
     width:100%;
     height:700px;
-    /* padding-left:6rem; */
-    /* padding-right:6rem; */
-    padding-top:2rem;
-    padding-bottom:2rem;
+    padding: 2.5rem 6rem 2.5rem 6rem;
     background: #FAFCFC;
     display:flex;
     position: relative;
+    justify-content: center;
 `
 
 export const NawazImg = styled.div`
     position: absolute;
-    width: 30rem;
-    height: 37.5rem;
+    width: 500px;
+    height: 600px;
     flex-shrink: 0;
     background: url(/nawaz-profilepicture.jpg), no-repeat;
     background-size: cover;
-    margin-left: 9.25rem;
+    margin-left: 8rem;
     margin-top: 1rem;
     background-color: transparent;
 
 `
 export const ColoredDiv = styled.div`
-    width: 30rem;
-    height: 37.5rem;
-    margin-left: 3rem;
-    margin-top:4.25rem;
-    margin-left: 6.25rem;
+    width: 500px;
+    height: 500px;
+    margin-left: 4rem;
+    margin-top:10rem;
     flex-shrink: 0;
     background: #D5E4E6;
 
 `
 
+export const ImageContainer = styled.div`
+    margin-right: 4rem;
+    height: fit-content;
+`
+
 export const DescriptionDiv = styled.div`
-    padding-left: 10rem;
+    margin-left: 10rem;
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
+    width: 100%;
 `
 export const DescriptionTitle = styled(Typography)`
     height: 31px;
@@ -150,7 +158,7 @@ export const DescriptionTitle2 = styled(Typography)`
 `
 
 export const Description = styled(Typography)`
-    margin-top:5rem;
+    margin-top:3rem;
     display: flex;
     width: 688px;
     height: 209px;
@@ -160,7 +168,7 @@ export const Description = styled(Typography)`
     font-weight: 400;
     line-height: 40px;
 `
-export const DescriptionLists = styled(Box)`
+export const DescriptionLists = styled.div`
     width: 620px;
     display: flex;
     font-size: 24px;
