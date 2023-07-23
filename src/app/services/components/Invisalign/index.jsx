@@ -9,7 +9,7 @@ import {
 } from "../../styles";
 
 const Invisalign = () => (
-  <ServiceWrapper>
+  <ServiceWrapper id="invisalign">
     <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>

@@ -1,22 +1,28 @@
 import { useRouter, usePathname } from "next/navigation";
+import { ScrollToLinkButtonWrapper } from "../styles";
 
-const ScrollToMenuButton = ({ to, label, elementId }) => {
+const ScrollToMenuButton = ({ to, label, elementId, handleClose }) => {
   const router = useRouter();
-  const pathName = usePathname()
+  const pathName = usePathname();
 
   const handleClick = () => {
-    if(pathName != "/services") {
-        router.push(to);
+    if (pathName != "/services") {
+      router.push(to);
     }
-        setTimeout(() => {
-          const element = document.getElementById(elementId);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        }, 100);
+    setTimeout(() => {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
+    handleClose();
   };
 
-  return <div onClick={handleClick}>{label}</div>;
+  return (
+    <ScrollToLinkButtonWrapper onClick={handleClick}>
+      {label}
+    </ScrollToLinkButtonWrapper>
+  );
 };
 
 export default ScrollToMenuButton;

@@ -9,7 +9,7 @@ import {
 } from "../../styles";
 
 const RootCanal = () => (
-  <ServiceWrapper>
+  <ServiceWrapper id="root_canal">
     <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>

@@ -9,11 +9,11 @@ import {
 } from "../../styles";
 
 const Extractions = () => (
-  <ServiceWrapper>
+  <ServiceWrapper id="extractions">
     <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>
-          <ServiceImage alt="Extraction" src="/dental_extraction.jpg" />
+          <ServiceImage alt="Extractions" src="/dental_extraction.jpg" />
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
               Extractions

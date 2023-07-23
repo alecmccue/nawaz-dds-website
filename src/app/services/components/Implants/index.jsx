@@ -9,7 +9,7 @@ import {
 } from "../../styles";
 
 const Implants = () => (
-  <ServiceWrapper>
+  <ServiceWrapper id="implants">
     <ServiceAccordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>

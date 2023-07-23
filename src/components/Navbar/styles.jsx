@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box } from "@mui/material";
+import { Box, MenuItem } from "@mui/material";
 
 export const NavbarButtonsWrapper = styled(Box)`
     position: absolute;
@@ -7,4 +7,8 @@ export const NavbarButtonsWrapper = styled(Box)`
     width: 100%;
     justify-content: center;
     gap: 1.25rem;
+`
+
+export const ServicesMenuItem = styled(MenuItem)`
+    padding: 0;
 `

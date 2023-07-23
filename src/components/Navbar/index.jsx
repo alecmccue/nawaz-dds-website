@@ -1,17 +1,16 @@
+import React, { useState } from "react";
 import { AppBar, Toolbar } from "@mui/material";
 import { NavbarButtonsWrapper } from "./styles";
 import Image from "next/image";
-import LinkButton from "../LinkButton";
 import Link from "next/link";
-import React, { useState } from "react";
+import LinkButton from "../LinkButton";
 import ServicesMenu from "./components/ServicesMenu";
-import ScrollToMenuButton from "../ScrollToLinkButton";
 
 const Navbar = () => {
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
 
-  const handleMouseEnter = (event) => setServicesAnchorEl(event.currentTarget);
-  const handleClose = () => setServicesAnchorEl(null);
+  const handleServicesMouseEnter = (event) => setServicesAnchorEl(event.currentTarget);
+  const handleServicesClose = () => setServicesAnchorEl(null);
 
   return (
     <AppBar position="sticky" color="azure">
@@ -25,11 +24,12 @@ const Navbar = () => {
           <LinkButton
             to="/services"
             label="Services"
-            handleMouseEnter={handleMouseEnter}
+            handleMouseEnter={handleServicesMouseEnter}
           />
           <LinkButton to="/products" label="Products" />
         </NavbarButtonsWrapper>
-        <ServicesMenu handleClose={handleClose} anchorEl={servicesAnchorEl} />
+
+        <ServicesMenu anchorEl={servicesAnchorEl} handleClose={handleServicesClose} />
       </Toolbar>
     </AppBar>
   );
