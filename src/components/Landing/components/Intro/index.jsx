@@ -28,7 +28,6 @@ const Intro = () => {
         </div>
       </IntroDiv>
       <div>
-        <BannerImg />
       </div>
     </IntroImage>
   );
