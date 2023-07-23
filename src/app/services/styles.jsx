@@ -1,6 +1,12 @@
 import styled from "@emotion/styled";
-import { Accordion } from "@mui/material";
-import Image from "next/image";
+import { Accordion, Typography } from "@mui/material";
+
+export const AccordionDetailsHeader = styled(Typography)`
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+`
 
 export const AccordionSummaryContentWrapper = styled.div`
   display: flex;
@@ -18,7 +24,7 @@ export const ServiceAccordion = styled(Accordion)`
   padding: 2rem;
   
   &:hover {
-    background-color: #ebf2f3;
+    background-color: #EBF2F3;
   }
 `;
 
@@ -34,10 +40,12 @@ export const ServiceWrapper = styled.div`
   justify-content: center;
   max-width: 80rem;
   padding: 1rem;
+  scroll-margin-top: 4rem;
 `;
 
 export const ServicesWrapper = styled.div`
   align-items: center;
+  background-color: #87E4DB;
   display: flex;
   flex-direction: column;
   padding: 2rem;
