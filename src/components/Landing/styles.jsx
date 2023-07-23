@@ -17,7 +17,9 @@ export const IntroImage = styled.div`
     width: 100%;
     height: 700px;
     flex-shrink: 0;
-    background: linear-gradient(0deg, rgba(1, 93, 103, 0.20) 0%, rgba(1, 93, 103, 0.20) 100%), url(/clean-dental-office.jpg), lightgray 50% / cover no-repeat;
+    background: url(/clean-dental-office.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `
 export const IntroDiv = styled.div`
@@ -34,7 +36,7 @@ export const IntroTitleText1 = styled(Typography)`
     font-weight: 500;
     line-height: 95px;
     text-transform: uppercase;
-    margin-left: 10rem;
+    margin-left: 12.5rem;
     margin-top: 8rem;
 `
 export const IntroTitleText2 = styled(Typography)`
@@ -44,61 +46,54 @@ export const IntroTitleText2 = styled(Typography)`
     font-weight: 800;
     line-height: 95px;
     text-transform: uppercase;
-    margin-left: 10rem;
+    margin-left: 12.5rem;
     margin-top: .5rem;
 `
+//change later on to styled button
 export const CallButton = styled(Box)`
     background-color: #00ACB1;
-    border-radius: 1rem;
-    border: 3px solid #00ACB1;
+    border-radius: .5rem;
+    border: 2px solid #00ACB1;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-top: 3rem;
-    margin-left: 10rem;
-    padding: 0.5rem 1.5rem 0.5rem 1.2rem; 
+    margin-left: 12.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem; 
     width: fit-content;
     display: flex;
     align-items: center;
 
     &:hover {
-        background-color: transparent;
+        background-color:transparent
     }
 `
-
+//change later on to styled button
 export const DirectionsButton = styled(Box)`
     background-color: #00ACB1;
-    border-radius: 1rem;
-    border: 3px solid #00ACB1;
+    border-radius: .5rem;
+    border: 2px solid #00ACB1;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-top: 3rem;
-    margin-left: 5rem;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
+    margin-left: 6rem;
+    padding: 0.5rem 1rem 0.5rem 1rem; 
     width: fit-content;
     display: flex;
     align-items: center;
+
     &:hover {
-        background-color: transparent;
+        background-color:transparent
     }
 `
-export const BannerImg = styled.div`
-    flex-shrink: 0;
-    width: 530px;
-    height: 485px;
-    background: url(/imgbanner.png), 100% / cover no-repeat;
-    margin-top: 6rem;
-    margin-right:5rem;
-`
-
 export const MainDiv = styled.div`
     width:100%;
     height:700px;
-    padding-left:6rem;
-    padding-right:6rem;
-    padding-top:2.5rem;
-    padding-bottom:2.5rem;
+    /* padding-left:6rem; */
+    /* padding-right:6rem; */
+    padding-top:2rem;
+    padding-bottom:2rem;
     background: #FAFCFC;
     display:flex;
     position: relative;
@@ -106,21 +101,22 @@ export const MainDiv = styled.div`
 
 export const NawazImg = styled.div`
     position: absolute;
-    width: 500px;
-    height: 600px;
+    width: 30rem;
+    height: 37.5rem;
     flex-shrink: 0;
     background: url(/nawaz-profilepicture.jpg), no-repeat;
     background-size: cover;
-    margin-left: 8rem;
+    margin-left: 9.25rem;
     margin-top: 1rem;
     background-color: transparent;
 
 `
 export const ColoredDiv = styled.div`
-    width: 500px;
-    height: 500px;
-    margin-left: 5rem;
-    margin-top:10rem;
+    width: 30rem;
+    height: 37.5rem;
+    margin-left: 3rem;
+    margin-top:4.25rem;
+    margin-left: 6.25rem;
     flex-shrink: 0;
     background: #D5E4E6;
 
