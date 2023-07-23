@@ -8,11 +8,3 @@ export const NavbarButtonsWrapper = styled(Box)`
     justify-content: center;
     gap: 1.25rem;
 `
-
-export const Title = styled.div`
-    width: 16em;
-    margin-left: 1rem;
-    font-family: monospace;
-    font-weight: 700;
-    font-size: 1.2rem;
-`

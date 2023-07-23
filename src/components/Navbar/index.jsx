@@ -2,13 +2,15 @@ import { AppBar, Toolbar } from "@mui/material";
 import { NavbarButtonsWrapper, Title } from "./styles";
 import Image from "next/image";
 import LinkButton from "../LinkButton";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <AppBar position="sticky" color="azure">
       <Toolbar>
-        <Image src="/tooth-logo.png" height={30} width={30} alt="tooth" />
-        <Title>Family & Cosmetic Denistry</Title>
+        <Link href={"/"}>
+          <Image src="/F&CD_logo.png" height={60} width={150} alt="tooth" />
+        </Link>
         <NavbarButtonsWrapper>
           <LinkButton to="/" label="Home" />
           <LinkButton to="/about" label="About" />
