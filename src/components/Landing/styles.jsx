@@ -164,7 +164,7 @@ export const Description = styled(Typography)`
     font-weight: 400;
     line-height: 40px;
 `
-export const DescriptionLists = styled(Typography)`
+export const DescriptionLists = styled(Box)`
     width: 620px;
     display: flex;
     font-size: 24px;
