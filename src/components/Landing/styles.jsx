@@ -18,9 +18,9 @@ export const IntroImage = styled.div`
     height: 700px;
     flex-shrink: 0;
     background: url(/clean-dental-office.jpg);
+    background-color:#FEFEFE;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `
 export const IntroDiv = styled.div`
     padding:5rem;
