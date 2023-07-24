@@ -1,12 +1,23 @@
 import React from "react";
 import StarIcon from "@mui/icons-material/Star";
 import Image from "next/image";
-import { Border, Col, Inner, Review, Row, Testimonial, Name } from "./styles";
+import {
+  Border,
+  Col,
+  Inner,
+  Review,
+  Row,
+  Testimonial,
+  Name,
+  Stars,
+  TestimonialTitle,
+} from "./styles";
+import { StarHalf } from "@mui/icons-material";
 const Testimonials = () => {
   return (
     <Testimonial>
       <Inner>
-        <h1>Testimonials</h1>
+        <TestimonialTitle>Reviews</TestimonialTitle>
         <Border />
         <Row>
           <Col>
@@ -16,16 +27,16 @@ const Testimonials = () => {
                 width={100}
                 height={100}
                 alt="profile picture"
-                style={{margin:'auto'}}
+                style={{ margin: "auto" }}
               />
               <Name>Full Name</Name>
-              <div className="stars">
+              <Stars>
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
-              </div>
+              </Stars>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
                 repudiandae, pariatur porro a nulla dolorem animi distinctio
@@ -40,16 +51,16 @@ const Testimonials = () => {
                 width={100}
                 height={100}
                 alt="profile picture"
-                style={{margin:'auto'}}
+                style={{ margin: "auto" }}
               />
               <Name>Full Name</Name>
-              <div className="stars">
+              <Stars>
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
-              </div>
+              </Stars>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
                 repudiandae, pariatur porro a nulla dolorem animi distinctio
@@ -66,16 +77,16 @@ const Testimonials = () => {
                 width={100}
                 height={100}
                 alt="profile picture"
-                style={{margin:'auto'}}
+                style={{ margin: "auto" }}
               />
               <Name>Full Name</Name>
-              <div className="stars">
+              <Stars>
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
                 <StarIcon />
-                <StarIcon />
-              </div>
+                <StarHalf />
+              </Stars>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
                 repudiandae, pariatur porro a nulla dolorem animi distinctio

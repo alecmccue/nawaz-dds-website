@@ -31,10 +31,10 @@ export const IntroDiv = styled.div`
 `
 export const IntroTitleText1 = styled(Typography)`
     color: #FEFEFE;
-    font-size: 85px;
+    font-size: 60px;
     font-style: normal;
+    line-height: 85px;
     font-weight: 500;
-    line-height: 95px;
     text-transform: uppercase;
     margin-left: 12.5rem;
     margin-top: 8rem;
@@ -42,12 +42,11 @@ export const IntroTitleText1 = styled(Typography)`
 export const IntroTitleText2 = styled(Typography)`
     color: #FEFEFE;
     font-size: 85px;
-    font-style: italic;
     font-weight: 800;
-    line-height: 95px;
+    line-height: 85px;
     text-transform: uppercase;
     margin-left: 12.5rem;
-    margin-top: .5rem;
+    margin-top: .25rem;
 `
 export const CallButton = styled(Box)`
     border-radius: .5rem;
