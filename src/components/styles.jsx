@@ -21,9 +21,10 @@ export const StackItemText = styled(Typography)`
 `
 
 export const StackItemWrapper = styled.div`
+    align-items: center;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
-    align-items: center;
 `
 
 export const ScrollToLinkButtonWrapper = styled.div`

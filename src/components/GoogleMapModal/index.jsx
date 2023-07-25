@@ -2,7 +2,7 @@ import React from "react";
 import { Modal } from "@mui/material";
 import { ModalBox } from "./styles";
 
-const GoogleMapModal = ({ handleClose, open }) => {
+const GoogleMapsModal = ({ handleClose, open }) => {
   addEventListener("keydown", (event) => {
     // Listen for escape key press
     if(event.key === "Escape") {
@@ -24,4 +24,4 @@ const GoogleMapModal = ({ handleClose, open }) => {
   );
 };
 
-export default GoogleMapModal;
+export default GoogleMapsModal;

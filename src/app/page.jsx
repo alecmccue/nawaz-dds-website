@@ -18,7 +18,7 @@ import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
 import Landing from "@/components/Landing";
 import { useState } from "react";
-import GoogleMapModal from "@/components/GoogleMapModal";
+import GoogleMapsModal from "@/components/GoogleMapModal";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -56,7 +56,7 @@ const Home = () => {
       </MainContainerWrapper>
 
       <InformationCards />
-      <GoogleMapModal open={open} handleClose={handleClose} />
+      <GoogleMapsModal open={open} handleClose={handleClose} />
     </HomeWrapper>
   );
 };
