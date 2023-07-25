@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   IntroImage,
   IntroTitleText1,
@@ -10,7 +10,13 @@ import {
 } from "../../styles";
 import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
+import GoogleMapModal from "@/components/GoogleMapModal";
 const Intro = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpenDirectionsModal = () => setOpen(true);
+  const handleCloseDirectionsModal = () => setOpen(false);
+  
   return (
     <IntroImage style={{ display: "flex" }}>
       <IntroDiv>
@@ -21,7 +27,7 @@ const Intro = () => {
             <PhoneIcon />
             (703) 430 3838
           </CallButton>
-          <DirectionsButton>
+          <DirectionsButton onClick={handleOpenDirectionsModal}>
             <MapIcon />
             Get Directions
           </DirectionsButton>
@@ -30,6 +36,8 @@ const Intro = () => {
       <div>
         <BannerImg />
       </div>
+
+      <GoogleMapModal open={open} handleClose={handleCloseDirectionsModal} />
     </IntroImage>
   );
 };

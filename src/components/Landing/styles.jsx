@@ -48,18 +48,19 @@ export const IntroTitleText2 = styled(Typography)`
     margin-top: .5rem;
 `
 export const CallButton = styled(Box)`
+    align-items: center;
     background-color: #00ACB1;
     border-radius: 1rem;
     border: 3px solid #00ACB1;
     color: white;
+    cursor: pointer;
+    display: flex;
     font-size: 1.1rem;
     font-weight: 500;
-    margin-top: 3rem;
     margin-left: 10rem;
+    margin-top: 3rem;
     padding: 0.5rem 1.5rem 0.5rem 1.2rem; 
     width: fit-content;
-    display: flex;
-    align-items: center;
 
     &:hover {
         background-color: transparent;
@@ -67,18 +68,20 @@ export const CallButton = styled(Box)`
 `
 
 export const DirectionsButton = styled(Box)`
+    align-items: center;
     background-color: #00ACB1;
     border-radius: 1rem;
     border: 3px solid #00ACB1;
     color: white;
+    cursor: pointer;
+    display: flex;
     font-size: 1.1rem;
     font-weight: 500;
-    margin-top: 3rem;
     margin-left: 5rem;
+    margin-top: 3rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
     width: fit-content;
-    display: flex;
-    align-items: center;
+    
     &:hover {
         background-color: transparent;
     }
