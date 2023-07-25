@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { AppBar, Toolbar } from "@mui/material";
 import { NavbarButtonsWrapper } from "./styles";
-import Image from "next/image";
-import Link from "next/link";
 import LinkButton from "../LinkButton";
 import MenuButton from "../MenuButton";
 import ServicesMenu from "./components/ServicesMenu";
+
+import FcdLogo from "./components/FcdLogo";
 
 const Navbar = () => {
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
@@ -16,9 +16,7 @@ const Navbar = () => {
   return (
     <AppBar position="sticky" color="azure">
       <Toolbar>
-        <Link href={"/"}>
-          <Image src="/F&CD_logo.png" height={60} width={150} alt="tooth" />
-        </Link>
+        <FcdLogo />
         <NavbarButtonsWrapper>
           <LinkButton to="/" label="Home" />
           <LinkButton to="/about" label="About" />

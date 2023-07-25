@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import { Box, MenuItem } from "@mui/material";
 
 export const NavbarButtonsWrapper = styled(Box)`
-    position: absolute;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -12,3 +11,12 @@ export const NavbarButtonsWrapper = styled(Box)`
 export const ServicesMenuItem = styled(MenuItem)`
     padding: 0;
 `
+
+export const FcdLogoImage = styled.img`
+  height: auto;
+  width: 10rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
