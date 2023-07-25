@@ -4,6 +4,7 @@ import { NavbarButtonsWrapper } from "./styles";
 import Image from "next/image";
 import Link from "next/link";
 import LinkButton from "../LinkButton";
+import MenuButton from "../MenuButton";
 import ServicesMenu from "./components/ServicesMenu";
 
 const Navbar = () => {
@@ -21,10 +22,12 @@ const Navbar = () => {
         <NavbarButtonsWrapper>
           <LinkButton to="/" label="Home" />
           <LinkButton to="/about" label="About" />
-          <LinkButton
+          <MenuButton
             to="/services"
             label="Services"
+            isOpen={servicesAnchorEl}
             handleMouseEnter={handleServicesMouseEnter}
+            handleClose={handleServicesClose}
           />
           <LinkButton to="/products" label="Products" />
         </NavbarButtonsWrapper>

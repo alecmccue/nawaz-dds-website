@@ -1,15 +1,23 @@
-import ScrollToMenuButton from "@/components/ScrollToLinkButton";
-import { Menu, MenuItem } from "@mui/material";
+import { Menu } from "@mui/material";
 import { ServicesMenuItem } from "../../styles";
+import ScrollToMenuButton from "@/components/ScrollToLinkButton";
 
 const ServicesMenu = ({ anchorEl, handleClose }) => {
   return (
     <Menu
       anchorEl={anchorEl}
-      id="services-menu"
-      open={Boolean(anchorEl)}
-      onClose={handleClose}
       disableAutoFocusItem
+      id="services-menu"
+      onClose={handleClose}
+      open={Boolean(anchorEl)}
+      MenuListProps={{
+        onMouseLeave: handleClose,
+      }}
+      style={{
+        zIndex: -1
+      }}
+      disablePortal
+      hideBackdrop
     >
       <ServicesMenuItem>
         <ScrollToMenuButton

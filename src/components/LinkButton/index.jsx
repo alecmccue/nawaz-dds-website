@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import Link from "next/link";
 
-const LinkButton = ({ to, label, handleMouseEnter }) => (
-  <Link href={to} onMouseEnter={handleMouseEnter}>
+const LinkButton = ({ label, to }) => (
+  <Link href={to}>
     <Button variant="quiet">{label}</Button>
   </Link>
 );
