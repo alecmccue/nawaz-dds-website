@@ -7,6 +7,7 @@ export const ColumnBody = styled(Box)`
   padding: 1rem;
   gap: 1rem;
 `
+
 export const ColumnHeader = styled(Typography)`
   display: flex;
   border-bottom: thin solid #015D67;

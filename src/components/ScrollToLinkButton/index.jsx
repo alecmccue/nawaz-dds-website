@@ -9,13 +9,17 @@ const ScrollToMenuButton = ({ to, label, elementId, handleClose }) => {
     if (pathName != "/services") {
       router.push(to);
     }
+    
     setTimeout(() => {
       const element = document.getElementById(elementId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }, 100);
-    handleClose();
+
+    if(handleClose) {
+      handleClose();
+    }
   };
 
   return (
