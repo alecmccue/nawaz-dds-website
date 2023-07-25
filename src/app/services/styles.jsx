@@ -20,11 +20,6 @@ export const AccordionSummaryTextWrapper = styled.div`
   gap: 1rem;
 `;
 
-export const ListItemTitle = styled.div`
-  display: flex;
-  align-items: center;
-`
-
 export const ServiceAccordion = styled(Accordion)`
   padding: 2rem;
   
