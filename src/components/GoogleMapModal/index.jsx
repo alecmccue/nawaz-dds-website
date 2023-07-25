@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Modal } from "@mui/material";
 import { ModalBox } from "./styles";
 
 const GoogleMapsModal = ({ handleClose, open }) => {
-  addEventListener("keydown", (event) => {
-    // Listen for escape key press
-    if(event.key === "Escape") {
-      handleClose()
-    }
+  useEffect(() => {
+    window.addEventListener("keydown", (event) => {
+      // Listen for escape key press
+      if(event.key === "Escape") {
+        handleClose()
+      }
+    })
   })
   
   return (
