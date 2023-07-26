@@ -1,5 +1,10 @@
 import React from "react";
-import { LeftColumn, MarketingImage, MarketingStatementWrapper, RightColumn } from "./styles";
+import {
+  LeftColumn,
+  MarketingImage,
+  MarketingStatementWrapper,
+  RightColumn,
+} from "./styles";
 import { Typography } from "@mui/material";
 
 const MarketingStatement = () => (
@@ -22,7 +27,7 @@ const MarketingStatement = () => (
     </LeftColumn>
 
     <RightColumn>
-        <MarketingImage src="office.jpg" alt="office" />
+      <MarketingImage src="office.jpg" alt="office" />
     </RightColumn>
   </MarketingStatementWrapper>
 );

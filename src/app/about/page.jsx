@@ -13,8 +13,8 @@ const About = () => {
       <Introduction />
       <MeetNawaz />
       <MeetTeam />
-      <MarketingStatement />
       <MissionStatement />
+      <MarketingStatement />
     </AboutWrapper>
   );
 };

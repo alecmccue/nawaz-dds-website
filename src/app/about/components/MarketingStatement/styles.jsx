@@ -8,14 +8,16 @@ export const LeftColumn = styled.div`
 `;
 
 export const MarketingImage = styled.img`
-  height: 80%;
-  width: 80%;
+  height: auto;
+  width: 100%;
 `;
 
 export const MarketingStatementWrapper = styled.div`
   display: flex;
   gap: 3rem;
-  padding: 3rem;
+  padding: 2rem;
+  background-color: #00ACB1;
+  color: #EBF2F3;
 `;
 
 export const RightColumn = styled.div`

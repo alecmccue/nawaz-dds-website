@@ -11,12 +11,13 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`
+  flex: 1;
+`;
 
 export const Line = styled.div`
   border: thin solid black;
   width: 100%;
-`
+`;
 
 export const MeetNawazWrapper = styled.div`
   display: flex;
@@ -31,14 +32,17 @@ export const NawazImage = styled.img`
   width: 100%;
 `;
 
-export const TextInnerWrapper = styled.div` 
+export const TextInnerWrapper = styled.div`
   display: flex;
   gap: 3rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
-export const TextOuterWrapper = styled.div` 
+export const TextOuterWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   max-width: 75rem;
 `;
