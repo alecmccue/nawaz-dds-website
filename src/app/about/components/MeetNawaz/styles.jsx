@@ -1,25 +1,44 @@
 import styled from "@emotion/styled";
 
-export const LeftColumn = styled.div`
-  align-items: center;
+export const ImageWrapper = styled.div`
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 20rem;
+`;
+
+export const Column = styled.div`
+  display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: center;
-  padding: 2rem;
-  position: relative;
-`;
+`
+
+export const Line = styled.div`
+  border: thin solid black;
+  width: 100%;
+`
 
 export const MeetNawazWrapper = styled.div`
-  background-color: #CAF0C1;
   display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 5rem;
 `;
 
-export const RightColumn = styled.div`
+export const NawazImage = styled.img`
+  border-radius: 1rem;
+  height: auto;
+  width: 100%;
+`;
+
+export const TextInnerWrapper = styled.div` 
+  display: flex;
+  gap: 3rem;
+`;
+
+export const TextOuterWrapper = styled.div` 
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  padding-left: 3rem;
+  gap: 1rem;
+  max-width: 75rem;
 `;

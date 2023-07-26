@@ -1,11 +1,13 @@
 import styled from "@emotion/styled";
-import { Box, MenuItem } from "@mui/material";
+import { MenuItem } from "@mui/material";
 
-export const NavbarButtonsWrapper = styled(Box)`
+export const NavbarButtonsWrapper = styled.div`
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 1.25rem;
+    height: 4rem;
+    align-items: center;
 `
 
 export const ServicesMenuItem = styled(MenuItem)`

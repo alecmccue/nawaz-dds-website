@@ -4,7 +4,6 @@ import { NavbarButtonsWrapper } from "./styles";
 import LinkButton from "../LinkButton";
 import MenuButton from "../MenuButton";
 import ServicesMenu from "./components/ServicesMenu";
-
 import FcdLogo from "./components/FcdLogo";
 
 const Navbar = () => {
@@ -26,11 +25,13 @@ const Navbar = () => {
             isOpen={servicesAnchorEl}
             handleMouseEnter={handleServicesMouseEnter}
             handleClose={handleServicesClose}
-          />
+          >
+            <ServicesMenu anchorEl={servicesAnchorEl} handleClose={handleServicesClose} />
+          </MenuButton>
           <LinkButton to="/products" label="Products" />
         </NavbarButtonsWrapper>
 
-        <ServicesMenu anchorEl={servicesAnchorEl} handleClose={handleServicesClose} />
+        
       </Toolbar>
     </AppBar>
   );

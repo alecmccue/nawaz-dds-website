@@ -27,5 +27,5 @@ export const OverlayCard = styled.div`
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: fit-content;
+  width: 50rem;
 `;
