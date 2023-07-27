@@ -10,7 +10,16 @@ import {
 } from "../../styles";
 import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
+import GoogleMapsModal from "@/components/GoogleMapModal";
+import useGoogleMapModal from "@/hooks/useGoogleMapModal";
+
 const Intro = () => {
+  const {
+    handleCloseDirectionsModal,
+    handleOpenDirectionsModal,
+    isDirectionsModalOpen
+  } = useGoogleMapModal()
+  
   return (
     <IntroImage style={{ display: "flex" }}>
       <IntroDiv>
@@ -21,7 +30,7 @@ const Intro = () => {
             <PhoneIcon />
             (703) 430 3838
           </CallButton>
-          <DirectionsButton>
+          <DirectionsButton onClick={handleOpenDirectionsModal}>
             <MapIcon />
             Get Directions
           </DirectionsButton>
@@ -29,6 +38,8 @@ const Intro = () => {
       </IntroDiv>
       <div>
       </div>
+
+      <GoogleMapsModal open={isDirectionsModalOpen} handleClose={handleCloseDirectionsModal} />
     </IntroImage>
   );
 };

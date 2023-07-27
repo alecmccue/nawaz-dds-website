@@ -1,9 +1,9 @@
 import { IconWrapper, StackItemText, StackItemWrapper } from "../../../styles";
 import PlaceIcon from "@mui/icons-material/Place";
 
-const Address = () => {
+const Address = ({ handleOpenDirectionsModal }) => {
   return (
-    <StackItemWrapper>
+    <StackItemWrapper onClick={handleOpenDirectionsModal}>
       <IconWrapper>
         <PlaceIcon />
       </IconWrapper>

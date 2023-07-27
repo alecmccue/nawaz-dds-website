@@ -52,12 +52,14 @@ export const CallButton = styled(Box)`
     border-radius: .5rem;
     border: 2px solid #00ACB1;
     color: #FEFEFE;
+    
     background-color: #00ACB1;
     font-size: 1.25rem;
     font-weight: 500;
     margin-top: 3rem;
     margin-left: 12.5rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
+    
     width: fit-content;
     display: flex;
     align-items: center;
@@ -73,12 +75,17 @@ export const DirectionsButton = styled(Box)`
     background-color: #00ACB1;
     font-size: 1.25rem;
     font-weight: 500;
+    
     margin-top: 3rem;
     margin-left: 6rem;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
-    width: fit-content;
-    display: flex;
     align-items: center;
+    
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    
+    width: fit-content;
+    
     &:hover {
         background-color: transparent;
     }
