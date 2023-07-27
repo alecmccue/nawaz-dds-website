@@ -26,10 +26,12 @@ const Footer = () => {
     <>
       <FooterWraper component="footer">
         <UpperBox>
+          
+          <img src="/FCD_logo.png" alt="logo" />
           <ColumnWrapper>
             <ColumnHeader>Contact Us</ColumnHeader>
             <ColumnBody>
-              <Address handleOpenDirectionsModal={handleOpenDirectionsModal}/>
+              <Address handleOpenDirectionsModal={handleOpenDirectionsModal} />
               <PhoneNumber />
               <Email />
             </ColumnBody>

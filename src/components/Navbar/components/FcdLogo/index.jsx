@@ -10,7 +10,7 @@ const FcdLogo = () => {
 
   return (
     <div onClick={handleClick} >
-      <FcdLogoImage src="/F&CD_logo.png" alt="FC&D Logo" />
+      <FcdLogoImage src="/FCD_logo.png" alt="FC&D Logo" />
     </div>
   );
 };
