@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  CallButton,
   ColoredDiv,
   Description,
   DescriptionDiv,
@@ -14,7 +13,7 @@ import {
 const Main = () => {
   return (
     <MainDiv>
-      <div>
+      <div style={{width:'40%'}}>
         <NawazImg />
         <ColoredDiv />
       </div>
@@ -30,20 +29,21 @@ const Main = () => {
         </Description>
         <DescriptionLists>
           <ul style={{ listStyleType: "circle" }}>
-            <li style={{ color: '#00ACB1'}}>
-              <span style={{ color: '#000'}}>
+            <li style={{ color: "#00ACB1" }}>
+              <span style={{ color: "#000" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et
               </span>
             </li>
-            <li style={{ color: '#00ACB1'}}>
-              <span style={{ color: '#000'}}>
+            <li style={{ color: "#00ACB1" }}>
+              <span style={{ color: "#000" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </span>
             </li>
-            <li style={{ color: '#00ACB1'}}>
-              <span style={{ color: '#000'}}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit              </span>
+            <li style={{ color: "#00ACB1" }}>
+              <span style={{ color: "#000" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
+              </span>
             </li>
           </ul>
         </DescriptionLists>

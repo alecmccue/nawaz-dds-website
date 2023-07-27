@@ -37,7 +37,6 @@ const Intro = () => {
         </div>
       </IntroDiv>
       <div>
-        <BannerImg />
       </div>
 
       <GoogleMapsModal open={isDirectionsModalOpen} handleClose={handleCloseDirectionsModal} />

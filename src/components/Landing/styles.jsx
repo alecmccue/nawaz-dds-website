@@ -17,8 +17,10 @@ export const IntroImage = styled.div`
     width: 100%;
     height: 700px;
     flex-shrink: 0;
-    background: linear-gradient(0deg, rgba(1, 93, 103, 0.20) 0%, rgba(1, 93, 103, 0.20) 100%), url(/clean-dental-office.jpg), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: url(/clean-dental-office.jpg);
+    background-color:#FEFEFE;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 `
 export const IntroDiv = styled.div`
     padding:5rem;
@@ -29,57 +31,59 @@ export const IntroDiv = styled.div`
 `
 export const IntroTitleText1 = styled(Typography)`
     color: #FEFEFE;
-    font-size: 85px;
+    font-size: 60px;
     font-style: normal;
+    line-height: 85px;
     font-weight: 500;
-    line-height: 95px;
     text-transform: uppercase;
-    margin-left: 10rem;
+    margin-left: 12.5rem;
     margin-top: 8rem;
 `
 export const IntroTitleText2 = styled(Typography)`
     color: #FEFEFE;
     font-size: 85px;
-    font-style: italic;
     font-weight: 800;
-    line-height: 95px;
+    line-height: 85px;
     text-transform: uppercase;
-    margin-left: 10rem;
-    margin-top: .5rem;
+    margin-left: 12.5rem;
+    margin-top: .25rem;
 `
 export const CallButton = styled(Box)`
-    align-items: center;
+    border-radius: .5rem;
+    border: 2px solid #00ACB1;
+    color: #FEFEFE;
+    
     background-color: #00ACB1;
-    border-radius: 1rem;
-    border: 3px solid #00ACB1;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 500;
-    margin-left: 10rem;
     margin-top: 3rem;
-    padding: 0.5rem 1.5rem 0.5rem 1.2rem; 
+    margin-left: 12.5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
+    
     width: fit-content;
-
+    display: flex;
+    align-items: center;
     &:hover {
         background-color: transparent;
     }
 `
 
 export const DirectionsButton = styled(Box)`
-    align-items: center;
+    border-radius: .5rem;
+    border: 2px solid #00ACB1;
+    color: #FEFEFE;
     background-color: #00ACB1;
+    font-size: 1.25rem;
+    font-weight: 500;
+    
+    margin-top: 3rem;
+    margin-left: 6rem;
+    align-items: center;
+    
     border-radius: 1rem;
-    border: 3px solid #00ACB1;
-    color: white;
     cursor: pointer;
     display: flex;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-left: 5rem;
-    margin-top: 3rem;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
+    
     width: fit-content;
     
     &:hover {
@@ -98,13 +102,11 @@ export const BannerImg = styled.div`
 export const MainDiv = styled.div`
     width:100%;
     height:700px;
-    padding-left:6rem;
-    padding-right:6rem;
-    padding-top:2.5rem;
-    padding-bottom:2.5rem;
+    padding: 2.5rem 6rem 2.5rem 6rem;
     background: #FAFCFC;
     display:flex;
     position: relative;
+    justify-content: center;
 `
 
 export const NawazImg = styled.div`
@@ -122,20 +124,25 @@ export const NawazImg = styled.div`
 export const ColoredDiv = styled.div`
     width: 500px;
     height: 500px;
-    margin-left: 5rem;
+    margin-left: 4rem;
     margin-top:10rem;
     flex-shrink: 0;
     background: #D5E4E6;
 
 `
 
+export const ImageContainer = styled.div`
+    margin-right: 4rem;
+    height: fit-content;
+`
+
 export const DescriptionDiv = styled.div`
-    padding-left: 10rem;
+    margin-left: 10rem;
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
+    width: 100%;
 `
 export const DescriptionTitle = styled(Typography)`
     height: 31px;
@@ -157,7 +164,7 @@ export const DescriptionTitle2 = styled(Typography)`
 `
 
 export const Description = styled(Typography)`
-    margin-top:5rem;
+    margin-top:3rem;
     display: flex;
     width: 688px;
     height: 209px;
@@ -167,7 +174,7 @@ export const Description = styled(Typography)`
     font-weight: 400;
     line-height: 40px;
 `
-export const DescriptionLists = styled(Box)`
+export const DescriptionLists = styled.div`
     width: 620px;
     display: flex;
     font-size: 24px;
