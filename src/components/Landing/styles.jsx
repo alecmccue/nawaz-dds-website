@@ -72,20 +72,18 @@ export const DirectionsButton = styled(Box)`
     border-radius: .5rem;
     border: 2px solid #00ACB1;
     color: #FEFEFE;
+    
     background-color: #00ACB1;
     font-size: 1.25rem;
     font-weight: 500;
-    
     margin-top: 3rem;
     margin-left: 6rem;
-    align-items: center;
-    
-    border-radius: 1rem;
-    cursor: pointer;
-    display: flex;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; 
     
     width: fit-content;
-    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     &:hover {
         background-color: transparent;
     }
