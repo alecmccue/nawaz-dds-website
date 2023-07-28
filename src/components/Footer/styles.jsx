@@ -63,6 +63,11 @@ export const LowerContainer = styled(Container)`
   justify-content: space-between;
   margin-top: 0.75rem;
   min-width: 100%;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `
 
 export const SocialWrapper = styled.div`
@@ -77,4 +82,8 @@ export const UpperBox = styled(Box)`
   gap: 5rem;
   width: 100%;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `

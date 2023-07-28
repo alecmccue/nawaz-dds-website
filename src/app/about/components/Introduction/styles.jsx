@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 
 export const BackgroundImage = styled.img`
-  min-height: 22rem;
+  filter: brightness(50%);
   height: auto;
-  opacity: 0.7;
+  min-height: 22rem;
   width: 100%;
 `;
 
@@ -17,11 +17,14 @@ export const IntroWrapper = styled.div`
 
 export const OverlayText = styled.div`
   display: flex;
+  color: white;
   flex-direction: column;
   gap: 1rem;
   height: 20rem;
   left: 8%;
   position: absolute;
   top: 12%;
-  width: 40rem;
+  width: 45rem;
+
+  max-width: 100vw;
 `;
