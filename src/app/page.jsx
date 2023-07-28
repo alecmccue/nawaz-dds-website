@@ -17,7 +17,6 @@ const Home = () => {
   return (
     <HomeWrapper>
       <Landing/>
-      {/* <InformationCards /> */}
       <GoogleMapModal open={open} handleClose={handleClose} />
     </HomeWrapper>
   );

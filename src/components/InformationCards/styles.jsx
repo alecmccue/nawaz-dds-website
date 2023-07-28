@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Card, Typography } from "@mui/material";
 
 export const CardWrapper = styled.div`
-    background-color: #015D67;
+    background-color: azure;
     display: flex;
     gap: 3rem;
     justify-content: center;
@@ -15,7 +15,7 @@ export const CardWrapper = styled.div`
 `
 
 export const InformationCard = styled(Card)`
-    background-color: azure;
+    background-color: white;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -23,6 +23,10 @@ export const InformationCard = styled(Card)`
     height: 18.125rem;
     min-width: 22.5rem;
     padding: 2rem;
+
+    &:hover {
+        background-color: #EBF2F3;
+    }
 `
 
 export const CardTitleText = styled(Typography)`

@@ -4,9 +4,11 @@ import Intro from "./components/Intro";
 import Main from "./components/Main";
 import Testimonials from "./components/Testimonials";
 import FAQs from "./components/FAQs";
+import InformationCards from "../InformationCards";
 const Landing = () => (
     <LandingWrapper>
         <Intro/>
+        <InformationCards />
         <Main/>
         <Testimonials/>
         <FAQs/>

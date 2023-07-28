@@ -18,7 +18,7 @@ export const IntroImage = styled.div`
     height: 700px;
     flex-shrink: 0;
     background: url(/clean-dental-office.jpg);
-    background-color:#FEFEFE;
+    background-color:azure;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 `
