@@ -1,48 +1,59 @@
 import React from "react";
-import { LeftColumn, MeetNawazWrapper, RightColumn } from "./styles";
+import {
+  ImageWrapper,
+  Column,
+  Line,
+  MeetNawazWrapper,
+  NawazImage,
+  TextInnerWrapper,
+  TextOuterWrapper,
+} from "./styles";
 import { Typography } from "@mui/material";
-import Image from "next/image";
 
 const MeetNawaz = () => (
   <MeetNawazWrapper>
-    <LeftColumn>
-      <Typography>
-        Dr. Parth Kansagra founded Bespoke Dental Studios to provide the
-        absolute best care in not just his community, but the entire dental
-        industry.
-      </Typography>
-      <Typography>
-        Dr. Parth received his Bachelor of Science from the University of the
-        Pacific before going on to receive his Master of Biomedical Sciences
-        from the University of Northern Colorado. From there, he attended
-        Roseman University of Health Sciences to receive his Doctor of Dental
-        Surgery and Master of Business Administration.
-      </Typography>
-      <Typography>
-        Active in community outreach all throughout dental school, community
-        involvement is crucially important to Dr. Parth. To ensure that each and
-        every one of his patients always receives the absolute best care, he has
-        committed himself to continuing education in the latest dental
-        treatments and technologies. His vision for Bespoke Dental Studios is to
-        help his community through excellence in dental care.
-      </Typography>
-      <Typography>
-        In his free time, Dr. Parth enjoys and pursues his interior design and
-        event design passions. Additionally, he enjoys cooking, baking,
-        traveling, and spending time with his nephews and niece.
-      </Typography>
+    <ImageWrapper>
+      <NawazImage src="/nawaz-profilepicture.jpg" alt="dr-nawaz" />
+    </ImageWrapper>
 
-      <Typography>EDUCATION</Typography>
-      <Typography>CERTIFICATIONS</Typography>
-    </LeftColumn>
-    <RightColumn>
-      <Image
-        src="/nawaz-profilepicture.jpg"
-        alt="dr-nawaz"
-        width={100}
-        height={30}
-      />
-    </RightColumn>
+    <TextOuterWrapper>
+      <Line />
+      <TextInnerWrapper>
+        <Column>
+          <div>
+            <img src="/dots.png" alt="dots" style={{ height: "8rem", width: "auto", transform: "scaleY(-1)" }} />
+          </div>
+          <Typography style={{ fontSize: "2rem", fontWeight: "500" }}>
+            Dr. Mirweiss Nawaz
+          </Typography>
+          <Typography style={{ fontSize: "1.1rem" }}>
+            Since its establishment in 2007, Dr. Nawaz has been committed to
+            delivering exceptional dental care at Family & Cosmetic Dentistry.
+            With a focus on both family and cosmetic dentistry, he creates
+            personalized treatment plans to cater to each patient's needs. Dr.
+            Nawaz's dedication to staying at the forefront of dental
+            advancements ensures that patients receive the highest standard of
+            care in a warm and welcoming environment.
+          </Typography>
+        </Column>
+        <Column style={{ justifyContent: "center" }}>
+          <Typography style={{ fontSize: "1.1rem", fontWeight: "500" }}>
+            Education
+          </Typography>
+          <ul style={{ fontSize: "1.1rem", listStyleType: "disc", paddingLeft: "1.5em" }}>
+            <li>BS in Biology at George Mason University</li>
+            <li>DDS, Virginia Commonwealth University</li>
+          </ul>
+          <Typography style={{ fontSize: "1.1rem", fontWeight: "500" }}>
+            Certifications
+          </Typography>
+          <ul style={{ fontSize: "1.1rem", listStyleType: "disc", paddingLeft: "1.5em" }}>
+            <li>Academy of General Dentistry</li>
+            <li>Invisalign</li>
+          </ul>
+        </Column>
+      </TextInnerWrapper>
+    </TextOuterWrapper>
   </MeetNawazWrapper>
 );
 

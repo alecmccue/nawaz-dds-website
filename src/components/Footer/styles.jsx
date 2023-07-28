@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Container, Typography } from "@mui/material";
+import Link from "next/link";
 
 export const ColumnBody = styled(Box)`
   display: flex;
@@ -22,6 +23,12 @@ export const ColumnWrapper = styled(Box)`
   width: fit-content;
 `
 
+export const FooterIconWrapper = styled.div`
+    border-radius: 50%;
+    border: thin solid #00ACB1;
+    padding: 0.4rem;
+`
+
 export const FooterWraper = styled(Box)`
   display: flex;
   flex-direction: column;
@@ -33,10 +40,21 @@ export const IconContainer = styled(Container)`
   margin-top: 2rem;
 `
 
+export const FCDLogo = styled.img`
+  height: 5rem;
+  width: auto;
+`
+
+export const FooterLink = styled(Link)`
+  &:hover {
+    color: #00ACB1;
+  }
+`
+
 export const LowerBox = styled(Box)`
   display: flex;
   max-width: full;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
   border-top: thin solid #D5E4E6;
 `
 
@@ -45,6 +63,17 @@ export const LowerContainer = styled(Container)`
   justify-content: space-between;
   margin-top: 0.75rem;
   min-width: 100%;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+`
+
+export const SocialWrapper = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
 `
 
 export const UpperBox = styled(Box)`
@@ -53,4 +82,8 @@ export const UpperBox = styled(Box)`
   gap: 5rem;
   width: 100%;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `

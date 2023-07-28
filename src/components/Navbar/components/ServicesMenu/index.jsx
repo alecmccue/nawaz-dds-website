@@ -14,7 +14,8 @@ const ServicesMenu = ({ anchorEl, handleClose }) => {
         onMouseLeave: handleClose,
       }}
       style={{
-        zIndex: -1
+        zIndex: -1,
+        top: -8,
       }}
       disablePortal
       hideBackdrop

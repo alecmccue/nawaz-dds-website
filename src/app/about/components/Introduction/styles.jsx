@@ -1,26 +1,30 @@
 import styled from "@emotion/styled";
 
 export const BackgroundImage = styled.img`
-  height: 100%;
-  opacity: 0.5;
+  filter: brightness(50%);
+  height: auto;
+  min-height: 22rem;
   width: 100%;
 `;
 
 export const IntroWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  height: 40rem;
+  height: auto;
+  position: relative;
   width: 100%;
 `;
 
 export const OverlayText = styled.div`
   display: flex;
+  color: white;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   height: 20rem;
-  left: 35rem;
+  left: 8%;
   position: absolute;
-  top: 28rem;
-  transform: translate(-50%, -50%);
-  width: fit-content;
+  top: 12%;
+  width: 45rem;
+
+  max-width: 100vw;
 `;

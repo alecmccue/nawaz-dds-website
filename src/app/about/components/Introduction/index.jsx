@@ -1,23 +1,21 @@
 import React from "react";
-import {
-  BackgroundImage,
-  IntroWrapper,
-  OverlayText,
-} from "./styles";
+import { BackgroundImage, IntroWrapper, OverlayText } from "./styles";
 import { Typography } from "@mui/material";
 
 const Introduction = () => (
   <IntroWrapper>
-    <BackgroundImage src="/nawaz-profilepicture.jpg" alt="dr-nawaz" />
+    <BackgroundImage src="/consultation.jpg" alt="dr-nawaz" />
     <OverlayText>
-      <Typography style={{ fontSize: "3rem" }}>
-        Dr. Mirweiss Nawaz, DDS
+      <Typography style={{ fontSize: "1.3rem", fontWeight: "500" }}>
+        ABOUT FAMILY & COSMETIC DENTISTRY
       </Typography>
-      <Typography style={{ fontSize: "1.5rem" }}>
-        Personalized & High-Tech NOVA Dentist
+      <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+        Exceeding expectations, inspiring forever smiles
       </Typography>
-      <Typography style={{ fontSize: "1.1rem" }}>
-        Since [YEAR], Dr. Nawaz has served the Northern Virginia community. He helps patients take control of their dental health and achieve the smiles they've always wanted.
+      <Typography
+        style={{ fontSize: "1.1rem", fontWeight: "500", marginTop: "1rem" }}
+      >
+        CALL (703) 430 3838 TO MAKE AN APPOINTMENT
       </Typography>
     </OverlayText>
   </IntroWrapper>

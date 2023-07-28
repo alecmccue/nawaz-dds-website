@@ -8,7 +8,7 @@ import { Typography } from "@mui/material";
 
 const MissionStatement = () => (
   <MissionStatementWrapper>
-    <BackgroundImage src="/office-stock.jpg" alt="background" />
+    <BackgroundImage src="/office.jpg" alt="background" />
     <OverlayCard>
       <Typography style={{ fontSize: "2.5rem", color: "#015D67" }}>OUR MISSION</Typography>
       <Typography style={{ fontSize: "1.1rem", color: "#015D67" }}>

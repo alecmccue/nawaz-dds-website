@@ -4,16 +4,19 @@ import {
   ColumnBody,
   ColumnHeader,
   ColumnWrapper,
+  FCDLogo,
+  FooterLink,
   FooterWraper,
   LowerBox,
   LowerContainer,
+  SocialWrapper,
   UpperBox,
 } from "./styles";
 import Instagram from "./components/Instagram";
-import Link from "next/link";
 import PhoneNumber from "./components/PhoneNumber";
 import useGoogleMapModal from "@/hooks/useGoogleMapModal";
 import GoogleMapsModal from "../GoogleMapModal";
+import GoogleReviews from "./components/GoogleReviews";
 
 const Footer = () => {
   const {
@@ -26,12 +29,21 @@ const Footer = () => {
     <>
       <FooterWraper component="footer">
         <UpperBox>
+          <ColumnWrapper sx={{ alignItems: "center" }}>
+            <FCDLogo src="/FCD_logo.png" alt="logo" />
+            <SocialWrapper>
+              <Instagram />
+              <GoogleReviews />
+            </SocialWrapper>
+          </ColumnWrapper>
+
           <ColumnWrapper>
-            <ColumnHeader>Contact Us</ColumnHeader>
-            <ColumnBody>
-              <Address handleOpenDirectionsModal={handleOpenDirectionsModal}/>
-              <PhoneNumber />
-              <Email />
+            <ColumnHeader>Our Office</ColumnHeader>
+            <ColumnBody sx={{ alignItems: "center" }}>
+              <FooterLink href="/">Home</FooterLink>
+              <FooterLink href="/about">About</FooterLink>
+              <FooterLink href="/services">Services</FooterLink>
+              <FooterLink href="/products">Products</FooterLink>
             </ColumnBody>
           </ColumnWrapper>
 
@@ -46,20 +58,18 @@ const Footer = () => {
           </ColumnWrapper>
 
           <ColumnWrapper>
-            <ColumnHeader>Services</ColumnHeader>
-          </ColumnWrapper>
-
-          <ColumnWrapper>
-            <ColumnHeader>Instagram</ColumnHeader>
-            <ColumnBody sx={{ alignItems: "center" }}>
-              <Instagram />
+            <ColumnHeader>Contact Us</ColumnHeader>
+            <ColumnBody>
+              <Address handleOpenDirectionsModal={handleOpenDirectionsModal} />
+              <PhoneNumber />
+              <Email />
             </ColumnBody>
           </ColumnWrapper>
         </UpperBox>
 
         <LowerBox>
           <LowerContainer>
-            <Link href="/privacy-policy"> Privacy Policy </Link>
+            <FooterLink href="/privacy-policy"> Privacy Policy </FooterLink>
             <div> &copy; 2023 Family & Cosmetic Densistry </div>
           </LowerContainer>
         </LowerBox>
