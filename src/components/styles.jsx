@@ -5,7 +5,7 @@ export const IconWrapper = styled.div`
     background-color: #00ACB1;
     border-radius: 50%;
     border: thin solid #00ACB1;
-    padding: 0.5rem;
+    padding: 0.4rem;
     color: white;
 
     &:hover {
