@@ -11,43 +11,86 @@ import Invisalign from "./components/Invisalign";
 import PartialDentures from "./components/PartialDentures";
 import RootCanal from "./components/RootCanal";
 
-const AnimatedComponent = ({ delay, children }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay }}
-  >
-    {children}
-  </motion.div>
-);
-
+const animationVariant = {
+  hide: {
+      opacity: 0,
+      y: 20,
+  },
+  show: {
+      opacity: 1,
+      x: 0,
+      transition: {
+          duration: .5,
+      },
+  },
+};
 const Services = () => {
   return (
     <ServicesWrapper>
-      <AnimatedComponent delay={0}>
+      <motion.div
+        initial='hide'
+        exit='hide'
+        whileInView='show'
+        variants={animationVariant}
+      >
         <GeneralDentistry />
-      </AnimatedComponent>
-      <AnimatedComponent delay={0.1}>
+      </motion.div>
+      <motion.div
+        initial='hide'
+        exit='hide'
+        whileInView='show'
+        variants={animationVariant}
+      >
         <CosmeticDentistry />
-      </AnimatedComponent>
-      <AnimatedComponent delay={0.2}>
+      </motion.div>
+      <motion.div
+        initial='hide'
+        exit='hide'
+        whileInView='show'
+        variants={animationVariant}
+      >
         <Invisalign />
-      </AnimatedComponent>
-      <AnimatedComponent delay={0.3}>
+      </motion.div>
+      <motion.div
+        initial='hide'
+        exit='hide'
+        whileInView='show'
+        variants={animationVariant}
+      >
         <Implants />
-      </AnimatedComponent>
-      <AnimatedComponent delay={0.4}>
+      </motion.div>
+      <motion.div
+        initial='hide'
+        exit='hide'
+        whileInView='show'
+        variants={animationVariant}
+      >
         <RootCanal />
-      </AnimatedComponent>
-      <AnimatedComponent delay={0.5}>
+      </motion.div>
+      <motion.div
+        initial='hide'
+        exit='hide'
+        whileInView='show'
+        variants={animationVariant}
+      >
         <Extractions />
-      </AnimatedComponent>
-      <AnimatedComponent delay={0.6}>
+      </motion.div>
+      <motion.div
+        initial='hide'
+        exit='hide'
+        whileInView='show'
+        variants={animationVariant}
+      >
         <Dentures />
-      </AnimatedComponent>
-      <AnimatedComponent delay={0.7}>
+      </motion.div>
+      <motion.div
+        initial='hide'
+        exit='hide'
+        whileInView='show'
+        variants={animationVariant}
+      >
         <PartialDentures />
-      </AnimatedComponent>
+      </motion.div>
     </ServicesWrapper>
   );
 };
