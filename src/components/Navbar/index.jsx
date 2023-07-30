@@ -29,6 +29,7 @@ const Navbar = () => {
             <ServicesMenu anchorEl={servicesAnchorEl} handleClose={handleServicesClose} />
           </MenuButton>
           <LinkButton to="/products" label="Products" />
+          <LinkButton to="/patients/forms" label="For Patients" />
         </NavbarButtonsWrapper>
 
         
