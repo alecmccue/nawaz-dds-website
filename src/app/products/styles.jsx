@@ -10,17 +10,15 @@ export const ImageColumn = styled.div`
   border-radius: 2rem;
   overflow: hidden;
   flex: 1;
-
 `;
 
 export const IntroductionWrapepr = styled.div`
-    display: flex;
-    flex-direction: column;
-    max-width: 80rem;
-    text-align: center;
-    gap: 1rem;
-
-`
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  text-align: center;
+  gap: 1rem;
+`;
 
 export const ProductWrapper = styled.div`
   display: flex;

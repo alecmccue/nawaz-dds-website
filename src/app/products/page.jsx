@@ -2,10 +2,10 @@
 
 import React from "react";
 import { ProductsWrapper } from "./styles";
-import IntraoralScanner from "./components/IntraoralScanner";
 import DigitalXray from "./components/DigitalXray";
-import ZoomWhitening from "./components/ZoomWhitening";
+import IntraoralScanner from "./components/IntraoralScanner";
 import Introduction from "./components/Introduction";
+import ZoomWhitening from "./components/ZoomWhitening";
 
 const Products = () => (
   <ProductsWrapper>

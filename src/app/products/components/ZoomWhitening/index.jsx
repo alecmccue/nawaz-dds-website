@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "@mui/material";
 import { ImageColumn, ProductWrapper, TextColumn } from "../../styles";
+import { Typography } from "@mui/material";
 
 const ZoomWhitening = () => (
   <ProductWrapper>
@@ -24,6 +24,7 @@ const ZoomWhitening = () => (
         smile.
       </Typography>
     </TextColumn>
+
     <ImageColumn>
       <img src="/zoom_whitening.jpg" />
     </ImageColumn>

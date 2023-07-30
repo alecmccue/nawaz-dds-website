@@ -1,11 +1,11 @@
 import React from "react";
-import { Typography } from "@mui/material";
 import {
-  DigitalXrayImage,
-  ImageColumn,
-  ProductWrapper,
-  TextColumn,
+    DigitalXrayImage,
+    ImageColumn,
+    ProductWrapper,
+    TextColumn,
 } from "../../styles";
+import { Typography } from "@mui/material";
 
 const DigitalXray = () => (
   <ProductWrapper>
@@ -30,6 +30,7 @@ const DigitalXray = () => (
         healthcare.
       </Typography>
     </TextColumn>
+    
     <ImageColumn>
       <DigitalXrayImage src="/digital_xray.jpg" />
     </ImageColumn>

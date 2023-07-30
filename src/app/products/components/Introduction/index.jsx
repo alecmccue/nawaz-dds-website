@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "@mui/material";
 import { IntroductionWrapepr } from "../../styles";
+import { Typography } from "@mui/material";
 
 const Introduction = () => (
   <IntroductionWrapepr>
