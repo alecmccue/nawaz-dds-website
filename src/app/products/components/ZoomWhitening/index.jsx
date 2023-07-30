@@ -5,23 +5,23 @@ import { ImageColumn, ProductWrapper, TextColumn } from "../../styles";
 const ZoomWhitening = () => (
   <ProductWrapper>
     <TextColumn>
-      <Typography style={{ fontSize: "1.5rem", fontWeight: "500" }}>
+      <Typography style={{ fontSize: "2rem", fontWeight: "500" }}>
         Zoom Whitening
       </Typography>
-      <Typography style={{ fontSize: "1.2rem" }}>
-        A dentistry intraoral scanner is a sophisticated handheld device that
-        utilizes advanced optical technology to create precise 3D digital
-        impressions of a patient's teeth, gums, and oral structures. By
-        replacing traditional messy dental molds, this non-invasive scanner
-        offers a comfortable and efficient experience for both dental
-        professionals and patients. Guided gently over the patient's mouth, the
-        scanner's camera captures multiple images per second, creating real-time
-        digital models that allow dentists to analyze dental issues and plan
-        accurate treatment procedures. With streamlined workflows, easy data
-        storage, and enhanced patient understanding, intraoral scanners have
-        revolutionized modern dentistry, providing a more efficient, accurate,
-        and patient-friendly approach to capturing dental impressions and
-        improving the overall quality of care.
+      <Typography style={{ fontSize: "1.1rem" }}>
+        Zoom Whitening is a highly effective and popular teeth whitening
+        procedure that offers remarkable results in a single visit. Using
+        advanced LED technology, the Zoom Whitening treatment involves the
+        application of a powerful yet safe hydrogen peroxide gel on the teeth.
+        The specialized Zoom lamp is then used to activate the gel, breaking
+        down stubborn stains and discolorations deep within the enamel. This
+        process accelerates the whitening process, revealing noticeably brighter
+        and whiter teeth in just about an hour. Moreover, Zoom Whitening is
+        customizable, allowing the dentist to adjust the intensity of the
+        treatment to ensure optimal comfort and minimize sensitivity. With its
+        convenience, speed, and dramatic outcomes, Dentistry Zoom Whitening is
+        an excellent option for individuals seeking a radiant and confident
+        smile.
       </Typography>
     </TextColumn>
     <ImageColumn>
