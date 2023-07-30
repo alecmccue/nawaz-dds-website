@@ -3,7 +3,7 @@ import {Typography, Box} from "@mui/material";
 
 export const Testimonial = styled.div`
     padding:40px 0;
-    background: #EBF2F3;
+    background:azure;
     color: #434343;
     text-align:center;
 `
