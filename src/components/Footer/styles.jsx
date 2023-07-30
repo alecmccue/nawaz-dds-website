@@ -32,6 +32,8 @@ export const FooterIconWrapper = styled.div`
 export const FooterWraper = styled(Box)`
   display: flex;
   flex-direction: column;
+  background-color:#D5E4E6;
+  padding-top:1.5rem;
 `
 
 export const IconContainer = styled(Container)`
@@ -55,7 +57,8 @@ export const LowerBox = styled(Box)`
   display: flex;
   max-width: full;
   padding: 0.5rem 0.5rem 1rem 0.5rem;
-  border-top: thin solid #D5E4E6;
+  border-top: thin solid #FAFCFC;
+  background-color: #EBF2F3;
 `
 
 export const LowerContainer = styled(Container)`

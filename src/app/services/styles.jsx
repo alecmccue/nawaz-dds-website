@@ -45,7 +45,7 @@ export const ServiceWrapper = styled.div`
 
 export const ServicesWrapper = styled.div`
   align-items: center;
-  background-color: #87E4DB;
+  background-color: azure;
   display: flex;
   flex-direction: column;
   padding: 2rem;
