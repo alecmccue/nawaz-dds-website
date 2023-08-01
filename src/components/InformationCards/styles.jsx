@@ -15,6 +15,7 @@ export const CardWrapper = styled.div`
 `
 
 export const InformationCard = styled(Card)`
+    border-radius: .5rem;
     background-color: white;
     display: flex;
     flex: 1;
@@ -23,10 +24,16 @@ export const InformationCard = styled(Card)`
     height: 18.125rem;
     min-width: 22.5rem;
     padding: 2rem;
+    font-size:1.1rem;
 
     &:hover {
         background-color: #EBF2F3;
     }
+`
+export const Border = styled.div`
+    width: 6rem;
+    height:4px;
+    background:#00ACB1;
 `
 
 export const CardTitleText = styled(Typography)`
