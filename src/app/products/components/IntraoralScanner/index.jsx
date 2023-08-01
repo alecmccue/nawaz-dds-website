@@ -1,11 +1,14 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import { ImageColumn, ProductWrapper, TextColumn } from "../../styles";
+import Image from "next/image";
+import intraOralScanner from 'public/intraoral_scanner.png';
+
 
 const IntraoralScanner = () => (
   <ProductWrapper>
     <ImageColumn>
-      <img src="/intraoral_scanner.png" />
+      <Image src={intraOralScanner} alt="intraoral scanner"/>
     </ImageColumn>
     <TextColumn>
       <Typography style={{ fontSize: "2rem", fontWeight: "500" }}>

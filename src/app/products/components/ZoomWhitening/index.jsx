@@ -1,6 +1,8 @@
 import React from "react";
 import { ImageColumn, ProductWrapper, TextColumn } from "../../styles";
 import { Typography } from "@mui/material";
+import Image from "next/image";
+import zoomWhitening from 'public/zoom_whitening.jpg';
 
 const ZoomWhitening = () => (
   <ProductWrapper>
@@ -26,7 +28,7 @@ const ZoomWhitening = () => (
     </TextColumn>
 
     <ImageColumn>
-      <img src="/zoom_whitening.jpg" />
+      <Image src= {zoomWhitening} alt="zoom whitening"/>
     </ImageColumn>
   </ProductWrapper>
 );
