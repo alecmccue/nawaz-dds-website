@@ -2,7 +2,8 @@ import styled from "@emotion/styled";
 
 export const BackgroundImage = styled.img`
   height: 40rem;
-  opacity: 0.5;
+  filter: brightness(60%);
+  opacity: 0.6;
   width: 100%;
 `;
 
