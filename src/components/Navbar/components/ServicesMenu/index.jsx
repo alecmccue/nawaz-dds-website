@@ -1,6 +1,6 @@
 import { Menu } from "@mui/material";
-import { ServicesMenuItem } from "../../styles";
-import ScrollToMenuButton from "@/components/ScrollToLinkButton";
+import { DropdownMenuItem } from "../../styles";
+import ServicesMenuButton from "@/components/Navbar/components/ServicesMenuButton";
 
 const ServicesMenu = ({ anchorEl, handleClose }) => {
   return (
@@ -20,70 +20,70 @@ const ServicesMenu = ({ anchorEl, handleClose }) => {
       disablePortal
       hideBackdrop
     >
-      <ServicesMenuItem>
-        <ScrollToMenuButton
+      <DropdownMenuItem>
+        <ServicesMenuButton
           elementId="general_dentistry"
           handleClose={handleClose}
           label="General Dentistry"
           to="/services"
         />
-      </ServicesMenuItem>
-      <ServicesMenuItem>
-        <ScrollToMenuButton
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+        <ServicesMenuButton
           elementId="cosmetic_dentistry"
           handleClose={handleClose}
           label="Cosmetic Dentistry"
           to="/services"
         />
-      </ServicesMenuItem>
-      <ServicesMenuItem>
-        <ScrollToMenuButton
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+        <ServicesMenuButton
           elementId="invisalign"
           handleClose={handleClose}
           label="Invisalign"
           to="/services"
         />
-      </ServicesMenuItem>
-      <ServicesMenuItem>
-        <ScrollToMenuButton
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+        <ServicesMenuButton
           elementId="implants"
           handleClose={handleClose}
           label="Implants"
           to="/services"
         />
-      </ServicesMenuItem>
-      <ServicesMenuItem>
-        <ScrollToMenuButton
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+        <ServicesMenuButton
           elementId="root_canal"
           handleClose={handleClose}
           label="Root Canal"
           to="/services"
         />
-      </ServicesMenuItem>
-      <ServicesMenuItem>
-        <ScrollToMenuButton
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+        <ServicesMenuButton
           elementId="extractions"
           handleClose={handleClose}
           label="Extractions"
           to="/services"
         />
-      </ServicesMenuItem>
-      <ServicesMenuItem>
-        <ScrollToMenuButton
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+        <ServicesMenuButton
           elementId="dentures"
           handleClose={handleClose}
           label="Dentures"
           to="/services"
         />
-      </ServicesMenuItem>
-      <ServicesMenuItem>
-        <ScrollToMenuButton
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+        <ServicesMenuButton
           elementId="partial_dentures"
           handleClose={handleClose}
           label="Partial Dentures"
           to="/services"
         />
-      </ServicesMenuItem>
+      </DropdownMenuItem>
     </Menu>
   );
 };

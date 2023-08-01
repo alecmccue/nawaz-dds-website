@@ -1,17 +1,16 @@
 "use client";
 
-const Forms = () => {
+import { FormsWrapper } from "./styles";
+import HipaaForm from "./components/HipaaForm";
+import MedicalHistoryForm from "./components/MedicalHistoryForm";
+import Intro from "./components/Intro";
 
-    return (
-        <div>
-            <a href="/hippa_form.pdf" download>
-                Downlaod Hippa Form
-            </a>
-            <a href="/medical_history_form.pdf" download>
-                Downlaod Medical History Form
-            </a>
-        </div>
-    )
-}
+const Forms = () => (
+  <FormsWrapper>
+    <Intro />
+    <HipaaForm />
+    <MedicalHistoryForm />
+  </FormsWrapper>
+);
 
-export default Forms
+export default Forms;
