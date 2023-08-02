@@ -1,7 +1,7 @@
 import { useRouter, usePathname } from "next/navigation";
-import { ScrollToLinkButtonWrapper } from "../styles";
+import { MenuButtonWrapper } from "../../../styles";
 
-const ScrollToMenuButton = ({ to, label, elementId, handleClose }) => {
+const ServicesMenuButton = ({ to, label, elementId, handleClose }) => {
   const router = useRouter();
   const pathName = usePathname();
 
@@ -9,7 +9,7 @@ const ScrollToMenuButton = ({ to, label, elementId, handleClose }) => {
     if (pathName != "/services") {
       router.push(to);
     }
-    
+
     setTimeout(() => {
       const element = document.getElementById(elementId);
       if (element) {
@@ -17,16 +17,10 @@ const ScrollToMenuButton = ({ to, label, elementId, handleClose }) => {
       }
     }, 100);
 
-    if(handleClose) {
-      handleClose();
-    }
+    handleClose();
   };
 
-  return (
-    <ScrollToLinkButtonWrapper onClick={handleClick}>
-      {label}
-    </ScrollToLinkButtonWrapper>
-  );
+  return <MenuButtonWrapper onClick={handleClick}>{label}</MenuButtonWrapper>;
 };
 
-export default ScrollToMenuButton;
+export default ServicesMenuButton;

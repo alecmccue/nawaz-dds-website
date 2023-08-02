@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import { ServicesWrapper } from "./styles";
-import { motion } from "framer-motion";
 import CosmeticDentistry from "./components/CosmeticDentistry";
 import Dentures from "./components/Dentures";
 import Extractions from "./components/Extractions";
