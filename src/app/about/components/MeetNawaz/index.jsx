@@ -9,7 +9,8 @@ import {
   TextOuterWrapper,
 } from "./styles";
 import { Typography } from "@mui/material";
-
+import Image from "next/image";
+import dots from 'public/dots.png';
 const MeetNawaz = () => (
   <MeetNawazWrapper>
     <ImageWrapper>
@@ -21,7 +22,7 @@ const MeetNawaz = () => (
       <TextInnerWrapper>
         <Column>
           <div>
-            <img src="/dots.png" alt="dots" style={{ height: "8rem", width: "auto", transform: "scaleY(-1)" }} />
+            <Image src={dots} alt="dots" style={{ height: "8rem", width: "auto", transform: "scaleY(-1)" }}/>
           </div>
           <Typography style={{ fontSize: "2rem", fontWeight: "500" }}>
             Dr. Mirweiss Nawaz
