@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  ColoredDiv,
   Description,
   DescriptionDiv,
   DescriptionLists,
@@ -14,10 +13,7 @@ import '../../../../app/fonts.css'
 const Main = () => {
   return (
     <MainDiv>
-      <div style={{ width: "40%" }}>
         <NawazImg />
-        <ColoredDiv />
-      </div>
       <DescriptionDiv>
         <div className="poppins">
           <DescriptionTitle>Introducing</DescriptionTitle>

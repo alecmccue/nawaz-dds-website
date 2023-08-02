@@ -106,23 +106,14 @@ export const MainDiv = styled.div`
 `;
 
 export const NawazImg = styled.div`
-  position: absolute;
   width: 500px;
-  height: 600px;
+  height: auto;
   flex-shrink: 0;
-  background: url(/nawaz-profilepicture.jpg), no-repeat;
-  background-size: cover;
-  margin-left: 8rem;
+  background: url(/nawaz-profilepicture.png), no-repeat;
+  background-size: contain;
+  background-repeat:no-repeat;
   margin-top: 1rem;
   background-color: transparent;
-`;
-export const ColoredDiv = styled.div`
-  width: 500px;
-  height: 500px;
-  margin-left: 4rem;
-  margin-top: 10rem;
-  flex-shrink: 0;
-  background: #d5e4e6;
 `;
 
 export const ImageContainer = styled.div`
@@ -131,7 +122,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const DescriptionDiv = styled.div`
-  margin-left: 10rem;
+  margin-left: 6rem;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
