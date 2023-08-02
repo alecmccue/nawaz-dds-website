@@ -29,7 +29,7 @@ export const ProductWrapper = styled.div`
 
 export const ProductsWrapper = styled.div`
   align-items: center;
-  background-color: #ebf2f3;
+  background-color: #fafcfc;
   display: flex;
   flex-direction: column;
   padding: 2rem;
