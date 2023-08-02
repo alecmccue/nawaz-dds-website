@@ -24,6 +24,7 @@ export const IntroImage = styled.div`
 `;
 export const IntroDiv = styled.div`
   padding: 5rem;
+  width:100%;
   @media (max-width: 1024px) {
     flex-direction: column;
   }
@@ -32,33 +33,31 @@ export const IntroTitleText1 = styled(Typography)`
   color: #fefefe;
   font-size: 60px;
   font-style: normal;
+  width:100%;
   line-height: 85px;
-  font-weight: 500;
+  text-align:center;
   text-transform: uppercase;
-  margin-left: 12.5rem;
   margin-top: 8rem;
 `;
 export const IntroTitleText2 = styled(Typography)`
   color: #fefefe;
   font-size: 85px;
-  font-weight: 800;
   line-height: 85px;
   text-transform: uppercase;
-  margin-left: 12.5rem;
+  text-align:center;
+  width:100%;
   margin-top: 0.25rem;
 `;
 export const CallButton = styled(Box)`
   border-radius: 0.5rem;
   border: 2px solid #00acb1;
   color: #fefefe;
-
+  align-items:center;
+  
   background-color: #00acb1;
   font-size: 1.25rem;
-  font-weight: 500;
   margin-top: 3rem;
-  margin-left: 12.5rem;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-
   width: fit-content;
   display: flex;
   align-items: center;

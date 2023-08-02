@@ -29,7 +29,7 @@ const Intro = () => {
         <IntroTitleText2>Your Smile</IntroTitleText2>
 
         </div>
-        <div className="poppins" style={{ display: "flex" }}>
+        <div className="poppins" style={{ display: "flex", justifyContent:'center'}}>
           <CallButton>
             <PhoneIcon />
             (703) 430 3838

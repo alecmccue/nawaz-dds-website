@@ -1,7 +1,7 @@
 import { Menu } from "@mui/material";
 import { ServicesMenuItem } from "../../styles";
 import ScrollToMenuButton from "@/components/ScrollToLinkButton";
-import '../../../../app/fonts.css'
+import "../../../../app/fonts.css";
 const ServicesMenu = ({ anchorEl, handleClose }) => {
   return (
     <Menu
@@ -15,7 +15,7 @@ const ServicesMenu = ({ anchorEl, handleClose }) => {
       }}
       style={{
         zIndex: -1,
-        top: -8,
+        top: 8,
       }}
       disablePortal
       hideBackdrop

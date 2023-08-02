@@ -9,7 +9,8 @@ import FcdLogo from "./components/FcdLogo";
 const Navbar = () => {
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
 
-  const handleServicesMouseEnter = (event) => setServicesAnchorEl(event.currentTarget);
+  const handleServicesMouseEnter = (event) =>
+    setServicesAnchorEl(event.currentTarget);
   const handleServicesClose = () => setServicesAnchorEl(null);
 
   return (
@@ -17,22 +18,25 @@ const Navbar = () => {
       <Toolbar>
         <FcdLogo />
         <NavbarButtonsWrapper>
-          <LinkButton to="/" label="Home" />
-          <LinkButton to="/about" label="About" />
-          <MenuButton
-            to="/services"
-            label="Services"
-            isOpen={servicesAnchorEl}
-            handleMouseEnter={handleServicesMouseEnter}
-            handleClose={handleServicesClose}
-          >
-            <ServicesMenu anchorEl={servicesAnchorEl} handleClose={handleServicesClose} />
-          </MenuButton>
-          <LinkButton to="/products" label="Products" />
-          <LinkButton to="/patients/forms" label="For Patients" />
+          <div className="nunito">
+            <LinkButton to="/" label="Home" />
+            <LinkButton to="/about" label="About" />
+            <MenuButton
+              to="/services"
+              label="Services"
+              isOpen={servicesAnchorEl}
+              handleMouseEnter={handleServicesMouseEnter}
+              handleClose={handleServicesClose}
+            >
+              <ServicesMenu
+                anchorEl={servicesAnchorEl}
+                handleClose={handleServicesClose}
+              />
+            </MenuButton>
+            <LinkButton to="/products" label="Products" />
+            <LinkButton to="/patients/forms" label="For Patients" />
+          </div>
         </NavbarButtonsWrapper>
-
-        
       </Toolbar>
     </AppBar>
   );
