@@ -1,4 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "../../../fonts.css";
 import {
   AccordionDetails,
   AccordionSummary,
@@ -11,6 +12,7 @@ import {
   AccordionDetailsHeader,
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  Border,
   ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
@@ -19,15 +21,15 @@ import {
 const RootCanal = () => (
   <ServiceWrapper id="root_canal">
     <ServiceAccordion>
-      
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <AccordionSummaryContentWrapper>
           <ServiceImage alt="Root Canal" src="/root_canal.jpg" />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+            <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Root Canal
+              <Border />
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }}>
+            <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Root canals are dental procedures performed to save severely
               damaged or infected teeth from extraction. During the treatment,
               the dentist removes the infected or inflamed dental pulp from the
@@ -43,9 +45,14 @@ const RootCanal = () => (
 
       <AccordionDetails>
         <List>
-          <AccordionDetailsHeader>Purpose:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Purpose:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Root canals are dental procedures performed to save severely
               damaged or infected teeth from extraction. When a tooth's pulp,
               which contains nerves, blood vessels, and connective tissues,
@@ -57,10 +64,15 @@ const RootCanal = () => (
               retained, and the patient's oral health can be restored.
             </ListItemText>
           </ListItem>
-          
-          <AccordionDetailsHeader>Procedure and Process:</AccordionDetailsHeader>
+
+          <AccordionDetailsHeader className="poppins">
+            Procedure and Process:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               The root canal procedure typically involves several steps. First,
               the dentist numbs the area around the affected tooth to ensure the
               patient's comfort during the treatment. Then, they create a small
@@ -76,9 +88,14 @@ const RootCanal = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>Benefits:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Benefits:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Root canals offer several essential benefits to patients. First
               and foremost, they allow patients to retain their natural teeth,
               which is vital for maintaining proper oral function and
@@ -92,9 +109,14 @@ const RootCanal = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>Post-treatment care:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Post-treatment care:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               After a root canal procedure, proper post-treatment care is
               crucial to ensure the success and longevity of the treated tooth.
               Patients may experience some mild discomfort or sensitivity, which

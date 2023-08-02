@@ -1,4 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "../../../fonts.css";
 import {
   AccordionDetails,
   AccordionSummary,
@@ -11,6 +12,7 @@ import {
   AccordionDetailsHeader,
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  Border,
   ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
@@ -26,29 +28,37 @@ const CosmeticDentistry = () => (
             src="/cosmetic_dentistry.jpg"
           />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+            <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Cosmetic Dentistry
+              <Border />
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }}>
-              Cosmetic dentistry offers a diverse array of procedures aimed at
-              improving the aesthetics of a person's smile. It goes beyond
-              addressing functional concerns and focuses on enhancing the
-              appearance of teeth, gums, and overall oral structures. With the
-              goal of creating a beautiful and confident smile, cosmetic
-              dentistry services aim to improve the appearance of teeth, gums,
-              and overall oral structures. These procedures go beyond addressing
-              functional concerns and focus on enhancing the aesthetics of a
-              person's smile.
-            </Typography>
+            <div className="nunito">
+              <Typography style={{ fontSize: "1.3rem" }}>
+                Cosmetic dentistry offers a diverse array of procedures aimed at
+                improving the aesthetics of a person's smile. It goes beyond
+                addressing functional concerns and focuses on enhancing the
+                appearance of teeth, gums, and overall oral structures. With the
+                goal of creating a beautiful and confident smile, cosmetic
+                dentistry services aim to improve the appearance of teeth, gums,
+                and overall oral structures. These procedures go beyond
+                addressing functional concerns and focus on enhancing the
+                aesthetics of a person's smile.
+              </Typography>
+            </div>
           </AccordionSummaryTextWrapper>
         </AccordionSummaryContentWrapper>
       </AccordionSummary>
 
       <AccordionDetails>
         <List>
-          <AccordionDetailsHeader>Teeth Whitening:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Teeth Whitening:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Teeth whitening is a popular cosmetic dentistry procedure designed
               to brighten and lighten the color of teeth that have become
               stained or discolored over time. It is a non-invasive treatment
@@ -65,9 +75,14 @@ const CosmeticDentistry = () => (
               color.
             </ListItemText>
           </ListItem>
-          <AccordionDetailsHeader>Composite Bonding:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Composite Bonding:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Composite bonding is a technique used to repair chipped, cracked,
               or discolored teeth, as well as to close gaps between teeth. It
               involves the application of a tooth-colored composite resin
@@ -84,9 +99,14 @@ const CosmeticDentistry = () => (
               other treatments like veneers.
             </ListItemText>
           </ListItem>
-          <AccordionDetailsHeader>Veneers:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Veneers:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Dental veneers are thin, custom-made shells typically made of
               porcelain or composite resin that are bonded to the front surface
               of the teeth. Veneers are used to correct a variety of cosmetic
@@ -102,9 +122,14 @@ const CosmeticDentistry = () => (
               adhesive, resulting in a transformed and attractive smile.
             </ListItemText>
           </ListItem>
-          <AccordionDetailsHeader>Dental Crowns:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Dental Crowns:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Dental crowns, also known as caps, are restorations that encase
               the entire visible portion of a damaged or severely decayed tooth
               above the gum line. While they serve a functional purpose to

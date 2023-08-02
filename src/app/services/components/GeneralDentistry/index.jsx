@@ -1,4 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "../../../fonts.css";
 import {
   AccordionDetails,
   AccordionSummary,
@@ -11,6 +12,7 @@ import {
   AccordionDetailsHeader,
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  Border,
   ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
@@ -23,10 +25,11 @@ const GeneralDentistry = () => (
         <AccordionSummaryContentWrapper>
           <ServiceImage alt="General Dentistry" src="/general_dentistry.jpg" />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+            <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               General & Family Dentistry
+            <Border/>
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }}>
+            <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               General dentistry services encompass a wide range of procedures
               designed to promote oral health, address dental issues, and
               enhance smiles. Regular visits to a general dentist play a vital
@@ -39,11 +42,14 @@ const GeneralDentistry = () => (
 
       <AccordionDetails>
         <List>
-          <AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
             Diagnosis and Treatment Planning:
           </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Diagnosis and Treatment Planning are fundamental aspects of
               general dentistry services that play a pivotal role in promoting
               oral health and enhancing smiles. During regular dental visits, a
@@ -70,9 +76,14 @@ const GeneralDentistry = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>Restorative Care:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Restorative Care:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Restorative care is a fundamental pillar of general dentistry
               aimed at repairing and revitalizing damaged or decayed teeth. When
               teeth suffer from cavities, fractures, or wear, restorative
@@ -97,9 +108,14 @@ const GeneralDentistry = () => (
               teeth.
             </ListItemText>
           </ListItem>
-          <AccordionDetailsHeader>Preventive Care:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Preventive Care:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Preventive care is the cornerstone of maintaining optimal oral
               health and preventing dental issues before they arise. Regular
               check-ups and cleanings with a general dentist are essential
