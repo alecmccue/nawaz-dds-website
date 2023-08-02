@@ -1,14 +1,19 @@
 import { Typography } from "@mui/material";
 import React from "react";
+import { IntroDiv } from "../../styles";
 
 const Intro = () => (
-  <div>
+  <IntroDiv>
     <Typography
-      style={{ fontSize: "1.5rem", fontWeight: "500", textAlign: "center", marginBottom: "1rem" }}
+      style={{ fontSize: "2.4rem", textAlign: "center", marginBottom: "1rem" }}
+      className="poppins"
     >
       PATIENT FORMS
     </Typography>
-    <Typography style={{ fontSize: "1.3rem", maxWidth: "80rem", textAlign: "center" }}>
+    <Typography
+      style={{ fontSize: "1.4rem", maxWidth: "80rem", textAlign: "center" }}
+      className="nunito"
+    >
       If you are a new patient and Family & Cosmetic Dentistry, you can easily
       access and download HIPAA (Health Insurance Portability and Accountability
       Act) and Medical History forms to kickstart your journey with us! Ensuring
@@ -19,7 +24,7 @@ const Intro = () => (
       Your well-being is our priority, and these forms are the first step in
       making your healthcare journey with us a smooth one.
     </Typography>
-  </div>
+  </IntroDiv>
 );
 
 export default Intro;

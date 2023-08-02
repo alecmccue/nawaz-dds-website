@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 
 const Introduction = () => (
   <IntroductionWrapepr>
-    <Typography style={{ fontSize: "2.4rem"}} className="poppins">
+    <Typography style={{ fontSize: "2.4rem", marginBottom:'1rem'}} className="poppins">
       OUR PRODUCTS
     </Typography>
     <Typography style={{ fontSize: "1.4rem" }} className="nunito">

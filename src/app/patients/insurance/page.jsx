@@ -14,7 +14,7 @@ import Link from "next/link";
 const Insurance = () => (
   <InsuranceWrapper>
     <InsuranceItem>
-      <Typography style={{ fontSize: "1.2rem" }}>
+      <Typography style={{ fontSize: "1.4rem" }} className="nunito">
         At Family & Cosmetic dental, our dedication lies in ensuring your time
         with us is enjoyable, starting from the primary assessment to the
         financial procedures. We are pleased to be in-network with all PPO
@@ -24,7 +24,7 @@ const Insurance = () => (
     </InsuranceItem>
 
     <InsuranceItem>
-      <Typography style={{ fontSize: "1.2rem" }}>
+      <Typography style={{ fontSize: "1.4rem" }} className="nunito">
         We are partnered with CareCredit, a specialized healthcare credit
         provider. This partnership allows you to conveniently manage
         out-of-pocket costs that may not be covered by your medical insurance.
