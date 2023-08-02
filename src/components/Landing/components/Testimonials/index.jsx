@@ -13,6 +13,7 @@ import {
   Stars,
   TestimonialTitle,
 } from "./styles";
+import "../../components/fonts.css";
 import { ArrowDropDown, ArrowDropUp, StarHalf } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 const Testimonials = () => {
@@ -27,7 +28,9 @@ const Testimonials = () => {
   return (
     <Testimonial>
       <Inner>
-        <TestimonialTitle>Reviews</TestimonialTitle>
+        <div className="poppins">
+          <TestimonialTitle>Reviews</TestimonialTitle>
+        </div>
         <Border />
         <Row>
           <Col>
@@ -39,7 +42,9 @@ const Testimonials = () => {
                 alt="profile picture"
                 style={{ margin: "auto" }}
               />
-              <Name>Full Name</Name>
+              <div className="poppins">
+                <Name>Full Name</Name>
+              </div>
               <Stars>
                 <StarIcon />
                 <StarIcon />
@@ -47,11 +52,13 @@ const Testimonials = () => {
                 <StarIcon />
                 <StarIcon />
               </Stars>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                repudiandae, pariatur porro a nulla dolorem animi distinctio
-                vitae sapiente nob
-              </p>
+              <div className="nunito">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  repudiandae, pariatur porro a nulla dolorem animi distinctio
+                  vitae sapiente nob
+                </p>
+              </div>
             </Review>
           </Col>
           <Col>
@@ -63,7 +70,9 @@ const Testimonials = () => {
                 alt="profile picture"
                 style={{ margin: "auto" }}
               />
-              <Name>Full Name</Name>
+              <div className="poppins">
+                <Name>Full Name</Name>
+              </div>
               <Stars>
                 <StarIcon />
                 <StarIcon />
@@ -71,13 +80,13 @@ const Testimonials = () => {
                 <StarIcon />
                 <StarIcon />
               </Stars>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                repudiandae, pariatur porro a nulla dolorem animi distinctio
-                vitae sapiente nobis aperiam praesentium assumenda doloremque
-                consequatur? Cupiditate voluptatum perspiciatis deleniti
-                veritatis?
-              </p>
+              <div className="nunito">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  repudiandae, pariatur porro a nulla dolorem animi distinctio
+                  vitae sapiente nob
+                </p>
+              </div>
             </Review>
           </Col>
           <Col>
@@ -89,7 +98,9 @@ const Testimonials = () => {
                 alt="profile picture"
                 style={{ margin: "auto" }}
               />
-              <Name>Full Name</Name>
+              <div className="poppins">
+                <Name>Full Name</Name>
+              </div>
               <Stars>
                 <StarIcon />
                 <StarIcon />
@@ -97,11 +108,13 @@ const Testimonials = () => {
                 <StarIcon />
                 <StarHalf />
               </Stars>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                repudiandae, pariatur porro a nulla dolorem animi distinctio
-                vitae sapiente nobis aperia
-              </p>
+              <div className="nunito">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  repudiandae, pariatur porro a nulla dolorem animi distinctio
+                  vitae sapiente nob
+                </p>
+              </div>
             </Review>
           </Col>
         </Row>
@@ -129,7 +142,9 @@ const Testimonials = () => {
                   alt="profile picture"
                   style={{ margin: "auto" }}
                 />
-                <Name>Full Name</Name>
+                <div className="poppins">
+                  <Name>Full Name</Name>
+                </div>
                 <Stars>
                   <StarIcon />
                   <StarIcon />
@@ -137,11 +152,13 @@ const Testimonials = () => {
                   <StarIcon />
                   <StarIcon />
                 </Stars>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  repudiandae, pariatur porro a nulla dolorem animi distinctio
-                  vitae sapiente nob
-                </p>
+                <div className="nunito">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia repudiandae, pariatur porro a nulla dolorem animi
+                    distinctio vitae sapiente nob
+                  </p>
+                </div>
               </Review>
             </Col>
             <Col>
@@ -153,7 +170,9 @@ const Testimonials = () => {
                   alt="profile picture"
                   style={{ margin: "auto" }}
                 />
-                <Name>Full Name</Name>
+                <div className="poppins">
+                  <Name>Full Name</Name>
+                </div>
                 <Stars>
                   <StarIcon />
                   <StarIcon />
@@ -161,13 +180,13 @@ const Testimonials = () => {
                   <StarIcon />
                   <StarIcon />
                 </Stars>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  repudiandae, pariatur porro a nulla dolorem animi distinctio
-                  vitae sapiente nobis aperiam praesentium assumenda doloremque
-                  consequatur? Cupiditate voluptatum perspiciatis deleniti
-                  veritatis?
-                </p>
+                <div className="nunito">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia repudiandae, pariatur porro a nulla dolorem animi
+                    distinctio vitae sapiente nob
+                  </p>
+                </div>
               </Review>
             </Col>
             <Col>
@@ -179,7 +198,9 @@ const Testimonials = () => {
                   alt="profile picture"
                   style={{ margin: "auto" }}
                 />
-                <Name>Full Name</Name>
+                <div className="poppins">
+                  <Name>Full Name</Name>
+                </div>
                 <Stars>
                   <StarIcon />
                   <StarIcon />
@@ -187,11 +208,13 @@ const Testimonials = () => {
                   <StarIcon />
                   <StarHalf />
                 </Stars>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  repudiandae, pariatur porro a nulla dolorem animi distinctio
-                  vitae sapiente nobis aperia
-                </p>
+                <div className="nunito">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia repudiandae, pariatur porro a nulla dolorem animi
+                    distinctio vitae sapiente nob
+                  </p>
+                </div>
               </Review>
             </Col>
           </Row>

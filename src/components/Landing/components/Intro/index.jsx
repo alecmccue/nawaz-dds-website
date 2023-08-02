@@ -8,6 +8,7 @@ import {
   BannerImg,
   IntroDiv,
 } from "../../styles";
+import "../../components/fonts.css";
 import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
 import GoogleMapsModal from "@/components/GoogleMapModal";
@@ -23,9 +24,12 @@ const Intro = () => {
   return (
     <IntroImage style={{ display: "flex" }}>
       <IntroDiv>
+        <div className="arvo">
         <IntroTitleText1>Feel Good About</IntroTitleText1>
         <IntroTitleText2>Your Smile</IntroTitleText2>
-        <div style={{ display: "flex" }}>
+
+        </div>
+        <div className="poppins" style={{ display: "flex" }}>
           <CallButton>
             <PhoneIcon />
             (703) 430 3838

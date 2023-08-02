@@ -1,23 +1,24 @@
 import React from "react";
 import { Box } from "@mui/material";
-import {
-  Border,
-  CardTitleText,
-  InformationCard,
-} from "../../styles";
+import { Border, CardTitleText, InformationCard } from "../../styles";
 import PublicIcon from "@mui/icons-material/Public";
+import "../../components/fonts.css";
 
 const LocationCard = () => {
   return (
     <InformationCard raised>
       <PublicIcon fontSize="large" />
-      <CardTitleText> Location </CardTitleText>
-      <Border/>
-      <Box>
-        46179 Westlake Drive, Suite 230,
-        <br />
-        Sterling, VA 20165
-      </Box>
+      <div className="poppins">
+        <CardTitleText> Location </CardTitleText>
+      </div>
+      <Border />
+      <div className="nunito">
+        <Box>
+          46179 Westlake Drive, Suite 230,
+          <br />
+          Sterling, VA 20165
+        </Box>
+      </div>
     </InformationCard>
   );
 };
