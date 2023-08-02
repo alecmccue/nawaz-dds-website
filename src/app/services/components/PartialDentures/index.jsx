@@ -1,4 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "../../../fonts.css";
 import {
   AccordionDetails,
   AccordionSummary,
@@ -11,6 +12,7 @@ import {
   AccordionDetailsHeader,
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  Border,
   ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
@@ -23,10 +25,11 @@ const PartialDentures = () => (
         <AccordionSummaryContentWrapper>
           <ServiceImage alt="Partial Dentures" src="/partial_dentures.jpg" />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+            <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Partial Dentures
+              <Border/>
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }}>
+            <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Partial dentures are removable dental prosthetics used to replace
               missing teeth when some natural teeth remain in the upper or lower
               jaw. These custom-made appliances consist of a metal or acrylic
@@ -41,11 +44,14 @@ const PartialDentures = () => (
 
       <AccordionDetails>
         <List>
-          <AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
             Type of Partial Dentures:
           </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Removable Partial Dentures: These are the most common type of
               partial dentures. They are designed to be easily removable by the
               patient for cleaning and sleeping. Removable partial dentures have
@@ -63,9 +69,14 @@ const PartialDentures = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>Purpose and Benefits:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Purpose and Benefits:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Restoring Aesthetics: Partial dentures are custom-made to replace
               missing teeth, restoring the appearance of the smile and improving
               facial aesthetics.

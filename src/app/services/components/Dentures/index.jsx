@@ -1,4 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "../../../fonts.css";
 import {
   AccordionDetails,
   AccordionSummary,
@@ -11,6 +12,7 @@ import {
   AccordionDetailsHeader,
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  Border,
   ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
@@ -23,10 +25,14 @@ const Dentures = () => (
         <AccordionSummaryContentWrapper>
           <ServiceImage alt="Dentures" src="/dentures.jpg" />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+            <Typography
+              style={{ fontSize: "2.2rem", fontWeight: "500" }}
+              className="poppins"
+            >
               Dentures
+              <Border />
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }}>
+            <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Dentures are removable dental appliances designed to replace
               missing teeth and surrounding tissues. They come in two main
               types: complete dentures, which replace all teeth in the upper or
@@ -42,9 +48,14 @@ const Dentures = () => (
 
       <AccordionDetails>
         <List>
-          <AccordionDetailsHeader>Type of Dentures:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Type of Dentures:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Complete Dentures: Complete dentures are designed to replace all
               teeth in either the upper or lower jaw or both. They are used when
               a patient has lost all of their natural teeth due to decay, gum
@@ -65,9 +76,14 @@ const Dentures = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>Purpose:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Purpose:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Replacing Missing Teeth: The primary purpose of dentures is to
               replace missing teeth, whether it is all teeth in one or both jaws
               (complete dentures) or a few missing teeth (partial dentures).
@@ -83,9 +99,14 @@ const Dentures = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>Materials Used:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Materials Used:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Acrylic Dentures: Acrylic dentures are made from a type of plastic
               called acrylic resin. They are a popular choice for both complete
               and partial dentures due to their lightweight, natural appearance,

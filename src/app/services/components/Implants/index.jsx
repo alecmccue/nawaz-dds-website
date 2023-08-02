@@ -1,4 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "../../../fonts.css";
 import {
   AccordionDetails,
   AccordionSummary,
@@ -11,6 +12,7 @@ import {
   AccordionDetailsHeader,
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  Border,
   ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
@@ -23,10 +25,11 @@ const Implants = () => (
         <AccordionSummaryContentWrapper>
           <ServiceImage alt="Implants" src="/dental_implant.jpg" />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+            <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Implants
+              <Border />
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }}>
+            <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Dental implants are titanium posts surgically inserted into the
               jawbone to replace missing teeth, providing a stable foundation
               for dental restorations. They offer a durable, natural-looking
@@ -41,11 +44,14 @@ const Implants = () => (
 
       <AccordionDetails>
         <List>
-          <AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
             How Are Dental Implants Placed?
           </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Initial Assessment: The journey begins with a comprehensive oral
               examination and a thorough evaluation of the patient's dental and
               medical history. X-rays, CT scans, or other imaging techniques may
@@ -86,11 +92,14 @@ const Implants = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
             Are Implants Truly Permanent?
           </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               While dental implants offer a remarkably durable and long-lasting
               solution for tooth replacement, the term "permanent" can be
               somewhat misleading. Dental implants can indeed last for many

@@ -1,4 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "../../../fonts.css";
 import {
   AccordionDetails,
   AccordionSummary,
@@ -11,6 +12,7 @@ import {
   AccordionDetailsHeader,
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  Border,
   ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
@@ -23,10 +25,11 @@ const Invisalign = () => (
         <AccordionSummaryContentWrapper>
           <ServiceImage alt="Invisalign" src="/invisalign.jpg" />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+            <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Invisalign
+              <Border />
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }}>
+            <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Invisalign is a discreet and convenient orthodontic treatment that
               utilizes clear, custom-made aligners to gradually shift teeth into
               desired positions. With their virtually invisible appearance and
@@ -41,12 +44,15 @@ const Invisalign = () => (
 
       <AccordionDetails>
         <List>
-          <AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
             Benefits of Invisalign:
           </AccordionDetailsHeader>
 
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Discreet Appearance:One of the primary benefits of Invisalign is
               its virtually invisible appearance. The clear aligners are hardly
               noticeable when worn, allowing individuals to undergo teeth
@@ -89,9 +95,14 @@ const Invisalign = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>Does Invisalign Work?</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Does Invisalign Work?
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Yes, Invisalign is an effective orthodontic treatment for many
               individuals. The clear aligners exert gentle and controlled forces
               on the teeth, gradually moving them into proper alignment. The
@@ -109,11 +120,14 @@ const Invisalign = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
             Is Invisalign Right for Me?
           </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Invisalign is an excellent option for many individuals seeking
               orthodontic treatment, but its suitability depends on various
               factors. An orthodontist can determine if Invisalign is the right

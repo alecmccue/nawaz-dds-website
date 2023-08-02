@@ -23,28 +23,31 @@ const Navbar = () => {
       <Toolbar>
         <FcdLogo />
         <NavbarButtonsWrapper>
-          <LinkButton to="/" label="Home" />
-          <LinkButton to="/about" label="About" />
-          <MenuButton
-            to="/services"
-            label="Services"
-            isOpen={servicesAnchorEl}
-            handleMouseEnter={handleServicesMouseEnter}
-            handleClose={handleServicesClose}
-          >
-            <ServicesMenu anchorEl={servicesAnchorEl} handleClose={handleServicesClose} />
-          </MenuButton>
-          <LinkButton to="/products" label="Products" />
-          <MenuButton
-            to="/patients/forms"
-            label="For Patients"
-            isOpen={patientsAnchorEl}
-            handleMouseEnter={handlePatientsMouseEnter}
-            handleClose={handlePatientsClose}
-          >
-            <PatientsMenu anchorEl={patientsAnchorEl} handleClose={handlePatientsClose} />
-          </MenuButton>
+          <div className="nunito">
+            <LinkButton to="/" label="Home" />
+            <LinkButton to="/about" label="About" />
+            <MenuButton
+              to="/services"
+              label="Services"
+              isOpen={servicesAnchorEl}
+              handleMouseEnter={handleServicesMouseEnter}
+              handleClose={handleServicesClose}
+            >
+              <ServicesMenu anchorEl={servicesAnchorEl} handleClose={handleServicesClose} />
+            </MenuButton>
+            <LinkButton to="/products" label="Products" />
+            <MenuButton
+              to="/patients/forms"
+              label="For Patients"
+              isOpen={patientsAnchorEl}
+              handleMouseEnter={handlePatientsMouseEnter}
+              handleClose={handlePatientsClose}
+            >
+              <PatientsMenu anchorEl={patientsAnchorEl} handleClose={handlePatientsClose} />
+            </MenuButton>
+          </div>
         </NavbarButtonsWrapper>        
+
       </Toolbar>
     </AppBar>
   );

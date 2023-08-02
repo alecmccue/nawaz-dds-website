@@ -1,4 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "../../../fonts.css";
 import {
   AccordionDetails,
   AccordionSummary,
@@ -11,6 +12,7 @@ import {
   AccordionDetailsHeader,
   AccordionSummaryContentWrapper,
   AccordionSummaryTextWrapper,
+  Border,
   ServiceAccordion,
   ServiceImage,
   ServiceWrapper,
@@ -23,10 +25,11 @@ const Extractions = () => (
         <AccordionSummaryContentWrapper>
           <ServiceImage alt="Extractions" src="/dental_extraction.jpg" />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem", fontWeight: "500" }}>
+            <Typography style={{ fontSize: "2.5rem" }} className="poppins">
               Extractions
+              <Border />
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }}>
+            <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Dental extractions, also known as tooth extractions, are dental
               procedures in which a dentist removes a tooth from its socket in
               the jawbone. Extractions may be necessary due to various reasons,
@@ -41,27 +44,31 @@ const Extractions = () => (
       </AccordionSummary>
       <AccordionDetails>
         <List>
-          <AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
             Reasons for Extraction:
           </AccordionDetailsHeader>
           <List>
             <ListItem>
-              <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+              <ListItemText
+                primaryTypographyProps={{ fontSize: "1.3rem" }}
+                className="nunito"
+              >
                 Severe Tooth Decay: Teeth with extensive decay that cannot be
                 effectively restored through fillings, crowns, or root canal
                 treatment may need to be extracted to prevent the spread of
                 infection and preserve overall oral health.
                 <br />
                 <br />
-                Advanced Gum Disease: In cases where gum disease has progressed to an advanced stage,
-                the supporting structures around the tooth can become
-                compromised. Extracting affected teeth may be necessary to halt
-                the disease's progression and prevent further damage.
+                Advanced Gum Disease: In cases where gum disease has progressed
+                to an advanced stage, the supporting structures around the tooth
+                can become compromised. Extracting affected teeth may be
+                necessary to halt the disease's progression and prevent further
+                damage.
                 <br />
                 <br />
-                Dental Trauma: Teeth that have suffered severe trauma due to accidents or
-                injuries, resulting in irreparable damage, may require
-                extraction.
+                Dental Trauma: Teeth that have suffered severe trauma due to
+                accidents or injuries, resulting in irreparable damage, may
+                require extraction.
                 <br />
                 <br />
                 Orthodontic Treatment: Sometimes, dental extractions are planned
@@ -71,9 +78,14 @@ const Extractions = () => (
             </ListItem>
           </List>
 
-          <AccordionDetailsHeader>Type of Tooth:</AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
+            Type of Tooth:
+          </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Wisdom Teeth Extraction: Wisdom teeth, also known as third molars,
               often need to be extracted due to their late eruption and
               potential for causing crowding, impaction, or other issues in the
@@ -86,11 +98,14 @@ const Extractions = () => (
             </ListItemText>
           </ListItem>
 
-          <AccordionDetailsHeader>
+          <AccordionDetailsHeader className="poppins">
             Aftercare and Complications:
           </AccordionDetailsHeader>
           <ListItem>
-            <ListItemText primaryTypographyProps={{ fontSize: "1.3rem" }}>
+            <ListItemText
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
+              className="nunito"
+            >
               Aftercare Instructions: After a dental extraction, patients
               receive specific aftercare instructions from the dentist to
               promote proper healing. This may include guidelines on managing

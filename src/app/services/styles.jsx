@@ -13,7 +13,13 @@ export const AccordionSummaryContentWrapper = styled.div`
   gap: 4rem;
   margin-right: 2rem;
 `;
-
+export const Border = styled.div`
+    width: 10rem;
+    height: .30rem;
+    background:#00ACB1;
+    margin-top:1rem;
+    margin-bottom:1rem;
+`
 export const AccordionSummaryTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
