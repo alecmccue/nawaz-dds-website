@@ -48,13 +48,13 @@ const FAQs = () => {
         {faqsData.map((faq, index) => (
           <Accordion key={index} className="customAccordion">
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <div className="poppins">
-                <Typography variant="h6">{faq.question}</Typography>
+              <div className="nunito">
+                <Typography variant="h5">{faq.question}</Typography>
               </div>
             </AccordionSummary>
             <AccordionDetails>
-              <div className="nunito">
-                <Typography>{faq.answer}</Typography>
+              <div className="scope-one">
+                <Typography variant="h6">{faq.answer}</Typography>
               </div>
             </AccordionDetails>
           </Accordion>
