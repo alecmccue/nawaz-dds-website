@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import { Border, CardTitleText, InformationCard } from "../../styles";
 import PublicIcon from "@mui/icons-material/Public";
-import "../../components/fonts.css";
+import '../../../../app/fonts.css'
 
 const LocationCard = () => {
   return (

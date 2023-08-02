@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import { Border, CardTitleText, InformationCard } from "../../styles";
 import PhoneIcon from "@mui/icons-material/Phone";
-import "../../components/fonts.css";
+import '../../../../app/fonts.css'
 
 const PhoneCard = () => {
   return (

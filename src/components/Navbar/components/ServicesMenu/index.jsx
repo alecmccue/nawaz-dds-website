@@ -1,7 +1,7 @@
 import { Menu } from "@mui/material";
 import { ServicesMenuItem } from "../../styles";
 import ScrollToMenuButton from "@/components/ScrollToLinkButton";
-
+import '../../../../app/fonts.css'
 const ServicesMenu = ({ anchorEl, handleClose }) => {
   return (
     <Menu
