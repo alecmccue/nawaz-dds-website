@@ -9,6 +9,7 @@ import Implants from "./components/Implants";
 import Invisalign from "./components/Invisalign";
 import PartialDentures from "./components/PartialDentures";
 import RootCanal from "./components/RootCanal";
+import { motion } from "framer-motion";
 
 const animationVariant = {
   hide: {
