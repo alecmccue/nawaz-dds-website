@@ -17,7 +17,7 @@ export const IntroductionWrapepr = styled.div`
   flex-direction: column;
   max-width: 80rem;
   text-align: center;
-  background-color:#87E4DB;
+  background-color:#87e4db;
   margin-top:2rem;
   border-radius:1rem;
   padding:2rem;
@@ -29,7 +29,7 @@ export const ProductWrapper = styled.div`
   padding: 2rem;
   gap: 5rem;
   max-width: 80rem;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  box-shadow: rgba(135, 228, 219, 0.50) 0px 10px 10px -10px;
   border-radius: 1rem;
 `;
 
