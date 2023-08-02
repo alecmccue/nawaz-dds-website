@@ -4,10 +4,10 @@ import { Typography } from "@mui/material";
 
 const Introduction = () => (
   <IntroductionWrapepr>
-    <Typography style={{ fontSize: "2rem", fontWeight: "450" }}>
+    <Typography style={{ fontSize: "2.4rem"}} className="poppins">
       OUR PRODUCTS
     </Typography>
-    <Typography style={{ fontSize: "1.2rem", fontWeight: "450" }}>
+    <Typography style={{ fontSize: "1.4rem" }} className="nunito">
       We are dedicated to providing you with the best in dental care and
       technology. We understand the importance of a comfortable and efficient
       dental experience, which is why we have curated a selection of
