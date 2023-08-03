@@ -6,7 +6,8 @@ export const NavbarTabWrapper = styled.div`
   cursor: pointer;
   display: flex;
   height: 100%;
-  padding: 0 4rem;
+  width: 12rem;
+  justify-content: center;
 
   &:hover {
     background-color: #ececec;
@@ -24,6 +25,7 @@ export const NavbarTabsWrapper = styled.div`
 
 export const DropdownMenuItem = styled(MenuItem)`
   padding: 0;
+  width: 12rem;
 `;
 
 export const FcdLogoImage = styled.img`
