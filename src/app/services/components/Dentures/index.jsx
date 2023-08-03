@@ -26,12 +26,12 @@ const Dentures = () => (
           <ServiceImage alt="Dentures" src="/dentures.jpg" />
           <AccordionSummaryTextWrapper>
             <Typography
-              style={{ fontSize: "2.2rem", fontWeight: "500" }}
               className="poppins"
+              style={{ fontSize: "2.2rem", fontWeight: "500" }}
             >
               Dentures
-              <Border />
             </Typography>
+            <Border />
             <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Dentures are removable dental appliances designed to replace
               missing teeth and surrounding tissues. They come in two main
@@ -53,8 +53,8 @@ const Dentures = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Complete Dentures: Complete dentures are designed to replace all
               teeth in either the upper or lower jaw or both. They are used when
@@ -81,8 +81,8 @@ const Dentures = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Replacing Missing Teeth: The primary purpose of dentures is to
               replace missing teeth, whether it is all teeth in one or both jaws
@@ -104,8 +104,8 @@ const Dentures = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Acrylic Dentures: Acrylic dentures are made from a type of plastic
               called acrylic resin. They are a popular choice for both complete

@@ -27,8 +27,8 @@ const Invisalign = () => (
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Invisalign
-              <Border />
             </Typography>
+            <Border />
             <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Invisalign is a discreet and convenient orthodontic treatment that
               utilizes clear, custom-made aligners to gradually shift teeth into

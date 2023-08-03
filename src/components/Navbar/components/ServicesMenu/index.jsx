@@ -1,26 +1,20 @@
-import { Menu } from "@mui/material";
-import { ServicesMenuItem } from "../../styles";
-// import ScrollToMenuButton from "@/components/ScrollToLinkButton";
-import ServicesMenuButton from "@/components/Navbar/components/ServicesMenuButton";
+import React from "react";
 import { DropdownMenuItem } from "../../styles";
-import "../../../../app/fonts.css";
+import { Menu } from "@mui/material";
+import ServicesMenuButton from "@/components/Navbar/components/ServicesMenuButton";
+
 const ServicesMenu = ({ anchorEl, handleClose }) => {
   return (
     <Menu
       anchorEl={anchorEl}
       disableAutoFocusItem
-      id="services-menu"
-      onClose={handleClose}
-      open={Boolean(anchorEl)}
-      MenuListProps={{
-        onMouseLeave: handleClose,
-      }}
-      style={{
-        zIndex: -1,
-        top: 8,
-      }}
       disablePortal
       hideBackdrop
+      id="services-menu"
+      MenuListProps={{ onMouseLeave: handleClose }}
+      onClose={handleClose}
+      open={Boolean(anchorEl)}
+      style={{ zIndex: -1 }}
     >
       <DropdownMenuItem>
         <ServicesMenuButton

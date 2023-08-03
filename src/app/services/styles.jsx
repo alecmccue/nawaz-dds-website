@@ -17,7 +17,6 @@ export const AccordionSummaryContentWrapper = styled.div`
 export const AccordionSummaryTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 `;
 
 export const Border = styled.div`

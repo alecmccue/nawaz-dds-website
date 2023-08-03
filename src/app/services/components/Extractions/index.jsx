@@ -25,11 +25,11 @@ const Extractions = () => (
         <AccordionSummaryContentWrapper>
           <ServiceImage alt="Extractions" src="/dental_extraction.jpg" />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.5rem" }} className="poppins">
+            <Typography className="poppins" style={{ fontSize: "2.5rem" }} >
               Extractions
-              <Border />
             </Typography>
-            <Typography style={{ fontSize: "1.3rem" }} className="nunito">
+            <Border />
+            <Typography className="nunito" style={{ fontSize: "1.3rem" }} >
               Dental extractions, also known as tooth extractions, are dental
               procedures in which a dentist removes a tooth from its socket in
               the jawbone. Extractions may be necessary due to various reasons,
@@ -50,8 +50,8 @@ const Extractions = () => (
           <List>
             <ListItem>
               <ListItemText
-                primaryTypographyProps={{ fontSize: "1.3rem" }}
                 className="nunito"
+                primaryTypographyProps={{ fontSize: "1.3rem" }}
               >
                 Severe Tooth Decay: Teeth with extensive decay that cannot be
                 effectively restored through fillings, crowns, or root canal
@@ -83,8 +83,8 @@ const Extractions = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Wisdom Teeth Extraction: Wisdom teeth, also known as third molars,
               often need to be extracted due to their late eruption and
@@ -103,8 +103,8 @@ const Extractions = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Aftercare Instructions: After a dental extraction, patients
               receive specific aftercare instructions from the dentist to

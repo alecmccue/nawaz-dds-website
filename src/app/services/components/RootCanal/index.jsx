@@ -27,8 +27,8 @@ const RootCanal = () => (
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Root Canal
-              <Border />
             </Typography>
+            <Border />
             <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Root canals are dental procedures performed to save severely
               damaged or infected teeth from extraction. During the treatment,
