@@ -12,7 +12,7 @@ const NavbarMenuTab = (props) => {
         onMouseLeave={handleClose}
       >
         {label} 
-        {isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+        {isOpen ? <KeyboardArrowUpIcon fontSize="small" /> : <KeyboardArrowDownIcon fontSize="small" />}
         {children}
       </NavbarTabWrapper>
   );
