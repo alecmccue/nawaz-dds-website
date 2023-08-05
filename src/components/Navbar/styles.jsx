@@ -32,7 +32,6 @@ export const NavbarTabWrapper = styled.div`
 
   &:hover {
     background-color: #ececec;
-    /* border-bottom: 0.2rem solid #00ACB1; */
   }
 `
 
