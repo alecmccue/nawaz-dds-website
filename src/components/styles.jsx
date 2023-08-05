@@ -27,9 +27,3 @@ export const StackItemWrapper = styled.div`
     flex-direction: row;
 `
 
-export const MenuButtonWrapper = styled.div`
-    display: flex;
-    justify-content: start;
-    padding: 0.4rem 1rem 0.4rem 1rem;
-    width: 100%;
-`

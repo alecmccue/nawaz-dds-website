@@ -1,5 +1,6 @@
-import { MenuButtonWrapper } from "../../../styles";
+import React from "react";
 import Link from "next/link";
+import { MenuButtonWrapper } from "../../styles";
 
 const PatientsMenuButton = ({ to, label, handleClose }) => (
   <MenuButtonWrapper onClick={() => handleClose()}>

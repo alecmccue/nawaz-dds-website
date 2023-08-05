@@ -1,5 +1,6 @@
+import React from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { MenuButtonWrapper } from "../../../styles";
+import { MenuButtonWrapper } from "../../styles";
 
 const ServicesMenuButton = ({ to, label, elementId, handleClose }) => {
   const router = useRouter();
