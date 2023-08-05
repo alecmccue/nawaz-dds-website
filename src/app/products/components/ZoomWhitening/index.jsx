@@ -1,16 +1,16 @@
 import React from "react";
-import { Border, ImageColumn, ProductWrapper, TextColumn } from "../../styles";
+import { Divider, ImageColumn, ProductWrapper, TextColumn } from "../../styles";
 import { Typography } from "@mui/material";
 import Image from "next/image";
-import zoomWhitening from 'public/zoom_whitening.jpg';
+import zoomWhitening from "public/zoom_whitening.jpg";
 
 const ZoomWhitening = () => (
   <ProductWrapper>
     <TextColumn>
-      <Typography style={{ fontSize: "2.2rem"}} className="poppins">
+      <Typography style={{ fontSize: "2.2rem" }} className="poppins">
         Zoom Whitening
-        <Border/>
       </Typography>
+      <Divider />
       <Typography style={{ fontSize: "1.2rem" }} className="scope-one">
         Zoom Whitening is a highly effective and popular teeth whitening
         procedure that offers remarkable results in a single visit. Using
@@ -29,7 +29,7 @@ const ZoomWhitening = () => (
     </TextColumn>
 
     <ImageColumn>
-      <Image src= {zoomWhitening} alt="zoom whitening"/>
+      <Image src={zoomWhitening} alt="zoom whitening" />
     </ImageColumn>
   </ProductWrapper>
 );

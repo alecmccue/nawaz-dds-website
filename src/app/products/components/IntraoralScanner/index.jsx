@@ -1,20 +1,19 @@
 import React from "react";
 import { Typography } from "@mui/material";
-import { Border, ImageColumn, ProductWrapper, TextColumn } from "../../styles";
+import { Divider, ImageColumn, ProductWrapper, TextColumn } from "../../styles";
 import Image from "next/image";
-import intraOralScanner from 'public/intraoral_scanner.png';
-
+import intraOralScanner from "public/intraoral_scanner.png";
 
 const IntraoralScanner = () => (
   <ProductWrapper>
     <ImageColumn>
-      <Image src={intraOralScanner} alt="intraoral scanner"/>
+      <Image src={intraOralScanner} alt="intraoral scanner" />
     </ImageColumn>
     <TextColumn>
       <Typography style={{ fontSize: "2.2rem" }} className="poppins">
         Intraoral Scanner
-        <Border/>
       </Typography>
+      <Divider />
       <Typography style={{ fontSize: "1.2rem" }} className="scope-one">
         An Intraoral Scanner is a handheld device that utilizes advanced optical
         technology to create precise 3D digital impressions of a patient's

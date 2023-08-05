@@ -1,20 +1,20 @@
 import React from "react";
 import {
-  Border,
-    DigitalXrayImage,
-    ImageColumn,
-    ProductWrapper,
-    TextColumn,
+  Divider,
+  DigitalXrayImage,
+  ImageColumn,
+  ProductWrapper,
+  TextColumn,
 } from "../../styles";
 import { Typography } from "@mui/material";
 
 const DigitalXray = () => (
-  <ProductWrapper style={{marginBottom:'2rem'}}>
+  <ProductWrapper style={{ marginBottom: "2rem" }}>
     <TextColumn>
-      <Typography style={{ fontSize: "2.2rem"}} className="poppins">
+      <Typography style={{ fontSize: "2.2rem" }} className="poppins">
         Digital Xray
-        <Border/>
       </Typography>
+      <Divider />
       <Typography style={{ fontSize: "1.2rem" }} className="scope-one">
         Digital X-ray is an advanced imaging technology that revolutionizes the
         way dental professionals capture and analyze images of a patient's oral
@@ -32,7 +32,7 @@ const DigitalXray = () => (
         healthcare.
       </Typography>
     </TextColumn>
-    
+
     <ImageColumn>
       <DigitalXrayImage src="/digital_xray.jpg" />
     </ImageColumn>
