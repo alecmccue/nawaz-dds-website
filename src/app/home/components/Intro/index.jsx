@@ -8,7 +8,7 @@ import {
   BannerImg,
   IntroDiv,
 } from "../../styles";
-import '../../../../app/fonts.css'
+import '../../../fonts.css'
 import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
 import GoogleMapsModal from "@/components/GoogleMapModal";

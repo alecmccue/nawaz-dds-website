@@ -1,26 +1,25 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { Border, CardTitleText, InformationCard } from "../../styles";
-import PublicIcon from "@mui/icons-material/Public";
-import '../../../../app/fonts.css'
+import PhoneIcon from "@mui/icons-material/Phone";
+import '../../../../../fonts.css'
 
-const LocationCard = () => {
+const PhoneCard = () => {
   return (
     <InformationCard raised>
-      <PublicIcon fontSize="large" />
+      <PhoneIcon fontSize="large" />
       <div className="poppins">
-        <CardTitleText> Location </CardTitleText>
+        <CardTitleText> Contact Us </CardTitleText>
       </div>
       <Border />
       <div className="nunito">
         <Box>
-          46179 Westlake Drive, Suite 230,
-          <br />
-          Sterling, VA 20165
+          <div>Phone: (703) 430 3838</div>
+          <div>Email: Info@nawazdds.com</div>
         </Box>
       </div>
     </InformationCard>
   );
 };
 
-export default LocationCard;
+export default PhoneCard;

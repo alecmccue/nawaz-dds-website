@@ -13,7 +13,7 @@ import {
   Stars,
   TestimonialTitle,
 } from "./styles";
-import '../../../../app/fonts.css'
+import '../../../fonts.css'
 import { ArrowDropDown, ArrowDropUp, StarHalf } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 const Testimonials = () => {

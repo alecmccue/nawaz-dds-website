@@ -9,7 +9,7 @@ import {
   MainDiv,
   NawazImg,
 } from "../../styles";
-import '../../../../app/fonts.css'
+import '../../../fonts.css'
 const Main = () => {
   return (
     <MainDiv>

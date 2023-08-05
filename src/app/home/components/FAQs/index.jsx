@@ -8,7 +8,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { FAQWrapper, FAQContainer, FAQTitle, Border } from "./styles";
 import "./style.css";
-import '../../../../app/fonts.css'
+import '../../../fonts.css'
 const FAQs = () => {
   const faqsData = [
     {
