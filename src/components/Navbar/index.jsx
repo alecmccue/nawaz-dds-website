@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import { AppBar, Toolbar } from "@mui/material";
 import { NavbarTabsWrapper } from "./styles";
 import FcdLogo from "./components/FcdLogo";
@@ -8,6 +9,8 @@ import PatientsMenu from "./components/PatientsMenu";
 import ServicesMenu from "./components/ServicesMenu";
 
 const Navbar = () => {
+  const pathName = usePathname();
+
   // Services Menu
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
   const handleServicesMouseEnter = (event) =>
@@ -25,11 +28,20 @@ const Navbar = () => {
       <Toolbar>
         <FcdLogo />
         <NavbarTabsWrapper className="nunito">
-          <NavbarTab to="/" label="Home" />
-          <NavbarTab to="/about" label="About" />
+          <NavbarTab 
+            to="/" 
+            label="Home" 
+            isCurrentTab={pathName === "/"} 
+          />
+          <NavbarTab
+            to="/about"
+            label="About"
+            isCurrentTab={pathName === "/about"}
+          />
           <NavbarMenuTab
             to="/services"
             label="Services"
+            isCurrentTab={pathName === "/services"}
             isOpen={servicesAnchorEl}
             handleMouseEnter={handleServicesMouseEnter}
             handleClose={handleServicesClose}
@@ -39,10 +51,15 @@ const Navbar = () => {
               handleClose={handleServicesClose}
             />
           </NavbarMenuTab>
-          <NavbarTab to="/products" label="Products" />
+          <NavbarTab
+            to="/products"
+            label="Products"
+            isCurrentTab={pathName === "/products"}
+          />
           <NavbarMenuTab
             to="/patients/forms"
             label="For Patients"
+            isCurrentTab={pathName.includes("/patients")}
             isOpen={patientsAnchorEl}
             handleMouseEnter={handlePatientsMouseEnter}
             handleClose={handlePatientsClose}

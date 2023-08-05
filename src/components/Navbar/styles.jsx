@@ -32,7 +32,6 @@ export const NavbarTabWrapper = styled.div`
 
   &:hover {
     background-color: #ececec;
-    border-bottom: 0.2rem solid #00ACB1;
   }
 `
 
@@ -42,4 +41,8 @@ export const NavbarTabsWrapper = styled.div`
   justify-content: center;
   height: 4rem;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    visibility: hidden;
+  }
 `;
