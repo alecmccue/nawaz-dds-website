@@ -1,6 +1,5 @@
 import { Menu } from "@mui/material";
 import { DropdownMenuItem } from "../../styles";
-import ServicesMenuButton from "@/components/Navbar/components/ServicesMenuButton";
 import PatientsMenuButton from "../PatientsMenuButton";
 
 const PatientsMenu = ({ anchorEl, handleClose }) => {
@@ -8,18 +7,13 @@ const PatientsMenu = ({ anchorEl, handleClose }) => {
     <Menu
       anchorEl={anchorEl}
       disableAutoFocusItem
-      id="services-menu"
-      onClose={handleClose}
-      open={Boolean(anchorEl)}
-      MenuListProps={{
-        onMouseLeave: handleClose,
-      }}
-      style={{
-        zIndex: -1,
-        top: -8,
-      }}
       disablePortal
       hideBackdrop
+      id="patients-menu"
+      MenuListProps={{ onMouseLeave: handleClose }}
+      onClose={handleClose}
+      open={Boolean(anchorEl)}
+      style={{ zIndex: -1 }}
     >
       <DropdownMenuItem>
         <PatientsMenuButton

@@ -6,31 +6,32 @@ export const AccordionDetailsHeader = styled(Typography)`
   font-weight: 500;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
-`
+`;
 
 export const AccordionSummaryContentWrapper = styled.div`
   display: flex;
   gap: 4rem;
   margin-right: 2rem;
 `;
-export const Border = styled.div`
-    width: 10rem;
-    height: .30rem;
-    background:#00ACB1;
-    margin-top:1rem;
-    margin-bottom:1rem;
-`
+
 export const AccordionSummaryTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+`;
+
+export const Border = styled.div`
+  width: 10rem;
+  height: 0.3rem;
+  background: #00acb1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 `;
 
 export const ServiceAccordion = styled(Accordion)`
   padding: 2rem;
-  
+
   &:hover {
-    background-color: #EBF2F3;
+    background-color: #ebf2f3;
   }
 `;
 

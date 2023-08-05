@@ -27,8 +27,8 @@ const PartialDentures = () => (
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Partial Dentures
-              <Border/>
             </Typography>
+            <Border />
             <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Partial dentures are removable dental prosthetics used to replace
               missing teeth when some natural teeth remain in the upper or lower

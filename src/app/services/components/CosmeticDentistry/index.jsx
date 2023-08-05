@@ -28,23 +28,21 @@ const CosmeticDentistry = () => (
             src="/cosmetic_dentistry.jpg"
           />
           <AccordionSummaryTextWrapper>
-            <Typography style={{ fontSize: "2.2rem" }} className="poppins">
+            <Typography className="poppins" style={{ fontSize: "2.2rem" }}>
               Cosmetic Dentistry
-              <Border />
             </Typography>
-            <div className="nunito">
-              <Typography style={{ fontSize: "1.3rem" }}>
-                Cosmetic dentistry offers a diverse array of procedures aimed at
-                improving the aesthetics of a person's smile. It goes beyond
-                addressing functional concerns and focuses on enhancing the
-                appearance of teeth, gums, and overall oral structures. With the
-                goal of creating a beautiful and confident smile, cosmetic
-                dentistry services aim to improve the appearance of teeth, gums,
-                and overall oral structures. These procedures go beyond
-                addressing functional concerns and focus on enhancing the
-                aesthetics of a person's smile.
-              </Typography>
-            </div>
+            <Border />
+            <Typography style={{ fontSize: "1.3rem" }}>
+              Cosmetic dentistry offers a diverse array of procedures aimed at
+              improving the aesthetics of a person's smile. It goes beyond
+              addressing functional concerns and focuses on enhancing the
+              appearance of teeth, gums, and overall oral structures. With the
+              goal of creating a beautiful and confident smile, cosmetic
+              dentistry services aim to improve the appearance of teeth, gums,
+              and overall oral structures. These procedures go beyond addressing
+              functional concerns and focus on enhancing the aesthetics of a
+              person's smile.
+            </Typography>
           </AccordionSummaryTextWrapper>
         </AccordionSummaryContentWrapper>
       </AccordionSummary>
@@ -56,8 +54,8 @@ const CosmeticDentistry = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Teeth whitening is a popular cosmetic dentistry procedure designed
               to brighten and lighten the color of teeth that have become
@@ -80,8 +78,8 @@ const CosmeticDentistry = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Composite bonding is a technique used to repair chipped, cracked,
               or discolored teeth, as well as to close gaps between teeth. It
@@ -104,8 +102,8 @@ const CosmeticDentistry = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Dental veneers are thin, custom-made shells typically made of
               porcelain or composite resin that are bonded to the front surface
@@ -127,8 +125,8 @@ const CosmeticDentistry = () => (
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
+              primaryTypographyProps={{ fontSize: "1.3rem" }}
             >
               Dental crowns, also known as caps, are restorations that encase
               the entire visible portion of a damaged or severely decayed tooth

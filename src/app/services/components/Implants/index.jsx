@@ -27,8 +27,8 @@ const Implants = () => (
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               Implants
-              <Border />
             </Typography>
+            <Border />
             <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               Dental implants are titanium posts surgically inserted into the
               jawbone to replace missing teeth, providing a stable foundation

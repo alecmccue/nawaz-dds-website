@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { AppBar, Toolbar } from "@mui/material";
-import { NavbarButtonsWrapper } from "./styles";
-import LinkButton from "../LinkButton";
-import MenuButton from "../MenuButton";
-import ServicesMenu from "./components/ServicesMenu";
+import { NavbarTabsWrapper } from "./styles";
 import FcdLogo from "./components/FcdLogo";
+import NavbarMenuTab from "./components/NavbarMenuTab";
+import NavbarTab from "./components/NavbarTab";
 import PatientsMenu from "./components/PatientsMenu";
+import ServicesMenu from "./components/ServicesMenu";
 
 const Navbar = () => {
   // Services Menu
@@ -24,10 +24,10 @@ const Navbar = () => {
     <AppBar position="sticky" color="azure">
       <Toolbar>
         <FcdLogo />
-        <NavbarButtonsWrapper className="nunito">
-          <LinkButton to="/" label="Home" />
-          <LinkButton to="/about" label="About" />
-          <MenuButton
+        <NavbarTabsWrapper className="nunito">
+          <NavbarTab to="/" label="Home" />
+          <NavbarTab to="/about" label="About" />
+          <NavbarMenuTab
             to="/services"
             label="Services"
             isOpen={servicesAnchorEl}
@@ -38,9 +38,9 @@ const Navbar = () => {
               anchorEl={servicesAnchorEl}
               handleClose={handleServicesClose}
             />
-          </MenuButton>
-          <LinkButton to="/products" label="Products" />
-          <MenuButton
+          </NavbarMenuTab>
+          <NavbarTab to="/products" label="Products" />
+          <NavbarMenuTab
             to="/patients/forms"
             label="For Patients"
             isOpen={patientsAnchorEl}
@@ -51,8 +51,8 @@ const Navbar = () => {
               anchorEl={patientsAnchorEl}
               handleClose={handlePatientsClose}
             />
-          </MenuButton>
-        </NavbarButtonsWrapper>
+          </NavbarMenuTab>
+        </NavbarTabsWrapper>
       </Toolbar>
     </AppBar>
   );

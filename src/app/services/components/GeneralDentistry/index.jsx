@@ -27,8 +27,8 @@ const GeneralDentistry = () => (
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.2rem" }} className="poppins">
               General & Family Dentistry
-            <Border/>
             </Typography>
+            <Border/>
             <Typography style={{ fontSize: "1.3rem" }} className="nunito">
               General dentistry services encompass a wide range of procedures
               designed to promote oral health, address dental issues, and

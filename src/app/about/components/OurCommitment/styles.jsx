@@ -2,12 +2,17 @@ import styled from "@emotion/styled";
 
 export const BackgroundImage = styled.img`
   height: 40rem;
-  filter: brightness(60%);
-  opacity: 0.6;
+  filter: brightness(50%);
   width: 100%;
 `;
 
-export const MissionStatementWrapper = styled.div`
+export const Divider = styled.div`
+  width: 10rem;
+  height: 0.3rem;
+  background: #00acb1;
+`;
+
+export const OurCommitmentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -15,7 +20,7 @@ export const MissionStatementWrapper = styled.div`
 
 export const OverlayCard = styled.div`
   align-items: center;
-  background-color: white;
+  background-color: #ebf2f3;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
