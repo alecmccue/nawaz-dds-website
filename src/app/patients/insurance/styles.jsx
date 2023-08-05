@@ -49,11 +49,6 @@ export const InsuranceWrapper = styled.div`
   width: 100%;
 `;
 
-export const InsuranceItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 60rem;
-`;
 
 export const IntroWrapper = styled.div`
   display: flex;
