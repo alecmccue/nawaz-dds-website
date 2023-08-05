@@ -27,7 +27,7 @@ export const InformationCard = styled(Card)`
     font-size:1.1rem;
 
     &:hover {
-        background-color: #EBF2F3;
+        background-color: whitesmoke;
     }
 `
 export const Border = styled.div`

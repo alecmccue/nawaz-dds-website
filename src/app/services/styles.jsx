@@ -31,7 +31,7 @@ export const ServiceAccordion = styled(Accordion)`
   padding: 2rem;
 
   &:hover {
-    background-color: #ebf2f3;
+    background-color: whitesmoke;
   }
 `;
 
