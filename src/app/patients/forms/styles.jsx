@@ -7,18 +7,6 @@ export const Column = styled.div`
   gap: 1rem;
 `;
 
-export const IntroDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 80rem;
-  text-align: center;
-  border-radius: 1rem;
-  background-color:#87e4db;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  text-align: center;
-`;
-
 export const DownloadButtonWrapper = styled.div`
   display: flex;
   gap: 2rem;
@@ -28,8 +16,8 @@ export const DownloadButtonWrapper = styled.div`
   width: fit-content;
 
   &:hover {
-    background-color: #015D67;
-    color:white;
+    background-color: #015d67;
+    color: white;
   }
 `;
 
@@ -63,4 +51,16 @@ export const FormsWrapper = styled.div`
   padding: 2rem;
   align-items: center;
   gap: 3rem;
+`;
+
+export const IntroWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #87e4db;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: center;
 `;
