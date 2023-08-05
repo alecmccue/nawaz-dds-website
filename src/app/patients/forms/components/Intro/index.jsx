@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
 import React from "react";
-import { IntroDiv } from "../../styles";
+import { IntroWrapper } from "../../styles";
+import { Typography } from "@mui/material";
 
 const Intro = () => (
-  <IntroDiv>
+  <IntroWrapper>
     <Typography
       style={{ fontSize: "2.4rem", textAlign: "center", marginBottom: "1rem" }}
       className="poppins"
@@ -24,7 +24,7 @@ const Intro = () => (
       Your well-being is our priority, and these forms are the first step in
       making your healthcare journey with us a smooth one.
     </Typography>
-  </IntroDiv>
+  </IntroWrapper>
 );
 
 export default Intro;
