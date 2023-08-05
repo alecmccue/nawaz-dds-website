@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageColumn, ProductWrapper, TextColumn } from "../../styles";
+import { Border, ImageColumn, ProductWrapper, TextColumn } from "../../styles";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 import zoomWhitening from 'public/zoom_whitening.jpg';
@@ -7,10 +7,11 @@ import zoomWhitening from 'public/zoom_whitening.jpg';
 const ZoomWhitening = () => (
   <ProductWrapper>
     <TextColumn>
-      <Typography style={{ fontSize: "2rem", fontWeight: "500" }}>
+      <Typography style={{ fontSize: "2.2rem"}} className="poppins">
         Zoom Whitening
+        <Border/>
       </Typography>
-      <Typography style={{ fontSize: "1.1rem" }}>
+      <Typography style={{ fontSize: "1.2rem" }} className="scope-one">
         Zoom Whitening is a highly effective and popular teeth whitening
         procedure that offers remarkable results in a single visit. Using
         advanced LED technology, the Zoom Whitening treatment involves the

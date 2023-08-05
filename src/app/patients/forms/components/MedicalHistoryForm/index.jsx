@@ -11,11 +11,15 @@ const MedicalHistoryForm = () => (
     />
     <Column>
       <Typography
-        style={{ fontSize: "1.5rem", fontWeight: "500", textAlign: "center" }}
+        style={{ fontSize: "2.2rem", textAlign: "center" }}
+        className="poppins"
       >
         Medical History Form
       </Typography>
-      <Typography style={{ textAlign: "center" }}>
+      <Typography
+        style={{ textAlign: "center", fontSize: "1.2rem" }}
+        className="nunito"
+      >
         We need your medical history to provide appropriate and safe dental
         care, as certain medical conditions, medications, and allergies can
         impact dental treatments and influence the choice of anesthesia or
