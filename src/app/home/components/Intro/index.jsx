@@ -1,50 +1,49 @@
 import React from "react";
-import {
-  IntroImage,
-  IntroTitleText1,
-  IntroTitleText2,
-  CallButton,
-  DirectionsButton,
-  BannerImg,
-  IntroDiv,
-} from "../../styles";
 import '../../../fonts.css'
+import GoogleMapsModal from "@/components/GoogleMapModal";
 import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
-import GoogleMapsModal from "@/components/GoogleMapModal";
 import useGoogleMapModal from "@/hooks/useGoogleMapModal";
+import {
+    BackgroundImage,
+    ContactButton,
+    ContactButtonsWrapper,
+    IntroSubtitle,
+    IntroTitle,
+    IntroWrapper,
+} from "./styles";
 
 const Intro = () => {
-  const {
-    handleCloseDirectionsModal,
-    handleOpenDirectionsModal,
-    isDirectionsModalOpen
-  } = useGoogleMapModal()
-  
-  return (
-    <IntroImage style={{ display: "flex" }}>
-      <IntroDiv>
-        <div className="arvo">
-        <IntroTitleText1>Feel Good About</IntroTitleText1>
-        <IntroTitleText2>Your Smile</IntroTitleText2>
+    const {
+        handleCloseDirectionsModal,
+        handleOpenDirectionsModal,
+        isDirectionsModalOpen
+    } = useGoogleMapModal()
 
-        </div>
-        <div className="poppins" style={{ display: "flex", justifyContent:'center'}}>
-          <CallButton>
-            <PhoneIcon />
-            (703) 430 3838
-          </CallButton>
-          <DirectionsButton onClick={handleOpenDirectionsModal}>
-            <MapIcon />
-            Get Directions
-          </DirectionsButton>
-        </div>
-      </IntroDiv>
-      <div>
-      </div>
+    return (
+        <>
+            <BackgroundImage style={{ display: "flex" }}>
+                <IntroWrapper>
+                    <div className="arvo">
+                        <IntroTitle>Feel Good About</IntroTitle>
+                        <IntroSubtitle>Your Smile</IntroSubtitle>
+                    </div>
+                    <ContactButtonsWrapper className="poppins">
+                        <ContactButton>
+                            <PhoneIcon />
+                            (703) 430 3838
+                        </ContactButton>
+                        <ContactButton onClick={handleOpenDirectionsModal}>
+                            <MapIcon />
+                            Get Directions
+                        </ContactButton>
+                    </ContactButtonsWrapper>
+                </IntroWrapper>
 
-      <GoogleMapsModal open={isDirectionsModalOpen} handleClose={handleCloseDirectionsModal} />
-    </IntroImage>
-  );
-};
-export default Intro;
+            </BackgroundImage>
+            <GoogleMapsModal open={isDirectionsModalOpen} handleClose={handleCloseDirectionsModal} />
+        </>
+    )
+}
+
+export default Intro

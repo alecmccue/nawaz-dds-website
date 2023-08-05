@@ -1,25 +1,21 @@
 "use client";
-import {
-  HomeWrapper,
-} from "./styles";
-import { Box, Typography } from "@mui/material";
-import MapIcon from "@mui/icons-material/Map";
-import PhoneIcon from "@mui/icons-material/Phone";
-import Landing from "@/app/home";
-import { useState } from "react";
-import GoogleMapModal from "@/components/GoogleMapModal";
 
-const Home = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+import React from "react";
+import FAQs from "./home/components/FAQs";
+import InformationCards from "./home/components/InformationCards";
+import Intro from "./home/components/Intro";
+import Main from "./home/components/Main";
+import Testimonials from "./home/components/Testimonials";
+import { HomeWrapper } from "./styles";
 
-  return (
+const Home = () => (
     <HomeWrapper>
-      <Landing/>
-      <GoogleMapModal open={open} handleClose={handleClose} />
+        <Intro />
+        <InformationCards />
+        <Main />
+        <Testimonials />
+        <FAQs />
     </HomeWrapper>
-  );
-};
+)
 
 export default Home;

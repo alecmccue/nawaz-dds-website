@@ -1,8 +1,13 @@
 import styled from "@emotion/styled";
-import { Box, Card } from "@mui/material";
 
-export const HomeWrapper = styled(Box)`
+export const HomeWrapper = styled.div`
+  background-color: #fefefe;
   display: flex;
   flex-direction: column;
-  align-items: center;
-`;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+`
