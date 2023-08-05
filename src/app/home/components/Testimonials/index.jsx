@@ -1,30 +1,27 @@
-import React from "react";
-import StarIcon from "@mui/icons-material/Star";
-import { useState } from "react";
+import React, { useState } from "react";
+import '../../../fonts.css'
 import Image from "next/image";
+import StarIcon from "@mui/icons-material/Star";
+import { ArrowDropDown, ArrowDropUp, StarHalf } from "@mui/icons-material";
 import {
   Border,
   Col,
   Inner,
+  Name,
   Review,
   Row,
-  Testimonial,
-  Name,
   Stars,
+  Testimonial,
   TestimonialTitle,
 } from "./styles";
-import '../../../fonts.css'
-import { ArrowDropDown, ArrowDropUp, StarHalf } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
+
 const Testimonials = () => {
   const [visibleTestimonials, setVisibleTestimonials] = useState(false);
 
-  const handleDropdownOpen = () => {
-    setVisibleTestimonials(true);
-  };
-  const handleDropdownClose = () => {
-    setVisibleTestimonials(false);
-  };
+  const handleDropdownOpen = () => setVisibleTestimonials(true);
+  const handleDropdownClose = () => setVisibleTestimonials(false);
+  
   return (
     <Testimonial>
       <Inner>

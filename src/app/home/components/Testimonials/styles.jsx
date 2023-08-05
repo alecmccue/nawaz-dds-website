@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import {Typography, Box} from "@mui/material";
+import { Typography } from "@mui/material";
 
 export const Testimonial = styled.div`
     padding:40px 0;

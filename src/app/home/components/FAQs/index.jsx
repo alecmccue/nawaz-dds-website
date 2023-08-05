@@ -1,14 +1,15 @@
 import React from "react";
+import "../../../fonts.css";
+import { AccordionSummary, AccordionDetails, Typography } from "@mui/material";
 import {
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Typography,
-} from "@mui/material";
+  FAQWrapper,
+  FAQContainer,
+  FAQTitle,
+  Divider,
+  FAQAccordion,
+} from "./styles";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { FAQWrapper, FAQContainer, FAQTitle, Border } from "./styles";
-import "./style.css";
-import '../../../fonts.css'
+
 const FAQs = () => {
   const faqsData = [
     {
@@ -43,10 +44,10 @@ const FAQs = () => {
       <div className="poppins">
         <FAQTitle>FAQs</FAQTitle>
       </div>
-      <Border />
+      <Divider />
       <FAQContainer>
         {faqsData.map((faq, index) => (
-          <Accordion key={index} className="customAccordion">
+          <FAQAccordion key={index}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <div className="nunito">
                 <Typography variant="h5">{faq.question}</Typography>
@@ -57,7 +58,7 @@ const FAQs = () => {
                 <Typography variant="h6">{faq.answer}</Typography>
               </div>
             </AccordionDetails>
-          </Accordion>
+          </FAQAccordion>
         ))}
       </FAQContainer>
     </FAQWrapper>
