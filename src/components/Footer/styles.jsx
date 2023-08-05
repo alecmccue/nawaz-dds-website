@@ -80,6 +80,7 @@ export const SocialWrapper = styled.div`
 `
 
 export const UpperBox = styled(Box)`
+  align-items: center;
   display: flex;
   padding: 1rem;
   gap: 5rem;

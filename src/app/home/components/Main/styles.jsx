@@ -81,6 +81,10 @@ export const MainWrapper = styled.div`
   padding: 2.5rem 6rem 2.5rem 6rem;
   position: relative;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `
 
 export const NawazImg = styled.div`
