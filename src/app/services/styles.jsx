@@ -23,7 +23,7 @@ export const Border = styled.div`
   width: 10rem;
   height: 0.3rem;
   background: #00acb1;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 `;
 
