@@ -14,6 +14,10 @@ export const FAQAccordion = styled(Accordion)`
   border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: #fafcfc;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const FAQContainer = styled.div`

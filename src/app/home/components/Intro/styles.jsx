@@ -24,10 +24,14 @@ export const ContactButton = styled.div`
   gap: 0.5rem;
   margin-top: 3rem;
   padding: 0.5rem 1.5rem;
-  width: fit-content;
+  width: 15rem;
 
   &:hover {
     background-color: transparent;
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 1rem;
   }
 `
 
@@ -36,6 +40,12 @@ export const ContactButtonsWrapper = styled.div`
   justify-content: center;
   gap: 5rem;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
 `
 
 export const IntroSubtitle = styled(Typography)`
@@ -57,6 +67,10 @@ export const IntroTitle = styled(Typography)`
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    margin-top: 2rem;
+  }
 `
 
 export const IntroWrapper = styled.div`
@@ -65,6 +79,7 @@ export const IntroWrapper = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
+    padding: 0;
   }
 `
 

@@ -10,6 +10,10 @@ export const Description = styled(Typography)`
   line-height: 40px;
   margin-top: 3rem;
   width: 688px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `
 
 export const DescriptionLists = styled.div`
@@ -19,9 +23,14 @@ export const DescriptionLists = styled.div`
   font-weight: 400;
   line-height: 50px;
   margin-bottom: 2rem;
-  margin-left: 4rem;
+  padding-left: 4rem;
   margin-top: 1rem;
   width: 620px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    white-space: pre-line;
+  }
 `
 
 export const DescriptionSubtitle = styled(Typography)`
@@ -51,6 +60,11 @@ export const DescriptionWrapper = styled.div`
   margin-left: 6rem;
   padding-top: 2rem;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    margin-left: 1rem;
+    padding: 0;
+  }
 `
 
 export const MainButton = styled.div`
@@ -84,6 +98,8 @@ export const MainWrapper = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
+    padding: 0;
+    height: fit-content;
   }
 `
 
@@ -96,4 +112,9 @@ export const NawazImg = styled.div`
   height: auto;
   margin-top: 1rem;
   width: 500px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+    height: auto;
+  }
 `
