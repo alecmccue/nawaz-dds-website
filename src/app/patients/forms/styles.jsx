@@ -25,6 +25,10 @@ export const FormFooter = styled.div`
   display: flex;
   justify-content: end;
   margin-top: 0.5rem;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `;
 
 export const FormPreview = styled.img`
@@ -42,6 +46,11 @@ export const FormWrapper = styled.div`
   border-radius: 2rem;
   align-items: center;
   padding: 2rem 2.5rem;
+
+  @media (max-width: 1024px) {
+    padding: 2rem;
+    flex-direction: column;
+  }
 `;
 
 export const FormsWrapper = styled.div`

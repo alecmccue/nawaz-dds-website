@@ -26,6 +26,10 @@ export const CareCreditSignUpWrapper = styled.div`
   justify-content: center;
   padding: 1rem;
   width: 25rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const CareCreditWrapper = styled.div`
@@ -37,6 +41,10 @@ export const CareCreditWrapper = styled.div`
   gap: 2rem;
   max-width: 80rem;
   padding: 2rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const InsuranceWrapper = styled.div`
@@ -47,6 +55,11 @@ export const InsuranceWrapper = styled.div`
   gap: 3rem;
   padding: 2rem;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    padding: 1rem;
+    gap: 1rem;
+  }
 `;
 
 

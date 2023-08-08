@@ -11,8 +11,8 @@ const Intro = () => (
       Insurance
     </Typography>
     <Typography
-      style={{ fontSize: "1.4rem", maxWidth: "80rem", textAlign: "center" }}
       className="nunito"
+      style={{ fontSize: "1.4rem", maxWidth: "80rem", textAlign: "center" }}
     >
       At Family & Cosmetic dental, our dedication lies in ensuring your time
       with us is enjoyable, starting from the primary assessment to the
