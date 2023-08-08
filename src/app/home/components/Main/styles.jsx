@@ -57,8 +57,7 @@ export const DescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 6rem;
-  padding-top: 2rem;
+  padding-left: 6rem;
   width: 100%;
 
   @media (max-width: 1024px) {
@@ -90,7 +89,7 @@ export const MainButton = styled.div`
 export const MainWrapper = styled.div`
   background: #fafcfc;
   display: flex;
-  height: 700px;
+  height: fit-content;
   justify-content: center;
   padding: 2.5rem 6rem 2.5rem 6rem;
   position: relative;
@@ -110,7 +109,7 @@ export const NawazImg = styled.div`
   background-color: transparent;
   flex-shrink: 0;
   height: auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
   width: 500px;
 
   @media (max-width: 1024px) {

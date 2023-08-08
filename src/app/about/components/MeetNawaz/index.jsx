@@ -32,12 +32,12 @@ const MeetNawaz = () => (
             />
           </div>
           <Typography
-            style={{ fontSize: "2rem", fontWeight: "500" }}
+            style={{ fontSize: "3rem", fontWeight: "700" }}
           >
             Dr. Mirweiss Nawaz
           </Typography>
           <Divider />
-          <Typography style={{ fontSize: "1.1rem" }}>
+          <Typography style={{ fontSize: "1.4rem" }}>
             Since its establishment in 2007, Dr. Nawaz has been committed to
             delivering exceptional dental care at Family & Cosmetic Dentistry.
             With a focus on both family and cosmetic dentistry, he creates
@@ -48,16 +48,16 @@ const MeetNawaz = () => (
           </Typography>
         </Column>
 
-        <Column style={{ justifyContent: "center" }}>
+        <Column style={{ paddingTop: "8rem" }}>
           <Typography
-            style={{ fontSize: "1.1rem", fontWeight: "500" }}
+            style={{ fontSize: "1.4rem", fontWeight: "500" }}
           >
             Education
           </Typography>
           <DividerSmall />
           <ul
             style={{
-              fontSize: "1.1rem",
+              fontSize: "1.4rem",
               listStyleType: "disc",
               paddingLeft: "1.5em",
             }}
@@ -67,14 +67,14 @@ const MeetNawaz = () => (
           </ul>
           <br/>
           <Typography
-            style={{ fontSize: "1.1rem", fontWeight: "500" }}
+            style={{ fontSize: "1.4rem", fontWeight: "500" }}
           >
             Certifications
           </Typography>
           <DividerSmall />
           <ul
             style={{
-              fontSize: "1.1rem",
+              fontSize: "1.4rem",
               listStyleType: "disc",
               paddingLeft: "1.5em",
             }}

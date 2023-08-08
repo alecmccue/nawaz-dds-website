@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const BackgroundImage = styled.img`
   height: 40rem;
-  filter: brightness(50%);
+  filter: brightness(35%);
   width: 100%;
 `;
 
@@ -20,9 +20,10 @@ export const OurCommitmentWrapper = styled.div`
 
 export const OverlayCard = styled.div`
   align-items: center;
-  background-color: #ebf2f3;
+  /* background-color: #ebf2f3; */
   border-radius: 2rem;
   display: flex;
+  color: white;
   flex-direction: column;
   gap: 1rem;
   height: fit-content;
@@ -33,5 +34,5 @@ export const OverlayCard = styled.div`
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 50rem;
+  width: 60rem;
 `;

@@ -4,7 +4,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  flex: 1;
+  min-width: 20rem;
 `;
 
 export const Divider = styled.div`
@@ -15,7 +15,7 @@ export const Divider = styled.div`
 `;
 
 export const DividerSmall = styled.div`
-  width: 3rem;
+  width: 4rem;
   height: 0.2rem;
   background: #00acb1;
   margin-bottom: 0.5rem;
@@ -48,7 +48,7 @@ export const NawazImage = styled.img`
 
 export const TextInnerWrapper = styled.div`
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
 
   @media (max-width: 1024px) {
     flex-direction: column;

@@ -4,13 +4,13 @@ import { Typography } from "@mui/material";
 
 const OurCommitment = () => (
   <OurCommitmentWrapper>
-    <BackgroundImage src="/office.jpg" alt="background" />
+    <BackgroundImage src="/dentist_at_work.jpeg" alt="background" />
     <OverlayCard>
-      <Typography style={{ fontSize: "2.5rem" }}>
+      <Typography style={{ fontSize: "4rem", fontWeight: 700 }}>
         OUR COMMITMENT
       </Typography>
       <Divider />
-      <Typography style={{ fontSize: "1.1rem" }}>
+      <Typography style={{ fontSize: "1.2rem", fontWeight: 500 }}>
         At Family & Cosmetic Dentistry, our mission is to create a
         transformative impact on your life through exceptional dentistry. We are
         driven by a deep sense of care for our patients and are committed to
@@ -19,7 +19,7 @@ const OurCommitment = () => (
         and providing a comforting environment with relaxing amenities, we aim
         to redefine the dental experience.
       </Typography>
-      <Typography style={{ fontSize: "1.1rem" }}>
+      <Typography style={{ fontSize: "1.2rem", fontWeight: 500 }}>
         We extend a warm welcome to you. Trust that your dental journey with us
         will be marked by genuine compassion, meticulous attention to detail,
         and a commitment to enhancing both your oral health and overall
@@ -27,10 +27,10 @@ const OurCommitment = () => (
         radiant smile.
       </Typography>
       <div>
-        <Typography style={{ fontSize: "1.5rem" }}>
+        <Typography style={{ fontSize: "1.8rem", fontWeight: 600 }}>
           Dr. Mirweiss Nawaz
         </Typography>
-        <Typography style={{ fontSize: "1.2rem" }}>
+        <Typography style={{ fontSize: "1.5rem", fontWeight: 500 }}>
           Founder
         </Typography>
       </div>
