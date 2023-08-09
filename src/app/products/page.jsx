@@ -10,9 +10,11 @@ import ZoomWhitening from "./components/ZoomWhitening";
 const animationVariant = {
   hide: {
     opacity: 0,
+    y: 50,
   },
   show: {
     opacity: 1,
+    y: 0,
     transition: {
       duration: 0.5,
     },
