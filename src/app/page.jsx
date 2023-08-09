@@ -1,5 +1,5 @@
-"use client"
-import React, { useEffect, useState } from "react";
+"use client";
+import React from "react";
 import { motion } from "framer-motion";
 import FAQs from "./home/components/FAQs";
 import InformationCards from "./home/components/InformationCards";
@@ -8,71 +8,61 @@ import Main from "./home/components/Main";
 import Testimonials from "./home/components/Testimonials";
 import { HomeWrapper } from "./styles";
 
+const animationVariant = {
+  hide: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 const Home = () => {
-  const [infoInView, setInfoInView] = useState(false);
-  const [mainInView, setMainInView] = useState(false);
-  const [testInView, setTestInView] = useState(false);
-  const [faqInView, setFaqInView] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const infoPosition = 300;
-      const mainPosition = 450;
-      const testPosition = 1000;
-      const faqPosition = 1700;
-
-      const scrollY = window.scrollY;
-
-      setInfoInView(scrollY > infoPosition);
-      setMainInView(scrollY > mainPosition);
-      setTestInView(scrollY > testPosition);
-      setFaqInView(scrollY > faqPosition);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <HomeWrapper>
       <motion.div
-        initial={{ opacity: 0, y: 0 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        initial="hide"
+        exit="hide"
+        whileInView="show"
+        variants={animationVariant}
       >
         <Intro />
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: infoInView ? 1 : 0, y: infoInView ? 0 : 50 }}
-        transition={{ duration: 0.5 }}
+        initial="hide"
+        exit="hide"
+        whileInView="show"
+        variants={animationVariant}
       >
         <InformationCards />
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: mainInView ? 1 : 0, y: mainInView ? 0 : 50 }}
-        transition={{ duration: 0.5 }}
+        initial="hide"
+        exit="hide"
+        whileInView="show"
+        variants={animationVariant}
       >
         <Main />
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: testInView ? 1 : 0, y: testInView ? 0 : 50 }}
-        transition={{ duration: 0.5 }}
+        initial="hide"
+        exit="hide"
+        whileInView="show"
+        variants={animationVariant}
       >
         <Testimonials />
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: faqInView ? 1 : 0, y: faqInView ? 0 : 50 }}
-        transition={{ duration: 0.5 }}
+        initial="hide"
+        exit="hide"
+        whileInView="show"
+        variants={animationVariant}
       >
         <FAQs />
       </motion.div>
