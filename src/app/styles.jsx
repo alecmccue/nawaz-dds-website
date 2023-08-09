@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const HomeWrapper = styled.div`
-  background-color: #fefefe;
+  background-color: azure;
   display: flex;
   flex-direction: column;
   justify-content: center;
