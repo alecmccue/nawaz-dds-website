@@ -47,7 +47,7 @@ export const ServiceWrapper = styled.div`
   justify-content: center;
   max-width: 80rem;
   padding: 1rem;
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 8rem;
 `;
 
 export const ServicesWrapper = styled.div`
