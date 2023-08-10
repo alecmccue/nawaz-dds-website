@@ -5,9 +5,9 @@ const OfficeHours = () => {
   return (
     <StackItemWrapper>
       <IconWrapper>
-        <WatchLaterIcon fontSize="large" />
+        <WatchLaterIcon fontSize="large" style={{color:'#015d67'}} />
       </IconWrapper>
-      <StackItemText style={{ fontSize: "1.5rem" }}>
+      <StackItemText style={{ fontSize: "1.5rem", color:'#015d67' }} className="nunito">
         Monday - Thursday: 10am - 6pm
       </StackItemText>
     </StackItemWrapper>

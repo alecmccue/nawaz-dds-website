@@ -38,8 +38,8 @@ export const MapWrapper = styled.div`
 `;
 
 export const MarketingStatementWrapper = styled.div`
-  background-color: #ebf2f3;
-  color: #015d67;
+  background-color: #fafcfa;
+  color: black;
   display: flex;
   flex-direction: column;
   gap: 3rem;
