@@ -8,56 +8,54 @@ import MeetNawaz from "./components/MeetNawaz";
 import MeetTeam from "./components/MeetTeam";
 
 const animationVariant = {
-  hide: {
-    opacity: 0,
-    y: 50,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
+    hide: {
+        opacity: 0,
+        y: 50,
     },
-  },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+        },
+    },
 };
 
-const About = () => {
-  return (
+const About = () => (
     <AboutWrapper>
-      <motion.div
-        initial="hide"
-        exit="hide"
-        whileInView="show"
-        variants={animationVariant}
-      >
-        <OurCommitment />
-      </motion.div>
-      <motion.div
-        initial="hide"
-        exit="hide"
-        whileInView="show"
-        variants={animationVariant}
-      >
-        <MeetNawaz />
-      </motion.div>
-      <motion.div
-        initial="hide"
-        exit="hide"
-        whileInView="show"
-        variants={animationVariant}
-      >
-        <MeetTeam />
-      </motion.div>
-      <motion.div
-        initial="hide"
-        exit="hide"
-        whileInView="show"
-        variants={animationVariant}
-      >
-        <VisitUs />
-      </motion.div>
+        <motion.div
+            initial="hide"
+            exit="hide"
+            whileInView="show"
+            variants={animationVariant}
+        >
+            <OurCommitment />
+        </motion.div>
+        <motion.div
+            initial="hide"
+            exit="hide"
+            whileInView="show"
+            variants={animationVariant}
+        >
+            <MeetNawaz />
+        </motion.div>
+        <motion.div
+            initial="hide"
+            exit="hide"
+            whileInView="show"
+            variants={animationVariant}
+        >
+            <MeetTeam />
+        </motion.div>
+        <motion.div
+            initial="hide"
+            exit="hide"
+            whileInView="show"
+            variants={animationVariant}
+        >
+            <VisitUs />
+        </motion.div>
     </AboutWrapper>
-  );
-};
+)
 
 export default About;
