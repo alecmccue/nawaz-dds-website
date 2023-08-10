@@ -26,6 +26,7 @@ export const ImageWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   min-width: 20rem;
+  width:40%;
 `;
 
 export const Line = styled.div`
@@ -36,6 +37,7 @@ export const Line = styled.div`
 export const MeetNawazWrapper = styled.div`
   display: flex;
   justify-content: center;
+  background-color: #fafcfc;
   padding: 2rem;
   gap: 5rem;
 `;
@@ -59,4 +61,7 @@ export const TextOuterWrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 75rem;
+  width:70%;
+  align-items:center;
+  justify-content:center;
 `;

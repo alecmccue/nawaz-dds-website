@@ -21,23 +21,13 @@ const MeetNawaz = () => (
     </ImageWrapper>
 
     <TextOuterWrapper>
-      <Line />
       <TextInnerWrapper>
         <Column>
-          <div>
-            <Image
-              src={dots}
-              alt="dots"
-              style={{ height: "8rem", width: "auto", transform: "scaleY(-1)" }}
-            />
-          </div>
-          <Typography
-            style={{ fontSize: "3rem", fontWeight: "700" }}
-          >
+          <Typography style={{ fontSize: "3rem"}} className="poppins">
             Dr. Mirweiss Nawaz
           </Typography>
           <Divider />
-          <Typography style={{ fontSize: "1.4rem" }}>
+          <Typography style={{ fontSize: "1.4rem" }} className="nunito">
             Since its establishment in 2007, Dr. Nawaz has been committed to
             delivering exceptional dental care at Family & Cosmetic Dentistry.
             With a focus on both family and cosmetic dentistry, he creates
@@ -48,10 +38,8 @@ const MeetNawaz = () => (
           </Typography>
         </Column>
 
-        <Column style={{ paddingTop: "8rem" }}>
-          <Typography
-            style={{ fontSize: "1.4rem", fontWeight: "500" }}
-          >
+        <Column>
+          <Typography style={{ fontSize: "1.5rem"}} className="poppins">
             Education
           </Typography>
           <DividerSmall />
@@ -60,15 +48,12 @@ const MeetNawaz = () => (
               fontSize: "1.4rem",
               listStyleType: "disc",
               paddingLeft: "1.5em",
-            }}
+            }} className="nunito"
           >
             <li>BS in Biology at George Mason University</li>
             <li>DDS, Virginia Commonwealth University</li>
           </ul>
-          <br/>
-          <Typography
-            style={{ fontSize: "1.4rem", fontWeight: "500" }}
-          >
+          <Typography style={{ fontSize: "1.5rem"}} className="poppins">
             Certifications
           </Typography>
           <DividerSmall />
@@ -78,6 +63,7 @@ const MeetNawaz = () => (
               listStyleType: "disc",
               paddingLeft: "1.5em",
             }}
+            className="nunito"
           >
             <li>Academy of General Dentistry</li>
             <li>Invisalign</li>
