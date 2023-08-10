@@ -24,7 +24,9 @@ const MobileNavbarMenuTab = (props) => {
                     )}
                 </ListItemButton>
             </ListItem>
-            {isOpen && children}
+            <div onClick={toggleMenuOpen}>
+                {isOpen && children}
+            </div>
         </>
     )
 }
