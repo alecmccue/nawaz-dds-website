@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FcdLogo from "@/components/Navbar/components/FcdLogo";
+import FcdLogo from "@/components/Navbar/FcdLogo";
 import NavbarMenuTab from "@/components/Navbar/DesktopNavbar/components/NavbarMenuTab";
 import NavbarTab from "@/components/Navbar/DesktopNavbar/components/NavbarTab";
 import PatientsMenu from "@/components/Navbar/DesktopNavbar/components/PatientsMenu";

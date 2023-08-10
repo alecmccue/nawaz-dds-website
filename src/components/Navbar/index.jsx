@@ -1,32 +1,33 @@
-import React, { useState } from "react";
-import { usePathname } from "next/navigation";
-import { AppBar, Toolbar } from "@mui/material";
-import { MenuIconWrapper, NavbarTabsWrapper } from "./styles";
-import FcdLogo from "./components/FcdLogo";
-import NavbarMenuTab from "./DesktopNavbar/components/NavbarMenuTab";
-import NavbarTab from "./DesktopNavbar/components/NavbarTab";
-import PatientsMenu from "./DesktopNavbar/components/PatientsMenu";
-import ServicesMenu from "./DesktopNavbar/components/ServicesMenu";
-import MenuIcon from '@mui/icons-material/Menu';
+import React, { useEffect, useState } from "react";
 import DesktopNavbar from "@/components/Navbar/DesktopNavbar";
+import MobileNavbar from "@/components/Navbar/MobileNavbar";
+import { AppBar, Toolbar } from "@mui/material";
 
 const Navbar = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
+    const updateScreenSize = () => {
+        setScreenWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', updateScreenSize);
+
+        return () => {
+            window.removeEventListener('resize', updateScreenSize);
+        };
+    }, []);
 
     return (
         <AppBar position="sticky" color="azure">
             <Toolbar>
-                {window.innerWidth > 1200
+                {screenWidth > 1200
                     ? <DesktopNavbar />
-                    : (
-                        <MenuIconWrapper>
-                            <MenuIcon />
-                        </MenuIconWrapper>
-                    )
+                    : <MobileNavbar />
                 }
             </Toolbar>
         </AppBar>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar
