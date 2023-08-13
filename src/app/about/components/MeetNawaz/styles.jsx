@@ -26,12 +26,7 @@ export const ImageWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   min-width: 20rem;
-  width:40%;
-`;
-
-export const Line = styled.div`
-  border: thin solid #00acb1;
-  width: 100%;
+  width: 40%;
 `;
 
 export const MeetNawazWrapper = styled.div`
@@ -40,6 +35,11 @@ export const MeetNawazWrapper = styled.div`
   background-color: #fafcfc;
   padding: 2rem;
   gap: 5rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const NawazImage = styled.img`
@@ -54,6 +54,7 @@ export const TextInnerWrapper = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
+    gap: 2rem;
   }
 `;
 
@@ -61,7 +62,11 @@ export const TextOuterWrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 75rem;
-  width:70%;
-  align-items:center;
-  justify-content:center;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;

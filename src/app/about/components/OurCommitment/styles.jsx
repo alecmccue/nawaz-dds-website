@@ -4,6 +4,10 @@ export const BackgroundImage = styled.img`
   height: 40rem;
   filter: brightness(35%);
   width: 100%;
+
+  @media (max-width: 1024px) {
+    height: 70rem;
+  }
 `;
 
 export const Divider = styled.div`
@@ -20,7 +24,6 @@ export const OurCommitmentWrapper = styled.div`
 
 export const OverlayCard = styled.div`
   align-items: center;
-  /* background-color: #ebf2f3; */
   border-radius: 2rem;
   display: flex;
   color: white;
@@ -35,4 +38,8 @@ export const OverlayCard = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   width: 60rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;

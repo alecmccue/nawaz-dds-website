@@ -9,12 +9,20 @@ export const LeftColumn = styled.div`
   justify-content: center;
   padding: 2rem;
   position: relative;
+
+  @media (max-width: 1024px) {
+    padding: 0 2rem;
+  }
 `;
 
 
 export const MeetTeamInnerWrapper = styled.div`
   display: flex;
   max-width: 100rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+  }
 `
 
 export const MeetTeamOuterWrapper = styled.div`
@@ -22,6 +30,10 @@ export const MeetTeamOuterWrapper = styled.div`
   color: black;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 2rem;
+  }
 `;
 
 export const RightColumn = styled.div`
@@ -31,7 +43,7 @@ export const RightColumn = styled.div`
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
 `;
 
 export const TeamImage = styled.img`

@@ -4,6 +4,11 @@ import { Typography } from "@mui/material";
 export const ColumnWrapper = styled.div`
   display: flex;
   gap: 3rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 0;
+  }
 `;
 
 export const IconWrapper = styled.div`
@@ -34,7 +39,11 @@ export const MarketingImage3 = styled.img`
 `;
 
 export const MapWrapper = styled.div`
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem;
+
+  @media (max-width: 1024px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 export const MarketingStatementWrapper = styled.div`
@@ -44,6 +53,11 @@ export const MarketingStatementWrapper = styled.div`
   flex-direction: column;
   gap: 3rem;
   padding: 2rem;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+    gap: 1rem;
+  }
 `;
 
 export const RightColumn = styled.div`
@@ -52,6 +66,11 @@ export const RightColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+
+  @media (max-width: 1024px) {
+    padding: 0 2rem;
+    gap: 1rem;
+  }
 `;
 
 export const StackItemText = styled(Typography)`
