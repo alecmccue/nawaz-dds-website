@@ -24,22 +24,20 @@ export const ColumnWrapper = styled(Box)`
 `
 
 export const FooterIconWrapper = styled.div`
-    border-radius: 50%;
-    border: thin solid #00ACB1;
-    padding: 0.4rem;
+  border-radius: 50%;
+  border: thin solid #00ACB1;
+  padding: 0.4rem;
 `
 
 export const FooterWraper = styled(Box)`
   display: flex;
   flex-direction: column;
-  background-color:#EBF2F3;
-  padding-top:1.5rem;
-`
+  background-color: #EBF2F3;
+  padding-top: 1.5rem;
 
-export const IconContainer = styled(Container)`
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+  @media (max-width: 1024px) {
+    padding-top: 0.5rem;
+  }
 `
 
 export const FCDLogo = styled.img`
@@ -55,7 +53,7 @@ export const FooterLink = styled(Link)`
 
 export const LowerBox = styled(Box)`
   display: flex;
-  max-width: full;
+  max-width: 100%;
   padding: 0.5rem 0.5rem 1rem 0.5rem;
   border-top: thin solid #FAFCFC;
   background-color: #D5E4E6;
@@ -70,6 +68,7 @@ export const LowerContainer = styled(Container)`
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
   }
 `
 
@@ -79,7 +78,7 @@ export const SocialWrapper = styled.div`
   margin-top: 0.5rem;
 `
 
-export const UpperBox = styled(Box)`
+export const UpperBox = styled.div`
   align-items: center;
   display: flex;
   padding: 1rem;
@@ -89,5 +88,6 @@ export const UpperBox = styled(Box)`
 
   @media (max-width: 1024px) {
     flex-direction: column;
+    gap: 2rem;
   }
 `

@@ -80,6 +80,8 @@ export const IntroWrapper = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
     padding: 0;
+    display: flex;
+    gap: 1rem;
   }
 `
 

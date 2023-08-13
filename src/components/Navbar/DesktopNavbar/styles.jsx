@@ -32,7 +32,4 @@ export const NavbarTabsWrapper = styled.div`
   justify-content: center;
   height: 4rem;
   align-items: center;
-
-  //@media (max-width: 1024px) {
-  //}
 `

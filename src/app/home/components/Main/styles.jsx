@@ -8,7 +8,6 @@ export const Description = styled(Typography)`
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  margin-top: 3rem;
   width: 688px;
 
   @media (max-width: 1024px) {
@@ -18,7 +17,7 @@ export const Description = styled(Typography)`
 
 export const DescriptionLists = styled.div`
   display: flex;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 50px;
@@ -29,27 +28,24 @@ export const DescriptionLists = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
-    white-space: pre-line;
   }
 `
 
 export const DescriptionSubtitle = styled(Typography)`
   color: #00acb1;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  height: 31px;
-  line-height: 95px;
+  height: 2rem;
   text-transform: uppercase;
 `
 
 export const DescriptionTitle = styled(Typography)`
   color: #000;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 500;
-  height: 31px;
-  line-height: 95px;
+  height: 2rem;
   text-transform: uppercase;
 `
 
@@ -58,11 +54,12 @@ export const DescriptionWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-left: 6rem;
+  padding-top: 2.5rem;
+  gap: 1rem;
   width: 100%;
 
   @media (max-width: 1024px) {
-    margin-left: 1rem;
-    padding: 0;
+    padding: 0 1rem;
   }
 `
 
@@ -99,6 +96,7 @@ export const MainWrapper = styled.div`
     flex-direction: column;
     padding: 0;
     height: fit-content;
+    gap: 2rem;
   }
 `
 
@@ -110,10 +108,11 @@ export const NawazImg = styled.div`
   flex-shrink: 0;
   height: auto;
   margin-top: 3rem;
-  width: 500px;
+  width: 31.25rem;
 
   @media (max-width: 1024px) {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 20rem;
+    margin-left: 3.5rem;
   }
 `
