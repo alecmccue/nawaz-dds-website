@@ -12,6 +12,12 @@ export const AccordionSummaryContentWrapper = styled.div`
   display: flex;
   gap: 4rem;
   margin-right: 2rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin-right: 0;
+    gap: 2rem;
+  }
 `;
 
 export const AccordionSummaryTextWrapper = styled.div`
@@ -33,6 +39,10 @@ export const ServiceAccordion = styled(Accordion)`
   &:hover {
     background-color: whitesmoke;
   }
+
+  @media (max-width: 1024px) {
+    padding: 0.5rem 0;
+  }
 `;
 
 export const ServiceImage = styled.img`
@@ -48,6 +58,11 @@ export const ServiceWrapper = styled.div`
   max-width: 80rem;
   padding: 1rem;
   scroll-margin-top: 8rem;
+
+  @media (max-width: 1024px) {
+    padding: 0.5rem;
+  }
+
 `;
 
 export const ServicesWrapper = styled.div`
@@ -56,4 +71,8 @@ export const ServicesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem;
+
+  @media (max-width: 1024px) {
+    padding: 1rem;
+  }
 `;
