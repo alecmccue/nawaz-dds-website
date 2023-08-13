@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
         <AppBar position="sticky" color="azure">
-            <Toolbar>
+            <Toolbar variant="dense" style={{ minHeight: "fit-content" }}>
                 {screenWidth > 1200
                     ? <DesktopNavbar />
                     : <MobileNavbar />

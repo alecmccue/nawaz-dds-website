@@ -6,6 +6,7 @@ import PatientsMenu from "@/components/Navbar/DesktopNavbar/components/PatientsM
 import ServicesMenu from "@/components/Navbar/DesktopNavbar/components/ServicesMenu";
 import { NavbarTabsWrapper } from "@/components/Navbar/DesktopNavbar/styles";
 import { usePathname } from "next/navigation";
+import { Toolbar } from "@mui/material";
 
 const DesktopNavbar = () => {
     const pathName = usePathname();
@@ -24,7 +25,7 @@ const DesktopNavbar = () => {
 
     return (
         <>
-            <FcdLogo />
+            <FcdLogo width="160" />
             <NavbarTabsWrapper className="nunito">
                 <NavbarTab
                     to="/"

@@ -1,7 +1,8 @@
 import { FcdLogoImage } from "../styles";
 import { useRouter } from "next/navigation";
 
-const FcdLogo = () => {
+const FcdLogo = (props) => {
+    const { width } = props
     const router = useRouter();
 
     const handleClick = () => {
@@ -10,7 +11,7 @@ const FcdLogo = () => {
 
     return (
         <div onClick={handleClick}>
-            <FcdLogoImage src="/FCD_logo.png" alt="FC&D Logo" />
+            <FcdLogoImage src="/FCD_logo.png" alt="FC&D Logo" width={width} />
         </div>
     );
 };
