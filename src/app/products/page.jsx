@@ -8,59 +8,57 @@ import Introduction from "./components/Introduction";
 import ZoomWhitening from "./components/ZoomWhitening";
 
 const animationVariant = {
-  hide: {
-    opacity: 0,
-    y: 50,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
+    hide: {
+        opacity: 0,
+        y: 50,
     },
-  },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+        },
+    },
 };
 
-const Products = () => {
-  return (
+const Products = () => (
     <ProductsWrapper>
-      <motion.div
-        initial="hide"
-        exit="hide"
-        whileInView="show"
-        variants={animationVariant}
-      >
-        <Introduction />
-      </motion.div>
+        <motion.div
+            initial="hide"
+            exit="hide"
+            whileInView="show"
+            variants={animationVariant}
+        >
+            <Introduction />
+        </motion.div>
 
-      <motion.div
-        initial="hide"
-        exit="hide"
-        whileInView="show"
-        variants={animationVariant}
-      >
-        <ZoomWhitening />
-      </motion.div>
+        <motion.div
+            initial="hide"
+            exit="hide"
+            whileInView="show"
+            variants={animationVariant}
+        >
+            <ZoomWhitening />
+        </motion.div>
 
-      <motion.div
-        initial="hide"
-        exit="hide"
-        whileInView="show"
-        variants={animationVariant}
-      >
-        <IntraoralScanner />
-      </motion.div>
+        <motion.div
+            initial="hide"
+            exit="hide"
+            whileInView="show"
+            variants={animationVariant}
+        >
+            <IntraoralScanner />
+        </motion.div>
 
-      <motion.div
-        initial="hide"
-        exit="hide"
-        whileInView="show"
-        variants={animationVariant}
-      >
-        <DigitalXray />
-      </motion.div>
+        <motion.div
+            initial="hide"
+            exit="hide"
+            whileInView="show"
+            variants={animationVariant}
+        >
+            <DigitalXray />
+        </motion.div>
     </ProductsWrapper>
-  );
-};
+)
 
 export default Products;

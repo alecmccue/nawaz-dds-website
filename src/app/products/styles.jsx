@@ -30,15 +30,42 @@ export const IntroductionWrapepr = styled.div`
   max-width: 80rem;
   padding: 2rem;
   text-align: center;
+
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+  }
 `;
 
-export const ProductWrapper = styled.div`
+export const ProductWrapperImageLeft = styled.div`
   border-radius: 1rem;
   box-shadow: rgba(135, 228, 219, 0.5) 0px 10px 10px -10px;
   display: flex;
   gap: 5rem;
   max-width: 80rem;
   padding: 2rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+`;
+
+export const ProductWrapperImageRight = styled.div`
+  border-radius: 1rem;
+  box-shadow: rgba(135, 228, 219, 0.5) 0px 10px 10px -10px;
+  display: flex;
+  gap: 5rem;
+  max-width: 80rem;
+  padding: 2rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
 `;
 
 export const ProductsWrapper = styled.div`
@@ -47,6 +74,10 @@ export const ProductsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media (max-width: 1024px) {
+    padding: 0 1rem;
+  }
 `;
 
 export const TextColumn = styled.div`

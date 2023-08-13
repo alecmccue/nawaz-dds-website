@@ -60,6 +60,10 @@ export const FormsWrapper = styled.div`
   padding: 2rem;
   align-items: center;
   gap: 3rem;
+
+  @media (max-width: 1024px) {
+    padding: 1rem 1rem 3rem 1rem;
+  }
 `;
 
 export const IntroWrapper = styled.div`
@@ -71,5 +75,8 @@ export const IntroWrapper = styled.div`
   background-color: #87e4db;
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  text-align: center;
+
+  @media (max-width: 1024px) {
+    padding: 1.5rem;
+  }
 `;
