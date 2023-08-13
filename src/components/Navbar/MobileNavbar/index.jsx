@@ -7,6 +7,7 @@ import MobileNavbarTab from "@/components/Navbar/MobileNavbar/components/MobileN
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { MenuIconWrapper } from "@/components/Navbar/styles";
 import MobileServicesMenu from "@/components/Navbar/MobileNavbar/components/MobileServicesMenu";
+import MobilePatientsMenu from "@/components/Navbar/MobileNavbar/components/MobilePatientsMenu";
 
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -29,14 +30,26 @@ const MobileNavbar = () => {
             >
                 <div style={{ width: 250 }}>
                     <List className="nunito">
-                        <MobileNavbarTab to="/" label="Home" />
-                        <MobileNavbarTab to="/about" label="About" />
+                        <MobileNavbarTab
+                            handleClick={toggleDrawer(false)}
+                            label="Home"
+                            to="/"
+                        />
+                        <MobileNavbarTab
+                            handleClick={toggleDrawer(false)}
+                            to="/about"
+                            label="About"
+                        />
                         <MobileNavbarMenuTab label="Services">
                             <MobileServicesMenu handleClose={toggleDrawer(false)} />
                         </MobileNavbarMenuTab>
-                        <MobileNavbarTab to="/products" label="Products" />
+                        <MobileNavbarTab
+                            handleClick={toggleDrawer(false)}
+                            to="/products"
+                            label="Products"
+                        />
                         <MobileNavbarMenuTab label="For Patients">
-
+                            <MobilePatientsMenu handleClose={toggleDrawer(false)} />
                         </MobileNavbarMenuTab>
                     </List>
                 </div>
