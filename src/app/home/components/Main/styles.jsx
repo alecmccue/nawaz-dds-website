@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 export const Description = styled(Typography)`
   color: #000;
@@ -20,15 +20,10 @@ export const DescriptionLists = styled.div`
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px;
   margin-bottom: 2rem;
   padding-left: 4rem;
   margin-top: 1rem;
-  width: 620px;
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
+  width: 100%;
 `
 
 export const DescriptionSubtitle = styled(Typography)`
@@ -63,23 +58,21 @@ export const DescriptionWrapper = styled.div`
   }
 `
 
-export const MainButton = styled.div`
+export const MainButton = styled(Button)`
+  align-items: center;
   background-color: #00acb1;
-  border-radius: 1rem;
-  border: 3px solid #00acb1;
   color: white;
+  cursor: pointer;
+  display: flex;
   font-size: 1.1rem;
   font-weight: 500;
-  margin-left: 2rem;
   margin-bottom: 4rem;
-  padding: 0.5rem 1.5rem 0.5rem 1.2rem;
+  margin-left: 2rem;
+  padding: 0.5rem 1.5rem;
   width: fit-content;
-  display: flex;
-  align-items: center;
 
   &:hover {
-    color: #000;
-    background-color: transparent;
+    background-color: #0099a0;
   }
 `
 
