@@ -111,7 +111,7 @@ export const NawazImg = styled.div`
   width: 31.25rem;
 
   @media (max-width: 1024px) {
-    width: 100%;
+    max-width: 18rem;
     height: 20rem;
     margin-left: 3.5rem;
   }
