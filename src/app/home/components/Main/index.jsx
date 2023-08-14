@@ -24,7 +24,7 @@ const Main = () => (
             </div>
             <div className="nunito">
                 <Description>
-                    Since its inception in 2007, Dr. Nawaz has been devoted to delivering excellent dental care at
+                    Since its opening in 2007, Dr. Nawaz has been devoted to delivering excellent dental care at
                     Family & Cosmetic Dentistry. Proficient in family and cosmetic dentistry, he creates tailored
                     treatment plans for each patient, ensuring the highest quality care in a welcoming environment
                     through his dedication to staying current with dental advancements.
