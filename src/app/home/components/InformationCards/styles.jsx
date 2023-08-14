@@ -30,6 +30,10 @@ export const InformationCard = styled(Card)`
   &:hover {
     background-color: whitesmoke;
   }
+
+  @media (max-width: 1024px) {
+    min-width: 20rem;
+  }
 `
 export const Border = styled.div`
   width: 6rem;

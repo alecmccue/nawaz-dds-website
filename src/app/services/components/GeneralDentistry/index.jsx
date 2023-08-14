@@ -1,6 +1,5 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "../../../fonts.css";
-import "../../../globals.css";
 import {
     AccordionDetails,
     AccordionSummary,

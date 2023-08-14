@@ -25,11 +25,14 @@ export const FAQContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 80%;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-bottom: 4rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 0 1rem;
+  }
 `;
 
 export const FAQTitle = styled(Typography)`
