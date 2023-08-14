@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
-import { Box, Container, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import Link from "next/link";
 
-export const ColumnBody = styled(Box)`
+export const ColumnBody = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -17,11 +17,17 @@ export const ColumnHeader = styled(Typography)`
   padding-bottom: 0.5rem;
 `
 
-export const ColumnWrapper = styled(Box)`
+export const ColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: fit-content;
 `
+
+export const Divider = styled.div`
+  height: 0.1rem;
+  background: #00acb1;
+  margin: 0 4rem;
+`;
 
 export const FooterIconWrapper = styled.div`
   border-radius: 50%;
@@ -29,10 +35,10 @@ export const FooterIconWrapper = styled.div`
   padding: 0.4rem;
 `
 
-export const FooterWraper = styled(Box)`
+export const FooterWrapper = styled.div`
+  background-color: #EBF2F3;
   display: flex;
   flex-direction: column;
-  background-color: #EBF2F3;
   padding-top: 1.5rem;
 
   @media (max-width: 1024px) {
@@ -51,19 +57,12 @@ export const FooterLink = styled(Link)`
   }
 `
 
-export const LowerBox = styled(Box)`
-  display: flex;
-  max-width: 100%;
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
-  border-top: thin solid #FAFCFC;
-  background-color: #D5E4E6;
-`
-
-export const LowerContainer = styled(Container)`
+export const LowerWrapper = styled(Container)`
   display: flex;
   justify-content: space-between;
   margin-top: 0.75rem;
   min-width: 100%;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -75,16 +74,17 @@ export const LowerContainer = styled(Container)`
 export const SocialWrapper = styled.div`
   display: flex;
   gap: 1rem;
+  justify-content: center;
   margin-top: 0.5rem;
 `
 
-export const UpperBox = styled.div`
+export const UpperWrapper = styled.div`
   align-items: center;
   display: flex;
-  padding: 1rem;
   gap: 5rem;
-  width: 100%;
   justify-content: center;
+  padding: 1rem;
+  width: 100%;
 
   @media (max-width: 1024px) {
     flex-direction: column;

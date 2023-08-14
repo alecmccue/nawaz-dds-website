@@ -6,21 +6,18 @@ import PatientsMenu from "@/components/Navbar/DesktopNavbar/components/PatientsM
 import ServicesMenu from "@/components/Navbar/DesktopNavbar/components/ServicesMenu";
 import { NavbarTabsWrapper } from "@/components/Navbar/DesktopNavbar/styles";
 import { usePathname } from "next/navigation";
-import { Toolbar } from "@mui/material";
 
 const DesktopNavbar = () => {
     const pathName = usePathname();
 
     // Services Menu
     const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
-    const handleServicesMouseEnter = (event) =>
-        setServicesAnchorEl(event.currentTarget);
+    const handleServicesMouseEnter = (event) => setServicesAnchorEl(event.currentTarget);
     const handleServicesClose = () => setServicesAnchorEl(null);
 
     // Patients Menu
     const [patientsAnchorEl, setPatientsAnchorEl] = useState(null);
-    const handlePatientsMouseEnter = (event) =>
-        setPatientsAnchorEl(event.currentTarget);
+    const handlePatientsMouseEnter = (event) => setPatientsAnchorEl(event.currentTarget);
     const handlePatientsClose = () => setPatientsAnchorEl(null);
 
     return (
