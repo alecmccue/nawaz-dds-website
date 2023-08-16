@@ -14,7 +14,7 @@ import { Typography } from "@mui/material";
 const MeetNawaz = () => (
     <MeetNawazWrapper>
         <ImageWrapper>
-            <NawazImage src="/dr-nawaz.png" alt="dr-nawaz" />
+            <NawazImage src="/nawaz-seated.jpg" alt="nawaz" />
         </ImageWrapper>
 
         <TextOuterWrapper>

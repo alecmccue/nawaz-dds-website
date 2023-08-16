@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 
 export const BackgroundImage = styled.div`
-  background: url(/clean-dental-office.jpg);
+  background: url(/nawaz-and-emad-working.jpg);
   background-color: azure;
   background-size: 100% 100%;
   background-repeat: no-repeat;

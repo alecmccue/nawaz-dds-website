@@ -28,7 +28,7 @@ const MeetTeam = () => (
                 </Typography>
             </LeftColumn>
             <RightColumn>
-                <TeamImage src="/dentist_team.jpg" alt="dr-nawaz" />
+                <TeamImage src="/team.jpg" alt="team" />
             </RightColumn>
         </MeetTeamInnerWrapper>
     </MeetTeamOuterWrapper>
