@@ -26,10 +26,10 @@ const VisitUs = () => (
                     }}
                 >
                     <div>
-                        <MarketingImage2 src="vertical.jfif" alt="office" />
+                        <MarketingImage2 src="outside_office.jpg" alt="office" />
                     </div>
                     <div>
-                        <MarketingImage3 src="office.jpg" alt="office" />
+                        <MarketingImage3 src="office_inside.jpg" alt="office" />
                     </div>
                 </div>
                 <div
@@ -42,13 +42,13 @@ const VisitUs = () => (
                 >
                     <div>
                         <MarketingImage2
-                            src="office.jpg"
+                            src="dental_chair.jpg"
                             alt="office"
                             style={{ borderTopRightRadius: "2rem" }}
                         />
                     </div>
                     <div>
-                        <MarketingImage3 src="office.jpg" alt="office" />
+                        <MarketingImage3 src="wall_picture.jpg" alt="office" />
                     </div>
                 </div>
             </LeftColumn>

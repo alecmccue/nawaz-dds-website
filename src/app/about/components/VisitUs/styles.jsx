@@ -21,7 +21,7 @@ export const LeftColumn = styled.div`
   display: flex;
   flex: 1;
   gap: 1rem;
-  padding: 2rem;
+  padding: 2rem 4rem;
   justify-content: center;
 `;
 
