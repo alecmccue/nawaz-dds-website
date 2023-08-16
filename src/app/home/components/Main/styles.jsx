@@ -94,7 +94,7 @@ export const MainWrapper = styled.div`
 `
 
 export const NawazImg = styled.div`
-  background: url(/nawaz.jpg), no-repeat;
+  background: url(/nawaz-profilepicture.png), no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
