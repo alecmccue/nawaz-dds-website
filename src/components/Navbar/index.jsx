@@ -4,7 +4,9 @@ import MobileNavbar from "@/components/Navbar/MobileNavbar";
 import { AppBar, Toolbar } from "@mui/material";
 
 const Navbar = () => {
-    const [screenWidth, setScreenWidth] = useState(window ? window.innerWidth : 0);
+    const [screenWidth, setScreenWidth] = useState(
+        typeof window !== 'undefined' ? window.innerWidth : 0
+      );
 
     const updateScreenSize = () => {
         setScreenWidth(window.innerWidth);
@@ -20,7 +22,7 @@ const Navbar = () => {
 
     return (
         <AppBar position="sticky" color="azure">
-            <Toolbar variant="dense" style={{ minHeight: "fit-content" }}>
+            <Toolbar>
                 {screenWidth > 1200
                     ? <DesktopNavbar />
                     : <MobileNavbar />

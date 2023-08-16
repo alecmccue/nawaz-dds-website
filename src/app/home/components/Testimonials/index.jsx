@@ -74,7 +74,7 @@ const Testimonials = () => {
                     <Col>
                         <Review>
                             <Image
-                                src="/review_icon.png"
+                                src="/mastora.png"
                                 width={100}
                                 height={100}
                                 alt="profile picture"
@@ -102,7 +102,7 @@ const Testimonials = () => {
                     <Col>
                         <Review>
                             <Image
-                                src="/review_icon.png"
+                                src="/airbendersllc.png"
                                 width={100}
                                 height={100}
                                 alt="profile picture"
@@ -154,7 +154,7 @@ const Testimonials = () => {
                                 <Col>
                                     <Review>
                                         <Image
-                                            src="/review_icon.png"
+                                            src="/huongc.png"
                                             width={100}
                                             height={100}
                                             alt="profile picture"
@@ -190,7 +190,7 @@ const Testimonials = () => {
                                 <Col>
                                     <Review>
                                         <Image
-                                            src="/review_icon.png"
+                                            src="/khaled.png"
                                             width={100}
                                             height={100}
                                             alt="profile picture"
@@ -224,7 +224,7 @@ const Testimonials = () => {
                                 <Col>
                                     <Review>
                                         <Image
-                                            src="/review_icon.png"
+                                            src="/aprils.png"
                                             width={100}
                                             height={100}
                                             alt="profile picture"
