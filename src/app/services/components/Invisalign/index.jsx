@@ -26,17 +26,17 @@ const Invisalign = () => (
           <ServiceImage alt="Invisalign" src="/invisalign.jpg" />
           <AccordionSummaryTextWrapper>
             <Typography style={{ fontSize: "2.2rem" }} className="poppins">
-              Invisalign
+              Invisalign®
             </Typography>
             <Border />
             <Typography style={{ fontSize: "1.3rem" }} className="nunito">
-              Invisalign is a discreet and convenient orthodontic treatment that
-              utilizes clear, custom-made aligners to gradually shift teeth into
-              desired positions. With their virtually invisible appearance and
-              comfortable fit, Invisalign appeals to individuals seeking a more
-              aesthetically pleasing option than traditional braces. The
-              removable aligners also allow for easy oral hygiene maintenance
-              and the freedom to enjoy favorite foods during treatment.
+              Invisalign® is the clear way to straighten your teeth. It
+              gradually moves your teeth through a series of custom-made,
+              removable, nearly invisible aligners. You can eat anything you
+              want and it is removable for good hygiene. Invisalign® makes it
+              possible to do virtually everything regular braces do ... but do
+              it with far more comfort, fewer appointments, no eating
+              restrictions (none!), and without anyone noticing.
             </Typography>
           </AccordionSummaryTextWrapper>
         </AccordionSummaryContentWrapper>
@@ -45,7 +45,7 @@ const Invisalign = () => (
       <AccordionDetails>
         <List>
           <AccordionDetailsHeader className="poppins">
-            Benefits of Invisalign:
+            Virtually Invisible:
           </AccordionDetailsHeader>
 
           <ListItem>
@@ -53,41 +53,24 @@ const Invisalign = () => (
               primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
             >
-              Discreet Appearance:One of the primary benefits of Invisalign is
-              its virtually invisible appearance. The clear aligners are hardly
-              noticeable when worn, allowing individuals to undergo teeth
-              straightening discreetly, without drawing attention to their
-              orthodontic treatment.
+              Instead of using wire and brackets, Invisalign® uses smooth, clear
+              plastic trays -- called aligners -- which are virtually invisible.
+              No need to hide your smile while straightening your teeth. Gradual
+              and Precise Tooth Movement: The clear aligners work gradually to
+              shift teeth into the desired positions. As patients progress
+              through the treatment plan, new sets of aligners are provided to
+              continue the gentle adjustment of teeth, achieving precise and
+              predictable results.
               <br />
               <br />
-              Comfortable and Customized Fit: Comfortable and Customized Fit:
-              Invisalign aligners are custom-made for each patient using
-              advanced 3D imaging technology. They are designed to fit snugly
-              over the teeth, ensuring a comfortable experience throughout the
-              treatment journey.
-              <br />
-              <br />
-              Gradual and Precise Tooth Movement: The clear aligners work
-              gradually to shift teeth into the desired positions. As patients
-              progress through the treatment plan, new sets of aligners are
-              provided to continue the gentle adjustment of teeth, achieving
-              precise and predictable results.
-              <br />
-              <br />
-              Removable Aligners: Unlike traditional braces that are fixed to
-              the teeth, Invisalign aligners are removable. This feature grants
-              individuals the freedom to take out the aligners during meals,
-              allowing them to enjoy their favorite foods without restrictions.
-              <br />
-              <br />
-              Improved Oral Hygiene: With the ability to remove the aligners,
+              With the ability to remove the aligners,
               maintaining good oral hygiene becomes more manageable. Patients
               can brush and floss their teeth as usual, preventing the buildup
               of plaque and ensuring healthier gums and teeth throughout the
               treatment.
               <br />
               <br />
-              Fewer Orthodontic Visits: In many cases, Invisalign treatment
+              In many cases, Invisalign treatment
               requires fewer visits to the orthodontist compared to traditional
               braces. Patients receive multiple sets of aligners at once and can
               switch to the next set at home, reducing the need for frequent
@@ -96,27 +79,16 @@ const Invisalign = () => (
           </ListItem>
 
           <AccordionDetailsHeader className="poppins">
-            Does Invisalign Work?
+            Confortable:
           </AccordionDetailsHeader>
           <ListItem>
             <ListItemText
               primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
             >
-              Yes, Invisalign is an effective orthodontic treatment for many
-              individuals. The clear aligners exert gentle and controlled forces
-              on the teeth, gradually moving them into proper alignment. The
-              treatment is suitable for various orthodontic issues, such as
-              crowding, gaps, overbite, underbite, and crossbite. However, the
-              success of Invisalign depends on consistent wear and adherence to
-              the treatment plan.
-              <br />
-              <br />
-              Patients must wear their aligners for the recommended 20-22 hours
-              per day and switch to the next set of aligners as instructed by
-              their orthodontist. Regular follow-ups with the orthodontist will
-              ensure that the treatment progresses as planned, leading to
-              successful and lasting results.
+              The smooth trays do not cause the discomfort & abrasions
+              associated with the wire & brackets used with regular metal braces
+              ... which also means less time at the dentist getting adjustments.
             </ListItemText>
           </ListItem>
 
@@ -136,10 +108,12 @@ const Invisalign = () => (
               aligners as prescribed.
               <br />
               <br />
-              Invisalign is often a preferred choice for teenagers and adults
-              who desire a more discreet and comfortable treatment option.
-              However, patients with complex orthodontic needs may still require
-              traditional braces for the most effective outcome.
+              To discover if Invisalign® is right for you, please call Dr. Nawaz
+              at (703) 430-3838. For more information, please visit the
+              <a href="https://www.invisalign.com/" style={{ color: "blue" }}>
+                {" "}
+                Invisalign website!
+              </a>
             </ListItemText>
           </ListItem>
         </List>

@@ -30,14 +30,12 @@ const RootCanal = () => (
             </Typography>
             <Border />
             <Typography style={{ fontSize: "1.3rem" }} className="nunito">
-              Root canals are dental procedures performed to save severely
-              damaged or infected teeth from extraction. During the treatment,
-              the dentist removes the infected or inflamed dental pulp from the
-              tooth's interior, cleans and disinfects the root canal system, and
-              seals it with a biocompatible material. Afterward, a dental crown
-              is typically placed over the treated tooth to protect and restore
-              its function, allowing patients to retain their natural teeth and
-              alleviate pain caused by dental infections.
+              Root Canal therapy refers to the process by which a dentist treats
+              the inner aspects of a tooth, specifically that area inside a
+              tooth that is occupied by its "pulp tissue." Most people would
+              probably refer to a tooth's pulp tissue as its "nerve." While a
+              tooth's pulp tissue does contain nerve fibers it is also composed
+              of arteries, veins, lymph vessels, and connective tissue.
             </Typography>
           </AccordionSummaryTextWrapper>
         </AccordionSummaryContentWrapper>
@@ -53,38 +51,14 @@ const RootCanal = () => (
               primaryTypographyProps={{ fontSize: "1.3rem" }}
               className="nunito"
             >
-              Root canals are dental procedures performed to save severely
-              damaged or infected teeth from extraction. When a tooth's pulp,
-              which contains nerves, blood vessels, and connective tissues,
-              becomes infected or inflamed due to deep decay, cracks, or trauma,
-              it can cause severe pain and lead to tooth loss if left untreated.
-              The purpose of a root canal is to remove the infected or inflamed
-              pulp, clean and disinfect the root canal system, and seal it to
-              prevent further infection. By doing so, the natural tooth can be
-              retained, and the patient's oral health can be restored.
-            </ListItemText>
-          </ListItem>
-
-          <AccordionDetailsHeader className="poppins">
-            Procedure and Process:
-          </AccordionDetailsHeader>
-          <ListItem>
-            <ListItemText
-              primaryTypographyProps={{ fontSize: "1.3rem" }}
-              className="nunito"
-            >
-              The root canal procedure typically involves several steps. First,
-              the dentist numbs the area around the affected tooth to ensure the
-              patient's comfort during the treatment. Then, they create a small
-              access hole in the tooth's crown to reach the pulp chamber and
-              root canals. Using specialized instruments, the infected pulp is
-              carefully removed, and the root canals are cleaned and shaped to
-              remove any debris or bacteria. Once the canals are thoroughly
-              cleaned, they are filled with a biocompatible material, usually
-              gutta-percha, to seal the root canals. Finally, the access hole is
-              sealed with a temporary filling, and after a healing period, a
-              dental crown is placed over the treated tooth to protect and
-              restore its function.
+              You could say that the purpose of root canal treatment is to
+              create an end result where the tissues that surround a tooth's
+              root will maintain a healthy status despite the fact that the
+              tooth's nerve has undergone degenerative changes. Specifically, we
+              mean that the tissues surrounding a tooth's root are not affected
+              by bacterial infection and/or irritating substances leaking from
+              those inner aspects of the tooth originally occupied by the
+              tooth's nerve tissue.
             </ListItemText>
           </ListItem>
 
