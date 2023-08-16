@@ -21,6 +21,17 @@ const animationVariant = {
     },
   },
 };
+const animationVariant2 = {
+  hide: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 const Home = () => {
   return (
     <HomeWrapper>
@@ -28,7 +39,7 @@ const Home = () => {
         initial="hide"
         exit="hide"
         whileInView="show"
-        variants={animationVariant}
+        variants={animationVariant2}
       >
         <Intro />
       </motion.div>
