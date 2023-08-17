@@ -1,6 +1,7 @@
+import React from "react";
 import Link from "next/link";
-import { ViewAllReviewsWrapper } from "@/app/home/components/Testimonials/ViewAllReviewsButton/styles";
 import { Button } from "@mui/material";
+import { ViewAllReviewsWrapper } from "./styles";
 
 const ViewAllReviewsButton = () => (
     <ViewAllReviewsWrapper>
