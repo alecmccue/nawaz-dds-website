@@ -22,7 +22,7 @@ const Intro = () => {
 
     return (
         <>
-            <BackgroundImage style={{ display: "flex" }}>
+            <BackgroundImage>
                 <IntroWrapper>
                     <div className="arvo">
                         <IntroTitle>Feel Good About</IntroTitle>

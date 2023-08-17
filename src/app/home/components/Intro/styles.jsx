@@ -6,8 +6,9 @@ export const BackgroundImage = styled.div`
   background-color: azure;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  display: flex;
   flex-shrink: 0;
-  height: 700px;
+  height: 42rem;
   width: 100%;
 `
 
