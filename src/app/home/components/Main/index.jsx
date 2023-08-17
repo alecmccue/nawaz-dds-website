@@ -1,5 +1,7 @@
 import React from "react";
 import "../../../fonts.css";
+import Link from "next/link";
+import { StarSharp } from "@mui/icons-material";
 import {
     Description,
     DescriptionWrapper,
@@ -10,8 +12,6 @@ import {
     MainWrapper,
     NawazImg,
 } from "./styles";
-import Link from "next/link";
-import { StarSharp } from "@mui/icons-material";
 
 const Main = () => (
     <MainWrapper>

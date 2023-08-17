@@ -8,7 +8,7 @@ export const Description = styled(Typography)`
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  width: 688px;
+  width: 43rem;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -23,7 +23,7 @@ export const DescriptionLists = styled.div`
   margin-bottom: 2rem;
   padding-left: 4rem;
   margin-top: 1rem;
-  width: 100%;
+  width: 43rem;
 `
 
 export const DescriptionSubtitle = styled(Typography)`
@@ -51,7 +51,7 @@ export const DescriptionWrapper = styled.div`
   padding-left: 6rem;
   padding-top: 2.5rem;
   gap: 1rem;
-  width: 100%;
+  width: fit-content;
 
   @media (max-width: 1024px) {
     padding: 0 1rem;

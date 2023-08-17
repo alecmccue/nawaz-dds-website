@@ -4,7 +4,7 @@ import { Accordion, Typography } from "@mui/material";
 export const Divider = styled.div`
   background: #00acb1;
   height: 8px;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   width: 12rem;
 `;
 
