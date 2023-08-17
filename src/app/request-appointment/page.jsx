@@ -1,20 +1,24 @@
 "use client"
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { RequestAppointmentForm } from "./styles";
+import { RequestAppointmentForm, RequestAppointmentWrapper } from "./styles";
+import { Button, TextField } from "@mui/material";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import DatePickerInput from "@/app/request-appointment/DatePickerInput";
 
 const RequestAppointment = () => {
     const form = useRef();
+
     const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY
     const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID
     const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID
 
-    console.log(publicKey)
+
     const sendEmail = (e) => {
         e.preventDefault();
 
-        console.log(publicKey)
         emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             .then((result) => {
                 console.log(result.text);
@@ -24,17 +28,34 @@ const RequestAppointment = () => {
     };
 
     return (
-        <RequestAppointmentForm ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="name" />
-            <label>Email</label>
-            <input type="text" name="phone_number" />
-            <label>Appointment Date</label>
-            <input type="text" name="appointment_date_time" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-        </RequestAppointmentForm>
+        <RequestAppointmentWrapper>
+            <RequestAppointmentForm
+                id="appointment-request-form"
+                ref={form}
+                onSubmit={sendEmail}
+            >
+                <TextField
+                    label="Name"
+                    name="name"
+                    variant="standard"
+                />
+                <TextField
+                    label="Phone Number"
+                    name="phone_number"
+                    variant="standard"
+                />
+                <DatePickerInput />
+                <TextField
+                    label="Reason for Appointment"
+                    name="message"
+                    variant="standard"
+                    multiline
+                />
+                <Button type="submit">
+                    Send
+                </Button>
+            </RequestAppointmentForm>
+        </RequestAppointmentWrapper>
     );
 }
 
