@@ -37,6 +37,7 @@ export const IntroductionWrapepr = styled.div`
 `;
 
 export const ProductWrapperImageLeft = styled.div`
+  background-color: #fafcfc;
   border-radius: 1rem;
   box-shadow: rgba(135, 228, 219, 0.5) 0px 10px 10px -10px;
   display: flex;
@@ -53,6 +54,7 @@ export const ProductWrapperImageLeft = styled.div`
 `;
 
 export const ProductWrapperImageRight = styled.div`
+  background-color: #fafcfc;
   border-radius: 1rem;
   box-shadow: rgba(135, 228, 219, 0.5) 0px 10px 10px -10px;
   display: flex;
@@ -70,7 +72,6 @@ export const ProductWrapperImageRight = styled.div`
 
 export const ProductsWrapper = styled.div`
   align-items: center;
-  background-color: #fafcfc;
   display: flex;
   flex-direction: column;
   gap: 2rem;

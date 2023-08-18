@@ -23,11 +23,9 @@ const Intro = () => {
     return (
         <>
             <BackgroundImage>
-                <IntroWrapper>
-                    <div className="arvo">
-                        <IntroTitle>Feel Good About</IntroTitle>
-                        <IntroSubtitle>Your Smile</IntroSubtitle>
-                    </div>
+                <IntroWrapper className="arvo">
+                    <IntroTitle>Feel Good About</IntroTitle>
+                    <IntroSubtitle>Your Smile</IntroSubtitle>
                     <ContactButtonsWrapper className="poppins">
                         <ContactButton>
                             <PhoneIcon />
