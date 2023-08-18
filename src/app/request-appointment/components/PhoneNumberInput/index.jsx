@@ -3,9 +3,13 @@ import { matchIsValidTel } from "mui-tel-input";
 import { StyledMuiTelInput } from "../../styles";
 
 const PhoneNumberInput = (props) => {
-    const { name } = props
+    const {
+        isPhoneNumberError,
+        name,
+        setIsPhoneNumberError
+    } = props
+
     const [phone, setPhone] = useState('')
-    const [isError, setIsError] = useState(false)
 
     const handleChange = (phoneNumberInput) => {
         setPhone(phoneNumberInput)
@@ -16,18 +20,18 @@ const PhoneNumberInput = (props) => {
         const isValidPhoneNumber = matchIsValidTel(phoneNumberFormatted)
 
         if(!isValidPhoneNumber) {
-            setIsError(true)
+            setIsPhoneNumberError(true)
         } else {
-            setIsError(false)
+            setIsPhoneNumberError(false)
         }
     }
 
     return (
         <StyledMuiTelInput
             defaultCountry="US"
-            error={isError}
+            error={isPhoneNumberError}
             forceCallingCode
-            helperText={isError ? "Invalid Phone Number" : ""}
+            helperText={isPhoneNumberError ? "Invalid Phone Number" : ""}
             label="Phone Number"
             name={name}
             onBlur={validatePhoneNumber}
