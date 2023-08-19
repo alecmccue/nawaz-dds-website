@@ -8,7 +8,6 @@ export const Description = styled(Typography)`
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  width: 43rem;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -33,6 +32,11 @@ export const DescriptionSubtitle = styled(Typography)`
   font-weight: 500;
   height: 2rem;
   text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    text-align:center;
+    font-size:1.2rem;
+  }
 `
 
 export const DescriptionTitle = styled(Typography)`
@@ -42,6 +46,11 @@ export const DescriptionTitle = styled(Typography)`
   font-weight: 500;
   height: 2rem;
   text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    text-align:center;
+    font-size:1.5rem;
+  }
 `
 
 export const DescriptionWrapper = styled.div`

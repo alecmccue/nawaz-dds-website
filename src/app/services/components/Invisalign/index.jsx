@@ -63,18 +63,16 @@ const Invisalign = () => (
               predictable results.
               <br />
               <br />
-              With the ability to remove the aligners,
-              maintaining good oral hygiene becomes more manageable. Patients
-              can brush and floss their teeth as usual, preventing the buildup
-              of plaque and ensuring healthier gums and teeth throughout the
-              treatment.
+              With the ability to remove the aligners, maintaining good oral
+              hygiene becomes more manageable. Patients can brush and floss
+              their teeth as usual, preventing the buildup of plaque and
+              ensuring healthier gums and teeth throughout the treatment.
               <br />
               <br />
-              In many cases, Invisalign treatment
-              requires fewer visits to the orthodontist compared to traditional
-              braces. Patients receive multiple sets of aligners at once and can
-              switch to the next set at home, reducing the need for frequent
-              office appointments.
+              In many cases, Invisalign treatment requires fewer visits to the
+              orthodontist compared to traditional braces. Patients receive
+              multiple sets of aligners at once and can switch to the next set
+              at home, reducing the need for frequent office appointments.
             </ListItemText>
           </ListItem>
 
