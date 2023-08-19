@@ -25,8 +25,11 @@ export const ImageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 20rem;
-  width: 28rem;
+  /* min-width: 20rem; */
+  width: 25rem;
+  @media (max-width: 1024px) {
+    width:100%;
+  }
 `;
 
 export const MeetNawazWrapper = styled.div`
