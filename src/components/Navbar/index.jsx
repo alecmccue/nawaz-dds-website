@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import DesktopNavbar from "@/components/Navbar/DesktopNavbar";
 import MobileNavbar from "@/components/Navbar/MobileNavbar";
 import { AppBar, Toolbar } from "@mui/material";
+import dynamic from "next/dynamic";
 
 const Navbar = () => {
     const [screenWidth, setScreenWidth] = useState(
@@ -32,4 +33,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default dynamic (() => Promise.resolve(Navbar), {ssr: false})
