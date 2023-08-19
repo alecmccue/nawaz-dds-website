@@ -60,8 +60,7 @@ export const DescriptionWrapper = styled.div`
 
 export const MainButton = styled(Button)`
   align-items: center;
-  background-color: #00acb1;
-  color: white;
+  color: #fefefe;
   cursor: pointer;
   display: flex;
   font-size: 1.1rem;
@@ -69,10 +68,12 @@ export const MainButton = styled(Button)`
   margin-bottom: 4rem;
   margin-left: 2rem;
   padding: 0.5rem 1.5rem;
+  background-color: #00acb1 !important;
   width: fit-content;
 
   &:hover {
-    background-color: #0099a0;
+    background-color: #01868d !important;
+    color:black;
   }
 `
 
