@@ -27,7 +27,6 @@ export const FAQContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-bottom: 4rem;
-  width: 55rem;
 
   @media (max-width: 1024px) {
     width: 100%;

@@ -5,4 +5,9 @@ export const ViewAllReviewsWrapper = styled.div`
   display: flex;
   justify-content: end;
   padding: 0 1.5rem;
+
+  @media (max-width: 1024px) {
+    justify-content:center;
+    margin: auto;
+  }
 `

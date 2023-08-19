@@ -22,7 +22,7 @@ export const DescriptionLists = styled.div`
   margin-bottom: 2rem;
   padding-left: 4rem;
   margin-top: 1rem;
-  width: 43rem;
+  /* width: 43rem; */
 `
 
 export const DescriptionSubtitle = styled(Typography)`
@@ -74,7 +74,6 @@ export const MainButton = styled(Button)`
   display: flex;
   font-size: 1.1rem;
   font-weight: 500;
-  margin-bottom: 4rem;
   margin-left: 2rem;
   padding: 0.5rem 1.5rem;
   background-color: #00acb1 !important;
@@ -92,7 +91,6 @@ export const MainWrapper = styled.div`
   height: fit-content;
   justify-content: center;
   padding: 2.5rem 6rem 2.5rem 6rem;
-  position: relative;
   width: 100%;
 
   @media (max-width: 1024px) {

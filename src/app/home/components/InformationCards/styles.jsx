@@ -23,7 +23,6 @@ export const InformationCard = styled(Card)`
   flex-direction: column;
   gap: 1rem;
   height: 18.125rem;
-  min-width: 22.5rem;
   padding: 2rem;
   font-size: 1.1rem;
 
@@ -32,7 +31,7 @@ export const InformationCard = styled(Card)`
   }
 
   @media (max-width: 1024px) {
-    min-width: 20rem;
+    width:100%;
   }
 `
 export const Border = styled.div`
