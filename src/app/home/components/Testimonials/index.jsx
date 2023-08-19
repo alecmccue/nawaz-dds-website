@@ -147,7 +147,7 @@ const Testimonials = () => {
                                 <Col>
                                     <Review>
                                         <Image
-                                            src="/huongc.png"
+                                            src="/review_icon.png"
                                             width={100}
                                             height={100}
                                             alt="profile picture"
