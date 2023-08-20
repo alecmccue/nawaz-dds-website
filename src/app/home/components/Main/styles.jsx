@@ -34,8 +34,8 @@ export const DescriptionSubtitle = styled(Typography)`
   text-transform: uppercase;
 
   @media (max-width: 1024px) {
-    text-align:center;
-    font-size:1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
   }
 `
 
@@ -48,8 +48,8 @@ export const DescriptionTitle = styled(Typography)`
   text-transform: uppercase;
 
   @media (max-width: 1024px) {
-    text-align:center;
-    font-size:1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
 `
 
@@ -81,7 +81,7 @@ export const MainButton = styled(Button)`
 
   &:hover {
     background-color: #01868d !important;
-    color:black;
+    color: black;
   }
 `
 
@@ -95,7 +95,7 @@ export const MainWrapper = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 0;
+    padding: 4rem 0;
     height: fit-content;
     gap: 2rem;
   }
@@ -114,6 +114,7 @@ export const NawazImg = styled.div`
   @media (max-width: 1024px) {
     max-width: 18rem;
     height: 20rem;
-    margin-left: 3.5rem;
+    margin-left: 4rem;
+    margin-top: 0;
   }
 `

@@ -10,6 +10,13 @@ export const BackgroundImage = styled.div`
   flex-shrink: 0;
   height: 42rem;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    background: url(/office-portrait.jpg);
+    background-color: azure;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 `
 
 export const ContactButton = styled.div`

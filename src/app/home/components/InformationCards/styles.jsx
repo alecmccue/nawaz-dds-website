@@ -11,7 +11,7 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
   }
 `
 
@@ -31,7 +31,7 @@ export const InformationCard = styled(Card)`
   }
 
   @media (max-width: 1024px) {
-    width:100%;
+    width: 100%;
   }
 `
 export const Border = styled.div`
