@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 const Navbar = () => {
     const [screenWidth, setScreenWidth] = useState(
         typeof window !== 'undefined' ? window.innerWidth : 0
-      );
+    );
 
     const updateScreenSize = () => {
         setScreenWidth(window.innerWidth);
@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <AppBar position="sticky" color="azure">
-            <Toolbar>
+            <Toolbar variant="dense">
                 {screenWidth > 1200
                     ? <DesktopNavbar />
                     : <MobileNavbar />
@@ -33,4 +33,4 @@ const Navbar = () => {
     )
 }
 
-export default dynamic (() => Promise.resolve(Navbar), {ssr: false})
+export default dynamic(() => Promise.resolve(Navbar), { ssr: false })

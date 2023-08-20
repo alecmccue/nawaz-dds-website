@@ -17,12 +17,29 @@ export const IconWrapper = styled.div`
   padding: 0.5rem;
 `;
 
+export const ImageGridRow = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+
+  @media (max-width: 1024px) {
+    gap: 0.5rem;
+  }
+`
+
 export const LeftColumn = styled.div`
   display: flex;
   flex: 1;
   gap: 1rem;
   padding: 2rem 4rem;
   justify-content: center;
+  max-width: 45rem;
+
+  @media (max-width: 1024px) {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
 `;
 
 export const MarketingImage = styled.img`
@@ -66,6 +83,7 @@ export const RightColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  max-width: 50rem;
 
   @media (max-width: 1024px) {
     padding: 0 2rem;
@@ -81,7 +99,6 @@ export const StackItemText = styled(Typography)`
 
 export const StackItemWrapper = styled.div`
   align-items: center;
-  cursor: pointer;
   display: flex;
   flex-direction: row;
 `;

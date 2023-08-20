@@ -43,7 +43,10 @@ const MobileNavbar = () => {
                                 to="/about"
                                 label="About"
                             />
-                            <MobileNavbarMenuTab label="Services">
+                            <MobileNavbarMenuTab
+                                label="Services"
+                                isDrawerOpen={isOpen}
+                            >
                                 <MobileServicesMenu handleClose={toggleDrawer(false)} />
                             </MobileNavbarMenuTab>
                             <MobileNavbarTab
@@ -51,7 +54,10 @@ const MobileNavbar = () => {
                                 to="/products"
                                 label="Products"
                             />
-                            <MobileNavbarMenuTab label="For Patients">
+                            <MobileNavbarMenuTab
+                                label="For Patients"
+                                isDrawerOpen={isOpen}
+                            >
                                 <MobilePatientsMenu handleClose={toggleDrawer(false)} />
                             </MobileNavbarMenuTab>
                         </List>

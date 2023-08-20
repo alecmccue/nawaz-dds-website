@@ -14,7 +14,7 @@ const PrivacyPolicy = () => (
             <div>
                 <Head>Privacy Policy</Head>
                 <Body>
-                    This Privacy Policy outlines how DentalWebsite.com ("we," "us," or "our") maintains and respects the
+                    This Privacy Policy outlines how nawazdss.com maintains and respects the
                     privacy of visitors to our website. We are committed to safeguarding the personal information of our
                     users while providing a secure and informative online experience. Please read this Privacy Policy
                     carefully to understand our practices regarding your data and how we operate.
@@ -24,9 +24,10 @@ const PrivacyPolicy = () => (
             <div>
                 <Head>Collection and Use of Information</Head>
                 <Body>
-                    No User Data Collection: DentalWebsite.com does not collect any personally identifiable information
-                    (PII) such as names, email addresses, phone numbers, or any other personal data from visitors to our
-                    website.
+                    No User Data Collection: nawazdss.com may collect personally identifiable information (PII) such as
+                    names and phone numbers from visitors who request appointments with our office. This information is
+                    solely used for the purpose of scheduling appointments and communicating with the visitors about
+                    their appointments.
                     <br />
                     <br />
                     No Cookies: We do not use any cookies or similar tracking technologies to gather information about
@@ -75,15 +76,15 @@ const PrivacyPolicy = () => (
                 <Head>Contact Us</Head>
                 <Body>
                     If you have any questions, concerns, or feedback regarding this Privacy Policy or our practices,
-                    please contact us at privacy@dentalwebsite.com.
+                    please contact us at mirweissnawazdds@gmail.com.
                     <br />
                     <br />
-                    By using DentalWebsite.com, you acknowledge that you have read and understood this Privacy Policy
+                    By using nawazdss.com, you acknowledge that you have read and understood this Privacy Policy
                     and agree to its terms. If you do not agree with the terms of this Privacy Policy, please do not use
                     our website.
                     <br />
                     <br />
-                    This Privacy Policy was last updated on 7/4/2023.
+                    This Privacy Policy was last updated on 8/20/2023.
                 </Body>
             </div>
         </PrivacyPolicyInnerWrapper>

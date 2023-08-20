@@ -7,7 +7,7 @@ import {
     LeftColumn,
     MarketingImage2,
     MarketingImage3,
-    MapWrapper,
+    MapWrapper, ImageGridRow,
 } from "./styles";
 import { Typography } from "@mui/material";
 import Address from "./components/Address";
@@ -17,29 +17,15 @@ const VisitUs = () => (
     <MarketingStatementWrapper>
         <ColumnWrapper>
             <LeftColumn>
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "1rem",
-                        flex: 1,
-                    }}
-                >
+                <ImageGridRow>
                     <div>
                         <MarketingImage2 src="outside_office.jpg" alt="office" />
                     </div>
                     <div>
                         <MarketingImage3 src="office_inside.jpg" alt="office" />
                     </div>
-                </div>
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "1rem",
-                        flex: 1,
-                    }}
-                >
+                </ImageGridRow>
+                <ImageGridRow>
                     <div>
                         <MarketingImage2
                             src="dental_chair.jpg"
@@ -50,7 +36,7 @@ const VisitUs = () => (
                     <div>
                         <MarketingImage3 src="wall_picture.jpg" alt="office" />
                     </div>
-                </div>
+                </ImageGridRow>
             </LeftColumn>
 
             <RightColumn>
