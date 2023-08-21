@@ -47,6 +47,22 @@ export const CareCreditWrapper = styled.div`
   }
 `;
 
+export const InsuranceBanner = styled.div`
+  background: url(/insurance-banner.jpg);
+  background-color: azure;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-shrink: 0;
+  height: 30rem;
+  width: 100%;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    background: url(/insurance-banner-mobile.jpg);
+  }
+`
+
 export const InsuranceWrapper = styled.div`
   align-items: center;
   background-color: white;
@@ -64,13 +80,10 @@ export const InsuranceWrapper = styled.div`
 
 
 export const IntroWrapper = styled.div`
+  color: white;
   display: flex;
   flex-direction: column;
   max-width: 80rem;
-  text-align: center;
-  border-radius: 1rem;
-  background-color: #87e4db;
   padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   text-align: center;
 `;
