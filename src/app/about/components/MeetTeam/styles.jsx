@@ -30,6 +30,7 @@ export const MeetTeamOuterWrapper = styled.div`
   color: black;
   display: flex;
   justify-content: center;
+  padding: 2rem;
 
   @media (max-width: 1024px) {
     padding-bottom: 2rem;

@@ -12,6 +12,7 @@ export const AccordionSummaryContentWrapper = styled.div`
   display: flex;
   gap: 4rem;
   margin-right: 2rem;
+  align-items: center;
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -39,7 +40,7 @@ export const ServiceAccordion = styled(Accordion)`
   &:hover {
     background-color: whitesmoke;
   }
-  
+
   & .MuiAccordionSummary-gutters {
     display: flex;
     flex-direction: column;
@@ -53,7 +54,7 @@ export const ServiceAccordion = styled(Accordion)`
 
 export const ServiceImage = styled.img`
   border-radius: 2rem;
-  height: auto;
+  height: 16.5rem;
   width: 25rem;
 `;
 

@@ -25,10 +25,10 @@ export const ImageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* min-width: 20rem; */
+  max-width: 20rem;
   width: 25rem;
   @media (max-width: 1024px) {
-    width:100%;
+    width: 100%;
   }
 `;
 
@@ -36,7 +36,7 @@ export const MeetNawazWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: #fafcfc;
-  padding: 2rem;
+  padding: 4rem 2rem;
   gap: 5rem;
 
   @media (max-width: 1024px) {

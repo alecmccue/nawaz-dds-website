@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const BackgroundImage = styled.img`
-  height: 40rem;
+  height: 55rem;
   filter: brightness(35%);
   width: 100%;
 

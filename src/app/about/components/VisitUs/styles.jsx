@@ -4,6 +4,7 @@ import { Typography } from "@mui/material";
 export const ColumnWrapper = styled.div`
   display: flex;
   gap: 3rem;
+  justify-content: center;
 
   @media (max-width: 1024px) {
     flex-direction: column;
