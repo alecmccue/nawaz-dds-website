@@ -1,4 +1,11 @@
 import styled from "@emotion/styled";
+import { Typography } from "@mui/material";
+
+export const ApplyNowText = styled(Typography)`
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+`
 
 export const CareCreditButtonWrapper = styled.div`
   background-color: #008378;
@@ -34,12 +41,8 @@ export const CareCreditSignUpWrapper = styled.div`
 
 export const CareCreditWrapper = styled.div`
   align-items: center;
-  border-radius: 1rem;
-  box-shadow: rgba(135, 228, 219, 0.5) 0 10px 10px -10px;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 80rem;
+  gap: 5rem;
   padding: 2rem;
 
   @media (max-width: 1024px) {
@@ -77,7 +80,6 @@ export const InsuranceWrapper = styled.div`
     gap: 1rem;
   }
 `;
-
 
 export const IntroWrapper = styled.div`
   color: white;
