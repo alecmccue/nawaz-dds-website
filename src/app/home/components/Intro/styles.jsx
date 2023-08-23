@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 
 export const BackgroundImage = styled.div`
-  background: url(/nawaz-working.jpg);
+  background: url(/landing_main_picture.png);
   background-color: azure;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -11,8 +11,8 @@ export const BackgroundImage = styled.div`
   height: 42rem;
   width: 100%;
 
-  @media (max-width: 1024px) {
-    background: url(/office-portrait.jpg);
+  @media (max-width: 900px) {
+    background: url(/landing_main_picture_mobile.png);
     background-color: azure;
     background-size: 100% 100%;
     background-repeat: no-repeat;
