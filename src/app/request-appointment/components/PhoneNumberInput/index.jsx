@@ -6,10 +6,10 @@ const PhoneNumberInput = (props) => {
     const {
         isPhoneNumberError,
         name,
-        setIsPhoneNumberError
+        phone,
+        setIsPhoneNumberError,
+        setPhone,
     } = props
-
-    const [phone, setPhone] = useState('')
 
     const handleChange = (phoneNumberInput) => {
         setPhone(phoneNumberInput)
@@ -32,6 +32,7 @@ const PhoneNumberInput = (props) => {
             error={isPhoneNumberError}
             forceCallingCode
             helperText={isPhoneNumberError ? "Invalid Phone Number" : ""}
+            id="phone_number"
             label="Phone Number"
             name={name}
             onBlur={validatePhoneNumber}

@@ -10,9 +10,10 @@ import { Instructions, RequestAppointmentForm, RequestAppointmentWrapper, Title 
 
 const RequestAppointment = () => {
     const form = useRef();
-    const [isPhoneNumberError, setIsPhoneNumberError] = useState(false)
     const [isFormValid, setIsFormValid] = useState(false)
+    const [isPhoneNumberError, setIsPhoneNumberError] = useState(false)
     const [isSnackbarOpen, setIsSnackbarOpen] = useState(false)
+    const [phone, setPhone] = useState('')
     const [severity, setSeverity] = useState()
 
     const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY
@@ -41,6 +42,11 @@ const RequestAppointment = () => {
             setSeverity("error")
             setIsSnackbarOpen(true)
             console.log(e)
+        } finally {
+            document.getElementById("name").value = ""
+            document.getElementById("appointment_date_time").value = ""
+            document.getElementById("message").value = ""
+            setPhone("")
         }
     }
 
@@ -64,23 +70,27 @@ const RequestAppointment = () => {
                     onChange={validateForm}
                 >
                     <TextField
+                        id="name"
                         label="Name"
                         name="name"
-                        variant="standard"
                         required
+                        variant="standard"
                     />
                     <PhoneNumberInput
                         isPhoneNumberError={isPhoneNumberError}
                         name="phone_number"
+                        phone={phone}
+                        setPhone={setPhone}
                         setIsPhoneNumberError={setIsPhoneNumberError}
                     />
                     <DatePickerInput name="appointment_date_time" />
                     <TextField
+                        id="message"
                         label="Reason for Appointment"
-                        name="message"
-                        variant="standard"
-                        required
                         multiline
+                        name="message"
+                        required
+                        variant="standard"
                     />
                     <Button
                         style={{ marginTop: "2rem" }}
