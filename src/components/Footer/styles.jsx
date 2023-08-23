@@ -104,7 +104,6 @@ export const SocialWrapper = styled.div`
 `
 
 export const UpperWrapper = styled.div`
-  align-items: center;
   display: flex;
   gap: 5rem;
   height: 100%;
@@ -113,6 +112,7 @@ export const UpperWrapper = styled.div`
   width: 100%;
 
   @media (max-width: 1024px) {
+    align-items: center;
     flex-direction: column;
     gap: 2rem;
   }
