@@ -22,7 +22,7 @@ export const DownloadButtonWrapper = styled.div`
 `;
 
 export const FormBanner = styled.div`
-  background: url(/insurance-banner.jpg);
+  background: url(/patients_banner.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
