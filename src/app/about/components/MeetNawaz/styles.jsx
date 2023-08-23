@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   min-width: 20rem;
 `;
 
@@ -52,6 +51,7 @@ export const NawazImage = styled.img`
 `;
 
 export const TextInnerWrapper = styled.div`
+  align-items: center;
   display: flex;
   gap: 4rem;
 

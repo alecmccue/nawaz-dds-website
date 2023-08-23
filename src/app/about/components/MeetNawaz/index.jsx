@@ -19,24 +19,23 @@ const MeetNawaz = () => (
 
         <TextOuterWrapper>
             <TextInnerWrapper>
-                <Column>
+                <Column style={{ gap: "0.5rem", maxWidth: "40rem" }}>
                     <Typography style={{ fontSize: "3rem" }} className="poppins">
                         Dr. Mirweiss Nawaz
                     </Typography>
                     <Divider />
                     <Typography style={{ fontSize: "1.4rem" }} className="nunito">
-                        [REWRITE. FAMILY ORIENTED?]
-                        Since its establishment in 2007, Dr. Nawaz has been committed to
-                        delivering exceptional dental care at Family & Cosmetic Dentistry.
-                        With a focus on both family and cosmetic dentistry, he creates
-                        personalized treatment plans to cater to each patient's needs. Dr.
-                        Nawaz's dedication to staying at the forefront of dental
-                        advancements ensures that patients receive the highest standard of
-                        care in a warm and welcoming environment.
+                        Dr. Nawaz brings not only his extensive expertise in dentistry but also his nurturing role
+                        as a father to four wonderful kids, shaping his approach to patient care with compassion and
+                        understanding. He provides personalized attention for each patient, just as he does for his own
+                        children. Beyond the dental chair, Dr. Nawaz's passion for soccer translates to his
+                        team-oriented spirit, harmonizing with his dental team to deliver optimal care. His commitment
+                        to teamwork, precision, and excellence, inspired by his love for the sport, resonates through
+                        every facet of his practice.
                     </Typography>
                 </Column>
 
-                <Column>
+                <Column style={{ gap: "2rem" }}>
                     <div>
                         <Typography style={{ fontSize: "1.5rem" }} className="poppins">
                             Education
