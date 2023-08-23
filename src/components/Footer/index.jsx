@@ -3,10 +3,10 @@ import Email from "./components/Email";
 import {
     ColumnBody,
     ColumnHeader,
-    ColumnWrapper, Divider,
+    ColumnWrapper, ContactButton, Divider,
     FCDLogo,
     FooterLink,
-    FooterWrapper,
+    FooterWrapper, LeftColumnWrapper,
     LowerBox,
     LowerWrapper,
     SocialWrapper,
@@ -18,6 +18,7 @@ import PhoneNumber from "./components/PhoneNumber";
 import useGoogleMapModal from "@/hooks/useGoogleMapModal";
 import GoogleMapsModal from "../GoogleMapModal";
 import GoogleReviews from "./components/GoogleReviews";
+import RequestAppointment from "@/components/RequestAppointment";
 
 const Footer = () => {
     const {
@@ -30,13 +31,16 @@ const Footer = () => {
         <>
             <FooterWrapper component="footer">
                 <UpperWrapper>
-                    <ColumnWrapper sx={{ alignItems: "center" }}>
-                        <FCDLogo src="/FCD_logo.png" alt="logo" />
-                        <SocialWrapper>
-                            <Instagram />
-                            <GoogleReviews />
-                        </SocialWrapper>
-                    </ColumnWrapper>
+                    <LeftColumnWrapper>
+                        <div>
+                            <FCDLogo src="/FCD_logo.png" alt="logo" />
+                            <SocialWrapper>
+                                <Instagram />
+                                <GoogleReviews />
+                            </SocialWrapper>
+                        </div>
+                        <RequestAppointment fontSize="0.8rem" iconSize="small" padding="0.5rem 1rem" />
+                    </LeftColumnWrapper>
 
                     <ColumnWrapper>
                         <ColumnHeader className="nunito">Our Office</ColumnHeader>

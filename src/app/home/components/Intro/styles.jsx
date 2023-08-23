@@ -32,10 +32,11 @@ export const ContactButton = styled.div`
   gap: 0.5rem;
   margin-top: 3rem;
   padding: 0.5rem 1.5rem;
-  width: 15rem;
+  width: fit-content;
 
   &:hover {
-    background-color: transparent;
+    background-color: #01868d;
+    border: 2px solid #01868d;
   }
 
   @media (max-width: 1024px) {

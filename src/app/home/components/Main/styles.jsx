@@ -81,7 +81,6 @@ export const MainButton = styled(Button)`
 
   &:hover {
     background-color: #01868d !important;
-    color: black;
   }
 `
 

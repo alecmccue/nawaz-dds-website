@@ -2,7 +2,7 @@ import React from "react";
 import '../../../fonts.css'
 import GoogleMapsModal from "@/components/GoogleMapModal";
 import MapIcon from "@mui/icons-material/Map";
-import PhoneIcon from "@mui/icons-material/Phone";
+import RequestAppointment from "@/components/RequestAppointment";
 import useGoogleMapModal from "@/hooks/useGoogleMapModal";
 import {
     BackgroundImage,
@@ -20,6 +20,7 @@ const Intro = () => {
         isDirectionsModalOpen
     } = useGoogleMapModal()
 
+
     return (
         <>
             <BackgroundImage>
@@ -27,10 +28,7 @@ const Intro = () => {
                     <IntroTitle>Feel Good About</IntroTitle>
                     <IntroSubtitle>Your Smile</IntroSubtitle>
                     <ContactButtonsWrapper className="poppins">
-                        <ContactButton>
-                            <PhoneIcon />
-                            (703) 430 3838
-                        </ContactButton>
+                        <RequestAppointment fontSize="1.25rem" marginTop="3rem" padding="0.5rem 1.5rem" />
                         <ContactButton onClick={handleOpenDirectionsModal}>
                             <MapIcon />
                             Get Directions

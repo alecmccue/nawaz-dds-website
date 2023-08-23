@@ -18,6 +18,13 @@ const PatientsMenu = ({ anchorEl, handleClose }) => {
             <DropdownMenuItem>
                 <PatientsMenuButton
                     handleClose={handleClose}
+                    label="Request Appointment"
+                    to="/request-appointment"
+                />
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+                <PatientsMenuButton
+                    handleClose={handleClose}
                     label="Patient Forms"
                     to="/patients/forms"
                 />

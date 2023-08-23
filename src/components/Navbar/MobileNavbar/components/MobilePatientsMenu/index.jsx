@@ -4,6 +4,11 @@ const MobilePatientsMenu = ({ handleClose }) => (
     <div style={{ marginLeft: "1rem" }}>
         <MobileNavbarTab
             handleClick={handleClose}
+            to="/request-appointment"
+            label="Request Appointment"
+        />
+        <MobileNavbarTab
+            handleClick={handleClose}
             to="/patients/forms"
             label="Forms"
         />
