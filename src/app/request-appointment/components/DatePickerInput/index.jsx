@@ -29,6 +29,7 @@ const DatePickerInput = (props) => {
             dateFormat="MMMM d, yyyy h:mm aa"
             filterDate={isWorkDay}
             filterTime={filterPassedTime}
+            id={"appointment_date_time"}
             name={name}
             onChange={(date) => setStartDate(date)}
             placeholderText="Click to select a date *"
