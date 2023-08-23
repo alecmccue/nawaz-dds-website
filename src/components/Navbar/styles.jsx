@@ -1,5 +1,11 @@
 import styled from "@emotion/styled";
 
+export const CloseWrapper = styled.div`
+  display: flex;
+  justify-content: end;
+  padding: 1rem 1rem 0 0;
+`
+
 export const FcdLogoImage = styled.img`
   height: auto;
 

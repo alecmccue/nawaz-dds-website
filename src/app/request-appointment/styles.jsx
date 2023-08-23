@@ -8,6 +8,9 @@ export const Instructions = styled(Typography)`
   text-align: center;
   margin-bottom: 1rem;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `
 
 export const RequestAppointmentForm = styled.form`
@@ -19,6 +22,10 @@ export const RequestAppointmentForm = styled.form`
   gap: 1rem;
   padding: 2rem;
   width: 35rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `
 
 export const RequestAppointmentWrapper = styled.div`
@@ -56,4 +63,8 @@ export const Title = styled(Typography)`
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
 `

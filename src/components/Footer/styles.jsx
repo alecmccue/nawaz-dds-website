@@ -48,15 +48,6 @@ export const ColumnWrapper = styled.div`
   width: fit-content;
 `
 
-export const LeftColumnWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-`
-
 export const Divider = styled.div`
   height: 0.1rem;
   background: #00acb1;
@@ -113,6 +104,7 @@ export const SocialWrapper = styled.div`
 `
 
 export const UpperWrapper = styled.div`
+  align-items: center;
   display: flex;
   gap: 5rem;
   height: 100%;

@@ -28,7 +28,7 @@ const Intro = () => {
                     <IntroTitle>Feel Good About</IntroTitle>
                     <IntroSubtitle>Your Smile</IntroSubtitle>
                     <ContactButtonsWrapper className="poppins">
-                        <RequestAppointment fontSize="1.25rem" marginTop="3rem" padding="0.5rem 1.5rem" />
+                        <RequestAppointment marginTop="3rem" />
                         <ContactButton onClick={handleOpenDirectionsModal}>
                             <MapIcon />
                             Get Directions

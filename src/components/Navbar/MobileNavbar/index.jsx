@@ -5,10 +5,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MobileNavbarMenuTab from "@/components/Navbar/MobileNavbar/components/MobileNavbarMenuTab";
 import MobileNavbarTab from "@/components/Navbar/MobileNavbar/components/MobileNavbarTab";
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import { MenuIconWrapper, MobileNavbarWrapper } from "@/components/Navbar/styles";
+import { CloseWrapper, MenuIconWrapper, MobileNavbarWrapper } from "@/components/Navbar/styles";
 import MobileServicesMenu from "@/components/Navbar/MobileNavbar/components/MobileServicesMenu";
 import MobilePatientsMenu from "@/components/Navbar/MobileNavbar/components/MobilePatientsMenu";
 import FcdLogo from "@/components/Navbar/FcdLogo";
+import CloseIcon from '@mui/icons-material/Close';
 
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -31,7 +32,10 @@ const MobileNavbar = () => {
                     onClose={toggleDrawer(false)}
                     onOpen={toggleDrawer(true)}
                 >
-                    <div style={{ width: "10rem" }}>
+                    <CloseWrapper onClick={toggleDrawer(false)}>
+                        <CloseIcon />
+                    </CloseWrapper>
+                    <div style={{ width: "10rem", paddingLeft: "1rem" }}>
                         <List className="nunito">
                             <MobileNavbarTab
                                 handleClick={toggleDrawer(false)}

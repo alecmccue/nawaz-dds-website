@@ -22,7 +22,7 @@ export const BackgroundImage = styled.div`
 export const ContactButton = styled.div`
   align-items: center;
   background-color: #00acb1;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   border: 2px solid #00acb1;
   color: #fefefe;
   cursor: pointer;
