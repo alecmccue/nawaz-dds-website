@@ -47,6 +47,7 @@ const RequestAppointment = () => {
             document.getElementById("appointment_date_time").value = ""
             document.getElementById("message").value = ""
             setPhone("")
+            setIsFormValid(false)
         }
     }
 
