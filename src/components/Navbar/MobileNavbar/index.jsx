@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "../../../app/fonts.css"
+import CloseIcon from '@mui/icons-material/Close';
+import FcdLogo from "@/components/Navbar/FcdLogo";
 import List from '@mui/material/List';
 import MenuIcon from "@mui/icons-material/Menu";
 import MobileNavbarMenuTab from "@/components/Navbar/MobileNavbar/components/MobileNavbarMenuTab";
 import MobileNavbarTab from "@/components/Navbar/MobileNavbar/components/MobileNavbarTab";
+import MobilePatientsMenu from "@/components/Navbar/MobileNavbar/components/MobilePatientsMenu";
+import MobileServicesMenu from "@/components/Navbar/MobileNavbar/components/MobileServicesMenu";
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { CloseWrapper, MenuIconWrapper, MobileNavbarWrapper } from "@/components/Navbar/styles";
-import MobileServicesMenu from "@/components/Navbar/MobileNavbar/components/MobileServicesMenu";
-import MobilePatientsMenu from "@/components/Navbar/MobileNavbar/components/MobilePatientsMenu";
-import FcdLogo from "@/components/Navbar/FcdLogo";
-import CloseIcon from '@mui/icons-material/Close';
 
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,9 +17,8 @@ const MobileNavbar = () => {
         if(event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return
         }
-
         setIsOpen(open);
-    };
+    }
 
     return (
         <MobileNavbarWrapper>
@@ -35,7 +34,7 @@ const MobileNavbar = () => {
                     <CloseWrapper onClick={toggleDrawer(false)}>
                         <CloseIcon />
                     </CloseWrapper>
-                    <div style={{ width: "10rem", paddingLeft: "1rem" }}>
+                    <div style={{ width: "10rem", paddingLeft: "0.5rem" }}>
                         <List className="nunito">
                             <MobileNavbarTab
                                 handleClick={toggleDrawer(false)}

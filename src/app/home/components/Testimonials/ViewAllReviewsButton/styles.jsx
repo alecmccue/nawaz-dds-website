@@ -7,8 +7,8 @@ export const ViewAllReviewsWrapper = styled.div`
   padding: 0 1.5rem;
 
   @media (max-width: 1024px) {
-    justify-content: center;
-    margin: auto;
+    padding: 0 1rem;
+    margin-top: 2rem;
   }
 `
 
@@ -20,5 +20,9 @@ export const ViewAllButtonWrapper = styled.div`
 
   &:hover {
     background-color: #01868d;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 0.8rem;
   }
 `

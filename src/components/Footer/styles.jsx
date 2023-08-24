@@ -82,17 +82,16 @@ export const FooterLink = styled(Link)`
   }
 `
 
-export const LowerWrapper = styled(Container)`
+export const LowerWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 0.75rem;
-  min-width: 100%;
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 4rem;
+  width: 100%;
 
   @media (max-width: 1024px) {
+    align-items: center;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
   }
 `
 

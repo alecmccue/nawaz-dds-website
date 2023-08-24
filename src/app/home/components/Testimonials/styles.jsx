@@ -7,26 +7,31 @@ export const Testimonial = styled.div`
   color: #434343;
   text-align: center;
 `
+
 export const Inner = styled.div`
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
 `
+
 export const TestimonialTitle = styled(Typography)`
   font-size: 2rem;
 `
+
 export const Divider = styled.div`
   background: #00ACB1;
   height: 8px;
   margin: 1.5rem auto;
   width: 12rem;
 `
+
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 `
+
 export const Col = styled.div`
   flex: 33.33%;
   max-width: 33.33%;
