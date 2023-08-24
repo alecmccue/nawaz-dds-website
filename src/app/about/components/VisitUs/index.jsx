@@ -2,11 +2,10 @@ import React from "react";
 import {
     ColumnWrapper,
     RightColumn,
-    MarketingImage,
     MarketingStatementWrapper,
     LeftColumn,
-    MarketingImage2,
-    MarketingImage3,
+    MarketingImageTop,
+    MarketingImageBottom,
     MapWrapper, ImageGridRow,
 } from "./styles";
 import { Typography } from "@mui/material";
@@ -19,22 +18,22 @@ const VisitUs = () => (
             <LeftColumn>
                 <ImageGridRow>
                     <div>
-                        <MarketingImage2 src="outside_office.jpg" alt="office" />
+                        <MarketingImageTop src="outside_office.jpg" alt="office" />
                     </div>
                     <div>
-                        <MarketingImage3 src="office_inside.jpg" alt="office" />
+                        <MarketingImageBottom src="office_inside.jpg" alt="office" />
                     </div>
                 </ImageGridRow>
                 <ImageGridRow>
                     <div>
-                        <MarketingImage2
+                        <MarketingImageTop
                             src="dental_chair.jpg"
                             alt="office"
                             style={{ borderTopRightRadius: "2rem" }}
                         />
                     </div>
                     <div>
-                        <MarketingImage3 src="wall_picture.jpg" alt="office" />
+                        <MarketingImageBottom src="wall_picture.jpg" alt="office" />
                     </div>
                 </ImageGridRow>
             </LeftColumn>

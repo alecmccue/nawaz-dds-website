@@ -38,29 +38,33 @@ export const LeftColumn = styled.div`
   max-width: 45rem;
 
   @media (max-width: 1024px) {
-    padding: 1rem;
     gap: 0.5rem;
+    padding: 0;
   }
 `;
 
-export const MarketingImage = styled.img`
-  height: auto;
-  width: 100%;
-`;
-export const MarketingImage2 = styled.img`
+export const MarketingImageTop = styled.img`
   height: 20rem;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    height: 15rem;
+  }
 `;
-export const MarketingImage3 = styled.img`
+export const MarketingImageBottom = styled.img`
   height: 10rem;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    height: 8rem;
+  }
 `;
 
 export const MapWrapper = styled.div`
   padding: 0 2rem;
 
   @media (max-width: 1024px) {
-    padding: 2rem 1rem;
+    padding: 0;
   }
 `;
 
@@ -73,7 +77,7 @@ export const MarketingStatementWrapper = styled.div`
   padding: 2rem;
 
   @media (max-width: 1024px) {
-    padding: 0;
+    padding: 4rem 2rem;
     gap: 1rem;
   }
 `;
@@ -87,7 +91,7 @@ export const RightColumn = styled.div`
   max-width: 50rem;
 
   @media (max-width: 1024px) {
-    padding: 0 2rem;
+    padding: 2rem 0;
     gap: 1rem;
   }
 `;

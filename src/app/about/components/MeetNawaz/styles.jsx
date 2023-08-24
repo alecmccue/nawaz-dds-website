@@ -1,4 +1,13 @@
 import styled from "@emotion/styled";
+import { Typography } from "@mui/material";
+
+export const AboutNawazTitle = styled(Typography)`
+  font-size: 3rem;
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+`
 
 export const Column = styled.div`
   display: flex;
@@ -45,7 +54,7 @@ export const MeetNawazWrapper = styled.div`
 `;
 
 export const NawazImage = styled.img`
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   height: 30rem;
   width: auto;
 `;

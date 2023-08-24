@@ -1,5 +1,6 @@
 import React from "react";
 import {
+    AboutNawazTitle,
     Column,
     Divider,
     DividerSmall,
@@ -20,9 +21,9 @@ const MeetNawaz = () => (
         <TextOuterWrapper>
             <TextInnerWrapper>
                 <Column style={{ gap: "0.5rem", maxWidth: "40rem" }}>
-                    <Typography style={{ fontSize: "3rem" }} className="poppins">
+                    <AboutNawazTitle className="poppins">
                         Dr. Mirweiss Nawaz
-                    </Typography>
+                    </AboutNawazTitle>
                     <Divider />
                     <Typography style={{ fontSize: "1.4rem" }} className="nunito">
                         Dr. Nawaz brings not only his extensive expertise in dentistry but also his nurturing role
