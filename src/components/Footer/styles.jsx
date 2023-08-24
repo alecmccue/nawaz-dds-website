@@ -52,7 +52,11 @@ export const Divider = styled.div`
   height: 0.1rem;
   background: #00acb1;
   margin: 0 4rem;
-`;
+
+  @media (max-width: 1024px) {
+    margin-top: 1rem;
+  }
+`
 
 export const FooterIconWrapper = styled.div`
   border-radius: 50%;
