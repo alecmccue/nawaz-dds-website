@@ -46,8 +46,10 @@ export const CareCreditWrapper = styled.div`
   padding: 2rem;
 
   @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0;
     width: 100%;
-    flex-direction:column;
   }
 `;
 
@@ -77,7 +79,7 @@ export const InsuranceWrapper = styled.div`
   width: 100%;
 
   @media (max-width: 1024px) {
-    padding: 1rem;
+    padding: 4rem 2rem;
     gap: 1rem;
   }
 `;
@@ -86,7 +88,14 @@ export const IntroWrapper = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
-  max-width: 80rem;
+  max-width: 50rem;
   padding: 2rem;
   text-align: center;
+  margin-left: 4rem;
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
 `;

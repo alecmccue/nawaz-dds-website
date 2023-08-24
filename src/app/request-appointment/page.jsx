@@ -33,7 +33,6 @@ const RequestAppointment = () => {
     const sendEmail = async (e) => {
         e.preventDefault();
 
-        // Put snackbar for successful or failed email sent
         try {
             await emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             setSeverity("success")
