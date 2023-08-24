@@ -11,7 +11,7 @@ import {
 import {
     AccordionDetailsHeader,
     AccordionSummaryContentWrapper,
-    AccordionSummaryTextWrapper,
+    AccordionSummaryTextWrapper, AccordionTitle,
     Border,
     ServiceAccordion,
     ServiceImage,
@@ -28,9 +28,9 @@ const CosmeticDentistry = () => (
                         src="/cosmetic_dentistry.jpg"
                     />
                     <AccordionSummaryTextWrapper>
-                        <Typography className="poppins" style={{ fontSize: "2.2rem" }}>
+                        <AccordionTitle className="poppins">
                             Cosmetic Dentistry
-                        </Typography>
+                        </AccordionTitle>
                         <Border />
                         <Typography style={{ fontSize: "1.3rem" }}>
                             Cosmetic dentistry offers a diverse array of procedures aimed at

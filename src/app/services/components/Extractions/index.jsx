@@ -11,7 +11,7 @@ import {
 import {
     AccordionDetailsHeader,
     AccordionSummaryContentWrapper,
-    AccordionSummaryTextWrapper,
+    AccordionSummaryTextWrapper, AccordionTitle,
     Border,
     ServiceAccordion,
     ServiceImage,
@@ -25,9 +25,9 @@ const Extractions = () => (
                 <AccordionSummaryContentWrapper>
                     <ServiceImage alt="Extractions" src="/dental_extraction.jpg" />
                     <AccordionSummaryTextWrapper>
-                        <Typography className="poppins" style={{ fontSize: "2.5rem" }}>
+                        <AccordionTitle className="poppins">
                             Extractions
-                        </Typography>
+                        </AccordionTitle>
                         <Border />
                         <Typography className="nunito" style={{ fontSize: "1.3rem" }}>
                             Dental extractions are dental procedures in which a dentist removes a tooth from its socket
