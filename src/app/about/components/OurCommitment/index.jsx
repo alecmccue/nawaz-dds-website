@@ -10,7 +10,7 @@ import RequestAppointment from "@/components/RequestAppointment";
 
 const OurCommitment = () => (
   <OurCommitmentWrapper>
-    <BackgroundImage src="/nawaz-and-emad-working.jpg" alt="nawaz-working" />
+    <BackgroundImage alt="nawaz-working" />
     <OverlayCard>
       <Typography style={{ fontSize: "3rem" }} className="poppins">
         OUR COMMITMENT
