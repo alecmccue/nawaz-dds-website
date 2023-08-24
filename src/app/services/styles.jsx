@@ -17,7 +17,7 @@ export const AccordionSummaryContentWrapper = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
     margin-right: 0;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 `;
 
@@ -25,6 +25,14 @@ export const AccordionSummaryTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const AccordionTitle = styled(Typography)`
+  font-size: 2.2rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1.9rem;
+  }
+`
 
 export const Border = styled.div`
   width: 10rem;
@@ -48,12 +56,12 @@ export const ServiceAccordion = styled(Accordion)`
   }
 
   @media (max-width: 1024px) {
-    padding: 0.5rem 0;
+    padding: 1rem 0.5rem;
   }
 `;
 
 export const ServiceImage = styled.img`
-  border-radius: 2rem;
+  border-radius: 1rem;
   height: 16.5rem;
   width: 25rem;
 `;
@@ -67,7 +75,8 @@ export const ServiceWrapper = styled.div`
   scroll-margin-top: 8rem;
 
   @media (max-width: 1024px) {
-    padding: 0.5rem;
+    padding: 1rem 0;
+    scroll-margin-top: 7rem;
   }
 
 `;
@@ -80,6 +89,6 @@ export const ServicesWrapper = styled.div`
   padding: 2rem;
 
   @media (max-width: 1024px) {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 `;

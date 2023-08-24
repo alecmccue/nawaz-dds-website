@@ -11,7 +11,7 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 4rem 1rem;
+    padding: 4rem 1.5rem;
   }
 `
 

@@ -25,13 +25,15 @@ export const FormBanner = styled.div`
   background: url(/patients_banner.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  align-items: center;
   display: flex;
   height: 30rem;
   width: 100%;
-  align-items: center;
 
   @media (max-width: 1024px) {
     background: url(/insurance-banner-mobile.jpg);
+    padding: 1rem;
+    height: 25rem;
   }
 `
 
@@ -61,6 +63,10 @@ export const FormText = styled.div`
   padding: 2rem 0;
   max-width: 85rem;
   line-height: 2.5rem;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
 `
 
 export const FormWrapper = styled.div`
@@ -75,7 +81,7 @@ export const FormWrapper = styled.div`
   width: fit-content;
 
   @media (max-width: 1024px) {
-    padding: 2rem;
+    padding: 3rem 1.5rem;
     flex-direction: column;
   }
 `;
@@ -89,7 +95,7 @@ export const FormsWrapper = styled.div`
   gap: 3rem;
 
   @media (max-width: 1024px) {
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 3rem 2rem;
   }
 `;
 
@@ -99,10 +105,12 @@ export const IntroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 60rem;
+  width: 100%;
   justify-content: center;
+  margin-left: 4rem;
 
   @media (max-width: 1024px) {
     width: 100%;
+    margin-left: 0;
   }
 `;

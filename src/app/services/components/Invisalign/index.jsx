@@ -11,7 +11,7 @@ import {
 import {
     AccordionDetailsHeader,
     AccordionSummaryContentWrapper,
-    AccordionSummaryTextWrapper,
+    AccordionSummaryTextWrapper, AccordionTitle,
     Border,
     ServiceAccordion,
     ServiceImage,
@@ -25,9 +25,9 @@ const Invisalign = () => (
                 <AccordionSummaryContentWrapper>
                     <ServiceImage alt="Invisalign" src="/invisalign.jpg" />
                     <AccordionSummaryTextWrapper>
-                        <Typography style={{ fontSize: "2.2rem" }} className="poppins">
+                        <AccordionTitle className="poppins">
                             Invisalign®
-                        </Typography>
+                        </AccordionTitle>
                         <Border />
                         <Typography style={{ fontSize: "1.3rem" }} className="nunito">
                             Invisalign® is the clear way to straighten your teeth. It

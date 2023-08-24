@@ -81,7 +81,7 @@ const Footer = () => {
                     </ColumnWrapper>
                 </UpperWrapper>
                 <Divider />
-                <LowerWrapper className="nunito">
+                <LowerWrapper className="scope-one">
                     <FooterLink href="/privacy-policy"> Privacy Policy </FooterLink>
                     <div> &copy; 2023 Family & Cosmetic Densistry</div>
                 </LowerWrapper>

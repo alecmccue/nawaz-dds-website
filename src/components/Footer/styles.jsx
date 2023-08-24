@@ -1,42 +1,17 @@
 import styled from "@emotion/styled";
-import { Container, Typography } from "@mui/material";
 import Link from "next/link";
-
-export const ContactButton = styled.div`
-  align-items: center;
-  background-color: #00acb1;
-  border-radius: 0.5rem;
-  border: 2px solid #00acb1;
-  color: #fefefe;
-  cursor: pointer;
-  display: flex;
-  font-size: 1.25rem;
-  font-weight: 500;
-  gap: 0.5rem;
-  margin-top: 3rem;
-  padding: 0.5rem 1.5rem;
-  width: fit-content;
-
-  &:hover {
-    background-color: #01868d;
-    border: 2px solid #01868d;
-  }
-
-  @media (max-width: 1024px) {
-    margin-top: 1rem;
-  }
-`
+import { Typography } from "@mui/material";
 
 export const ColumnBody = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   gap: 1rem;
+  padding: 1rem;
 `
 
 export const ColumnHeader = styled(Typography)`
-  display: flex;
   border-bottom: thin solid #015D67;
+  display: flex;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   padding-bottom: 0.5rem;
@@ -49,10 +24,14 @@ export const ColumnWrapper = styled.div`
 `
 
 export const Divider = styled.div`
-  height: 0.1rem;
   background: #00acb1;
+  height: 0.1rem;
   margin: 0 4rem;
-`;
+
+  @media (max-width: 1024px) {
+    margin-top: 1rem;
+  }
+`
 
 export const FooterIconWrapper = styled.div`
   border-radius: 50%;
@@ -82,17 +61,16 @@ export const FooterLink = styled(Link)`
   }
 `
 
-export const LowerWrapper = styled(Container)`
+export const LowerWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 0.75rem;
-  min-width: 100%;
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 4rem;
+  width: 100%;
 
   @media (max-width: 1024px) {
+    align-items: center;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
   }
 `
 

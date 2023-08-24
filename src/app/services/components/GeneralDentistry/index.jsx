@@ -11,7 +11,7 @@ import {
 import {
     AccordionDetailsHeader,
     AccordionSummaryContentWrapper,
-    AccordionSummaryTextWrapper,
+    AccordionSummaryTextWrapper, AccordionTitle,
     Border,
     ServiceAccordion,
     ServiceImage,
@@ -25,9 +25,9 @@ const GeneralDentistry = () => (
                 <AccordionSummaryContentWrapper>
                     <ServiceImage alt="General Dentistry" src="/general_dentistry.jpg" />
                     <AccordionSummaryTextWrapper>
-                        <Typography style={{ fontSize: "2.2rem" }} className="poppins">
-                            General & Family Dentistry
-                        </Typography>
+                        <AccordionTitle className="poppins">
+                            General Dentistry
+                        </AccordionTitle>
                         <Border />
                         <Typography style={{ fontSize: "1.3rem" }} className="nunito">
                             General dentistry services encompass a wide range of procedures

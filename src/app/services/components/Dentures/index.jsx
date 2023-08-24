@@ -11,7 +11,7 @@ import {
 import {
     AccordionDetailsHeader,
     AccordionSummaryContentWrapper,
-    AccordionSummaryTextWrapper,
+    AccordionSummaryTextWrapper, AccordionTitle,
     Border,
     ServiceAccordion,
     ServiceImage,
@@ -25,12 +25,9 @@ const Dentures = () => (
                 <AccordionSummaryContentWrapper>
                     <ServiceImage alt="Dentures" src="/dentures.jpg" />
                     <AccordionSummaryTextWrapper>
-                        <Typography
-                            className="poppins"
-                            style={{ fontSize: "2.2rem", fontWeight: "500" }}
-                        >
+                        <AccordionTitle className="poppins">
                             Dentures
-                        </Typography>
+                        </AccordionTitle>
                         <Border />
                         <Typography style={{ fontSize: "1.3rem" }} className="nunito">
                             Dentures are removable dental appliances designed to replace missing teeth and surrounding

@@ -22,7 +22,11 @@ export const DescriptionLists = styled.div`
   margin-bottom: 2rem;
   padding-left: 4rem;
   margin-top: 1rem;
-  /* width: 43rem; */
+
+  @media (max-width: 1024px) {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
 `
 
 export const DescriptionSubtitle = styled(Typography)`
@@ -63,7 +67,7 @@ export const DescriptionWrapper = styled.div`
   width: fit-content;
 
   @media (max-width: 1024px) {
-    padding: 0 1rem;
+    padding: 0;
   }
 `
 
@@ -94,7 +98,7 @@ export const MainWrapper = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     height: fit-content;
     gap: 2rem;
   }
@@ -111,9 +115,8 @@ export const NawazImg = styled.div`
   width: 31.25rem;
 
   @media (max-width: 1024px) {
-    max-width: 18rem;
-    height: 20rem;
-    margin-left: 4rem;
+    height: 25rem;
     margin-top: 0;
+    width: 100%;
   }
 `

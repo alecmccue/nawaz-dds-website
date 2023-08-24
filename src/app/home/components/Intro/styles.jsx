@@ -47,7 +47,7 @@ export const ContactButton = styled.div`
 export const ContactButtonsWrapper = styled.div`
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
   width: 100%;
 
   @media (max-width: 1024px) {
@@ -59,19 +59,24 @@ export const ContactButtonsWrapper = styled.div`
 
 export const IntroSubtitle = styled(Typography)`
   color: #fefefe;
-  font-size: 85px;
-  line-height: 85px;
+  font-size: 5.313rem;
+  line-height: 5.313rem;
   margin-top: 0.25rem;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 `
 
 export const IntroTitle = styled(Typography)`
-  color: #fefefe;
-  font-size: 60px;
+  color: white;
+  font-size: 3.75rem;
   font-style: normal;
-  line-height: 85px;
+  line-height: 5.313rem;
   margin-top: 8rem;
   text-align: center;
   text-transform: uppercase;
@@ -79,6 +84,8 @@ export const IntroTitle = styled(Typography)`
 
   @media (max-width: 1024px) {
     margin-top: 2rem;
+    font-size: 3.4rem;
+    line-height: 4.5rem;
   }
 `
 
