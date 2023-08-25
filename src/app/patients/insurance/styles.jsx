@@ -32,7 +32,7 @@ export const CareCreditSignUpWrapper = styled.div`
   height: 20rem;
   justify-content: center;
   padding: 1rem;
-  width: 25rem;
+  max-width: 25rem;
 
   @media (max-width: 1024px) {
     width: 100%;
