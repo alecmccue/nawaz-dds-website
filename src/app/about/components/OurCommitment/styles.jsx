@@ -1,11 +1,16 @@
 import styled from "@emotion/styled";
 
-export const BackgroundImage = styled.img`
+export const BackgroundImage = styled.div`
   height: 55rem;
   filter: brightness(35%);
   width: 100%;
+  background: url('/nawaz-and-emad-working.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
 
   @media (max-width: 1024px) {
+    background: url('/nawaz-and-emad-working-mobile.jpg');
+    background-size: cover;
     height: 70rem;
   }
 `;
