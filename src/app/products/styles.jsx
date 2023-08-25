@@ -27,6 +27,13 @@ export const IntroductionWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   
+  @media (max-width: 900px) {
+    background-size: cover !important;
+    background: url("/office_wide.jpg");
+    height: 20rem;
+    padding-top: 2rem;
+  }
+
   @media (max-width: 600px) {
     background-size: cover !important;
     background: url("/office_mobile.jpg");
