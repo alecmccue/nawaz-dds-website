@@ -9,7 +9,7 @@ export const Description = styled(Typography)`
   font-weight: 400;
   line-height: 40px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     width: 100%;
   }
 `
@@ -23,7 +23,7 @@ export const DescriptionLists = styled.div`
   padding-left: 4rem;
   margin-top: 1rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     padding-left: 2rem;
     margin-bottom: 1rem;
   }
@@ -37,7 +37,7 @@ export const DescriptionSubtitle = styled(Typography)`
   height: 2rem;
   text-transform: uppercase;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     text-align: center;
     font-size: 1.2rem;
   }
@@ -51,7 +51,7 @@ export const DescriptionTitle = styled(Typography)`
   height: 2rem;
   text-transform: uppercase;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     text-align: center;
     font-size: 1.5rem;
   }
@@ -66,7 +66,7 @@ export const DescriptionWrapper = styled.div`
   gap: 1rem;
   width: fit-content;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     padding: 0;
   }
 `
@@ -96,11 +96,12 @@ export const MainWrapper = styled.div`
   padding: 2.5rem 6rem 2.5rem 6rem;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     padding: 4rem 2rem;
     height: fit-content;
     gap: 2rem;
+    align-items: center;
   }
 `
 
@@ -114,9 +115,9 @@ export const NawazImg = styled.div`
   margin-top: 3rem;
   width: 31.25rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     height: 25rem;
     margin-top: 0;
-    width: 100%;
+    width: 21rem;
   }
 `
