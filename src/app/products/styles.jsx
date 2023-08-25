@@ -20,20 +20,26 @@ export const ImageColumn = styled.div`
   flex: 1;
 `;
 
-export const IntroductionWrapepr = styled.div`
-  background-color: #87e4db;
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  max-width: 80rem;
-  padding: 2rem;
-  text-align: center;
-
+export const IntroductionWrapper = styled.div`
+  height: 30rem;
+  padding-top:5rem;
+  background: url('/office_ultrawide.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
   @media (max-width: 1024px) {
-    padding: 1.5rem;
+    height:40rem;
+    background-size: cover;
+    padding-top:2rem;
   }
+`;
+export const IntroductionTextWrapper = styled.div`
+  width: 80%;
+  text-align:center;
+  margin: 0 auto;
+  color:#fefefe;
+  display:flex;
+  flex-direction:column;
+  
 `;
 
 export const ProductWrapperImageLeft = styled.div`
