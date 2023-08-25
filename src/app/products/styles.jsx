@@ -22,25 +22,28 @@ export const ImageColumn = styled.div`
 
 export const IntroductionWrapper = styled.div`
   height: 30rem;
-  padding-top:5rem;
-  background: url('/office_ultrawide.jpg');
+  padding-top: 5rem;
+  background: url("/office_ultrawide.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
+  @media (max-width: 900px) {
+    background-size: cover;
+    background: url("/office_wide.jpg");
+  }
   @media (max-width: 600px) {
     background-size: cover !important;
-    background: url('/office_mobile.jpg');
-    height:40rem;
-    padding-top:2rem;
+    background: url("/office_mobile.jpg");
+    height: 40rem;
+    padding-top: 2rem;
   }
 `;
 export const IntroductionTextWrapper = styled.div`
   width: 80%;
-  text-align:center;
+  text-align: center;
   margin: 0 auto;
-  color:#fefefe;
-  display:flex;
-  flex-direction:column;
-  
+  color: #fefefe;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ProductWrapperImageLeft = styled.div`

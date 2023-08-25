@@ -22,7 +22,7 @@ const animationVariant = {
 };
 
 const Products = () => (
-    <ProductsWrapper>
+    <>
         <motion.div
             initial="hide"
             exit="hide"
@@ -31,6 +31,7 @@ const Products = () => (
         >
             <Introduction />
         </motion.div>
+    <ProductsWrapper>
 
         <motion.div
             initial="hide"
@@ -59,6 +60,7 @@ const Products = () => (
             <DigitalXray />
         </motion.div>
     </ProductsWrapper>
+    </>
 )
 
 export default Products;
