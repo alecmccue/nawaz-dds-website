@@ -17,6 +17,10 @@ export const BackgroundImage = styled.div`
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
+
+  @media (prefers-color-scheme: dark) {
+    filter: invert(0);
+  }
 `
 
 export const ContactButton = styled.div`
