@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect } from "react";
 import { ListItem, ListItemButton } from "@mui/material";
 import useServicesScrollIntoView from "@/hooks/useServicesScrollIntoView";
 
@@ -11,11 +11,13 @@ const MobileServicesMenuButton = (props) => {
 
     const { handleClick } = useServicesScrollIntoView()
 
-    useLayoutEffect(() => {
-        const element = document.getElementById(elementId);
-        if(element) {
-            element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
+    useEffect(() => {
+        setTimeout(() => {
+            const element = document.getElementById(elementId);
+            if(element) {
+                element.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }, 100);
     }, [elementId])
 
     return (
