@@ -34,7 +34,7 @@ export const IntroductionWrapper = styled.div`
   height: 30rem;
   padding-top: 5rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     background: url("/office_mobile.jpg");
     background-size: 100% 100%;
     align-items: center;
