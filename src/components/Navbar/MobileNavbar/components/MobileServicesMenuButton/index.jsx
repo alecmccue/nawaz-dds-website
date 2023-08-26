@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ListItem, ListItemButton } from "@mui/material";
 import useServicesScrollIntoView from "@/hooks/useServicesScrollIntoView";
 
@@ -10,6 +10,13 @@ const MobileServicesMenuButton = (props) => {
     } = props
 
     const { handleClick } = useServicesScrollIntoView()
+
+    useEffect(() => {
+        const element = document.getElementById(elementId);
+        if(element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    }, [elementId])
 
     return (
         <ListItem disablePadding>
