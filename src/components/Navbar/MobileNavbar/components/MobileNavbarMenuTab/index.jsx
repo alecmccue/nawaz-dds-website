@@ -21,12 +21,14 @@ const MobileNavbarMenuTab = (props) => {
         <>
             <ListItem disablePadding>
                 <ListItemButton disableRipple onClick={toggleMenuOpen}>
-                    {label}
-                    {isOpen ? (
-                        <KeyboardArrowUpIcon fontSize="small" />
-                    ) : (
-                        <KeyboardArrowDownIcon fontSize="small" />
-                    )}
+                    <p style={{ paddingLeft: "0.5rem" }}>
+                        {label}
+                        {isOpen ? (
+                            <KeyboardArrowUpIcon fontSize="small" />
+                        ) : (
+                            <KeyboardArrowDownIcon fontSize="small" />
+                        )}
+                    </p>
                 </ListItemButton>
             </ListItem>
             <div onClick={toggleMenuOpen}>

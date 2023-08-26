@@ -34,7 +34,7 @@ const MobileNavbar = () => {
                     <CloseWrapper onClick={toggleDrawer(false)}>
                         <CloseIcon />
                     </CloseWrapper>
-                    <div style={{ width: "10rem", paddingLeft: "0.5rem" }}>
+                    <div style={{ width: "10rem" }}>
                         <List className="nunito">
                             <MobileNavbarTab
                                 handleClick={toggleDrawer(false)}
