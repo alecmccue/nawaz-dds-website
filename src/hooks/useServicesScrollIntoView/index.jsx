@@ -14,7 +14,7 @@ const useServicesScrollIntoView = () => {
             if(element) {
                 element.scrollIntoView({ behavior: "smooth", block: "start" });
             }
-        }, 500)
+        }, 1000)
 
         handleClose();
     };
