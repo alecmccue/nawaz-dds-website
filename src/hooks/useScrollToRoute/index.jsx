@@ -1,22 +1,20 @@
 import { usePathname, useRouter } from "next/navigation";
 
-const useServicesScrollIntoView = () => {
+const useScrollToRoute = () => {
     const router = useRouter();
     const pathName = usePathname();
 
     const handleClick = (elementId, handleClose, to) => {
         if(pathName.includes("/services")) {
-            const route = `${to}?id=${elementId}`
-            console.log(route)
-            router.push(route);
+            router.push(`${to}?id=${elementId}`);
         } else {
             router.replace(`${to}?id=${elementId}`)
         }
 
         handleClose();
-    };
+    }
 
     return { handleClick }
 }
 
-export default useServicesScrollIntoView
+export default useScrollToRoute

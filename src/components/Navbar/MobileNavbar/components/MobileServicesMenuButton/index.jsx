@@ -1,6 +1,6 @@
 import React from "react";
 import { ListItem, ListItemButton } from "@mui/material";
-import useServicesScrollIntoView from "@/hooks/useServicesScrollIntoView";
+import useScrollToRoute from "@/hooks/useScrollToRoute";
 
 const MobileServicesMenuButton = (props) => {
     const {
@@ -9,7 +9,7 @@ const MobileServicesMenuButton = (props) => {
         handleClose,
     } = props
 
-    const { handleClick } = useServicesScrollIntoView()
+    const { handleClick } = useScrollToRoute()
 
     return (
         <ListItem disablePadding>

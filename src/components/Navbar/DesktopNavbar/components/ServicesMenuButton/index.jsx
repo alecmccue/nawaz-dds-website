@@ -1,27 +1,11 @@
 import React from "react";
-import { useRouter, usePathname } from "next/navigation";
 import { MenuButtonWrapper } from "@/components/Navbar/DesktopNavbar/styles";
+import useScrollToRoute from "@/hooks/useScrollToRoute";
 
 const ServicesMenuButton = ({ to, label, elementId, handleClose }) => {
-    const router = useRouter();
-    const pathName = usePathname();
+    const { handleClick } = useScrollToRoute()
 
-    const handleClick = () => {
-        if(pathName !== "/services") {
-            router.push(to);
-        }
-
-        setTimeout(() => {
-            const element = document.getElementById(elementId);
-            if(element) {
-                element.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-        }, 100);
-
-        handleClose();
-    };
-
-    return <MenuButtonWrapper onClick={handleClick}>{label}</MenuButtonWrapper>;
+    return <MenuButtonWrapper onClick={() => handleClick(elementId, handleClose, to)}>{label}</MenuButtonWrapper>;
 };
 
 export default ServicesMenuButton;
