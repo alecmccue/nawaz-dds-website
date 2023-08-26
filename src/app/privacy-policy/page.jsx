@@ -14,7 +14,7 @@ const PrivacyPolicy = () => (
             <div>
                 <Head>Privacy Policy</Head>
                 <Body>
-                    This Privacy Policy outlines how nawazdss.com maintains and respects the
+                    This Privacy Policy outlines how nawazdds.com maintains and respects the
                     privacy of visitors to our website. We are committed to safeguarding the personal information of our
                     users while providing a secure and informative online experience. Please read this Privacy Policy
                     carefully to understand our practices regarding your data and how we operate.
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => (
             <div>
                 <Head>Collection and Use of Information</Head>
                 <Body>
-                    No User Data Collection: nawazdss.com may collect personally identifiable information (PII) such as
+                    No User Data Collection: nawazdds.com may collect personally identifiable information (PII) such as
                     names and phone numbers from visitors who request appointments with our office. This information is
                     solely used for the purpose of scheduling appointments and communicating with the visitors about
                     their appointments.
@@ -79,7 +79,7 @@ const PrivacyPolicy = () => (
                     please contact us at mirweissnawazdds@gmail.com.
                     <br />
                     <br />
-                    By using nawazdss.com, you acknowledge that you have read and understood this Privacy Policy
+                    By using nawazdds.com, you acknowledge that you have read and understood this Privacy Policy
                     and agree to its terms. If you do not agree with the terms of this Privacy Policy, please do not use
                     our website.
                     <br />
