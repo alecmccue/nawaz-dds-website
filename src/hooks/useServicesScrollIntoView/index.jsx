@@ -6,8 +6,15 @@ const useServicesScrollIntoView = () => {
 
     const handleClick = async (elementId, handleClose, to) => {
         if(pathName !== "/services") {
-            router.push(to);
+            await router.push(to);
         }
+
+        setTimeout(() => {
+            const element = document.getElementById(elementId);
+            if(element) {
+                element.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }, 500)
 
         handleClose();
     };
