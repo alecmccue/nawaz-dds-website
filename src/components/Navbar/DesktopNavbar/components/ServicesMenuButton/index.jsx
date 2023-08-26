@@ -5,7 +5,14 @@ import useScrollToRoute from "@/hooks/useScrollToRoute";
 const ServicesMenuButton = ({ to, label, elementId, handleClose }) => {
     const { handleClick } = useScrollToRoute()
 
-    return <MenuButtonWrapper onClick={() => handleClick(elementId, handleClose, to)}>{label}</MenuButtonWrapper>;
+    return (
+        <MenuButtonWrapper
+            onClick={() => handleClick(elementId, handleClose, to)}
+            style={{ padding: "0.4rem 1rem" }}
+        >
+            {label}
+        </MenuButtonWrapper>
+    )
 };
 
 export default ServicesMenuButton;

@@ -17,7 +17,6 @@ export const DropdownMenuItem = styled(MenuItem)`
 export const MenuButtonWrapper = styled.div`
   display: flex;
   justify-content: start;
-  padding: 0.4rem 1rem 0.4rem 1rem;
   width: 100%;
 `
 
