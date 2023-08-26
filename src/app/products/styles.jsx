@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Typography } from "@mui/material";
 
 export const DigitalXrayImage = styled.img`
   height: auto;
@@ -26,7 +27,7 @@ export const IntroductionWrapper = styled.div`
   background: url("/office_ultrawide.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   @media (max-width: 600px) {
     background-size: cover !important;
     background: url("/office_mobile.jpg");
@@ -41,7 +42,17 @@ export const IntroductionTextWrapper = styled.div`
   color: #fefefe;
   display: flex;
   flex-direction: column;
+  max-width: 60rem;
 `;
+
+export const ProductsTitle = styled(Typography)`
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 1024px) {
+    font-size: 2.2rem;
+  }
+`
 
 export const ProductWrapperImageLeft = styled.div`
   background-color: #fafcfc;
