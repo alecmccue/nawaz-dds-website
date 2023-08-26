@@ -28,7 +28,7 @@ export const Divider = styled.div`
   height: 0.1rem;
   margin: 0 4rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1100px) {
     margin-top: 1rem;
   }
 `
@@ -45,7 +45,7 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   padding-top: 1.5rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1100px) {
     padding-top: 0.5rem;
   }
 `
@@ -67,7 +67,7 @@ export const LowerWrapper = styled.div`
   padding: 1rem 4rem;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 700px) {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
@@ -89,7 +89,7 @@ export const UpperWrapper = styled.div`
   padding: 1rem;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1100px) {
     align-items: center;
     flex-direction: column;
     gap: 2rem;

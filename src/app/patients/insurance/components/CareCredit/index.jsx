@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const CareCredit = () => (
     <CareCreditWrapper>
-        <Typography className="nunito" style={{ fontSize: "1.4rem", maxWidth: "50rem" }}>
+        <Typography className="nunito" style={{ fontSize: "1.4rem", maxWidth: "40rem" }}>
             We are partnered with CareCredit, a specialized healthcare credit
             provider. This partnership allows you to conveniently manage out-of-pocket
             costs that may not be covered by your medical insurance. Unlike regular

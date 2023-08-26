@@ -32,8 +32,9 @@ export const FormBanner = styled.div`
 
   @media (max-width: 1024px) {
     background: url(/insurance-banner-mobile.jpg);
-    padding: 1rem;
     height: 25rem;
+    justify-content: center;
+    padding: 1rem;
   }
 `
 
@@ -42,7 +43,7 @@ export const FormFooter = styled.div`
   justify-content: end;
   margin-top: 0.5rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     justify-content: center;
   }
 `;
@@ -64,7 +65,7 @@ export const FormText = styled.div`
   max-width: 85rem;
   line-height: 2.5rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     padding: 0;
   }
 `
@@ -80,21 +81,21 @@ export const FormWrapper = styled.div`
   padding: 2rem 2.5rem;
   width: fit-content;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     padding: 3rem 1.5rem;
     flex-direction: column;
   }
 `;
 
 export const FormsWrapper = styled.div`
+  align-items: center;
   background-color: #fefefe;
   display: flex;
-  padding: 2rem;
   flex-direction: column;
-  align-items: center;
   gap: 3rem;
+  padding: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     padding: 3rem 2rem;
   }
 `;
@@ -104,13 +105,13 @@ export const IntroWrapper = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  width: 100%;
   justify-content: center;
   margin-left: 4rem;
+  text-align: center;
+  width: 100%;
 
   @media (max-width: 1024px) {
-    width: 100%;
     margin-left: 0;
+    width: 100%;
   }
 `;

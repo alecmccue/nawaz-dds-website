@@ -6,28 +6,37 @@ const DatePickerInput = (props) => {
     const [startDate, setStartDate] = useState()
 
     const filterPassedTime = (time) => {
-
         const currentDate = new Date();
         const selectedDate = new Date(time);
+
+        // Time selected hasn't already occurred
         const isTimePassed = currentDate.getTime() < selectedDate.getTime()
 
+        // Hours are between 10am - 6pm
         const openTime = 10
         const closeTime = 18
         const isOfficeOpen = selectedDate.getHours() >= openTime && selectedDate.getHours() < closeTime
 
-        return isOfficeOpen && isTimePassed
+        // Current day isn't an off day
+        const selectedDay = selectedDate.getDay()
+        const isWorkday = selectedDay !== 0 && selectedDay !== 5 && selectedDay !== 6
+
+        return isWorkday && isOfficeOpen && isTimePassed
     }
 
-    const isWorkDay = (date) => {
+    const filterWorkDates = (date) => {
+        const currentDate = new Date()
+        const hasDayOccured = date > currentDate
+
         const day = date.getDay();
-        return day !== 0 && day !== 5 && day !== 6;
+        return hasDayOccured && day !== 0 && day !== 5 && day !== 6;
     }
 
     return (
         <StyledDatePicker
             autoComplete="off"
             dateFormat="MMMM d, yyyy h:mm aa"
-            filterDate={isWorkDay}
+            filterDate={filterWorkDates}
             filterTime={filterPassedTime}
             id={"appointment_date_time"}
             name={name}

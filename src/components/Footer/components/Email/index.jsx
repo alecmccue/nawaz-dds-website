@@ -1,29 +1,17 @@
-import { useState } from "react";
+import React from "react";
+import EmailIcon from "@mui/icons-material/Email";
 import { FooterIconWrapper } from "../../styles";
 import { StackItemText, StackItemWrapper } from "../../../styles";
-import EmailIcon from "@mui/icons-material/Email";
 
-const Email = () => {
-    const [isHover, setIsHover] = useState(false);
+const Email = () => (
+    <StackItemWrapper>
+        <FooterIconWrapper style={{ backgroundColor: "#00ACB1", color: "white", }}>
+            <EmailIcon />
+        </FooterIconWrapper>
+        <StackItemText style={{ color: "black" }}>
+            mirweissnawazdds@gmail.com
+        </StackItemText>
+    </StackItemWrapper>
+)
 
-    return (
-        <StackItemWrapper
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-        >
-            <FooterIconWrapper
-                style={{
-                    backgroundColor: isHover ? "transparent" : "#00ACB1",
-                    color: isHover ? "#00ACB1" : "white",
-                }}
-            >
-                <EmailIcon />
-            </FooterIconWrapper>
-            <StackItemText style={{ color: isHover ? "#00ACB1" : "black" }}>
-                mirweissnawazdds@gmail.com
-            </StackItemText>
-        </StackItemWrapper>
-    );
-};
-
-export default Email;
+export default Email

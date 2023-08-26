@@ -10,8 +10,9 @@ export const LeftColumn = styled.div`
   padding: 2rem;
   position: relative;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1300px) {
     padding: 0;
+    max-width: 60rem;
   }
 `;
 
@@ -20,7 +21,7 @@ export const MeetTeamInnerWrapper = styled.div`
   display: flex;
   max-width: 100rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1300px) {
     flex-direction: column-reverse;
   }
 `
@@ -32,7 +33,7 @@ export const MeetTeamOuterWrapper = styled.div`
   justify-content: center;
   padding: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1300px) {
     padding: 3rem 2rem;
   }
 `;
@@ -40,7 +41,7 @@ export const MeetTeamOuterWrapper = styled.div`
 export const MeetTeamTitle = styled.div`
   font-size: 3rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     font-size: 2.5rem;
   }
 `
@@ -54,8 +55,9 @@ export const RightColumn = styled.div`
   margin-bottom: 2rem;
   padding: 0 1rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1300px) {
     padding: 0;
+    align-items: center;
   }
 `;
 
@@ -63,4 +65,12 @@ export const TeamImage = styled.img`
   border-radius: 0.5rem;
   height: auto;
   width: 100%;
+
+  @media (max-width: 1300px) {
+    max-width: 50rem;
+  }
+
+  @media (max-width: 1000px) {
+    max-width: 40rem;
+  }
 `;
