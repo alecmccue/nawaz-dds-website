@@ -2,12 +2,19 @@ import React from "react";
 import { Typography } from "@mui/material";
 import { Divider, ImageColumn, ProductWrapperImageLeft, TextColumn } from "../../styles";
 import Image from "next/image";
-import intraOralScanner from "public/intraoral_scanner.png";
+import intraOralScanner from "public/intraoral-scanner.jpg";
 
 const IntraoralScanner = () => (
     <ProductWrapperImageLeft>
         <ImageColumn>
-            <Image src={intraOralScanner} alt="intraoral scanner" />
+            <Image
+                src={intraOralScanner}
+                alt="intraoral scanner"
+                style={{
+                    borderRadius: "0.5rem",
+                    maxHeight: "25rem"
+                }}
+            />
         </ImageColumn>
         <TextColumn>
             <Typography style={{ fontSize: "2.2rem" }} className="poppins">

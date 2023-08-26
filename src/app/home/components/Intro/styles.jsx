@@ -7,11 +7,11 @@ export const BackgroundImage = styled.div`
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
-  flex-shrink: 0;
   height: 42rem;
   width: 100%;
+  justify-content: center;
 
-  @media (max-width: 900px) {
+  @media (max-width: 749px) {
     background: url(/landing_main_picture_mobile.png);
     background-color: azure;
     background-size: 100% 100%;
@@ -39,7 +39,7 @@ export const ContactButton = styled.div`
     border: 2px solid #01868d;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 749px) {
     margin-top: 1rem;
   }
 `
@@ -50,7 +50,7 @@ export const ContactButtonsWrapper = styled.div`
   gap: 3rem;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 749px) {
     flex-direction: column;
     gap: 0;
     align-items: center;
@@ -66,7 +66,7 @@ export const IntroSubtitle = styled(Typography)`
   text-transform: uppercase;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 749px) {
     font-size: 5rem;
     line-height: 5rem;
   }
@@ -82,7 +82,7 @@ export const IntroTitle = styled(Typography)`
   text-transform: uppercase;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 749px) {
     margin-top: 2rem;
     font-size: 3.4rem;
     line-height: 4.5rem;
@@ -93,11 +93,12 @@ export const IntroWrapper = styled.div`
   padding: 5rem;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 749px) {
     flex-direction: column;
     padding: 0;
     display: flex;
     gap: 1rem;
+    max-width: 30rem;
   }
 `
 

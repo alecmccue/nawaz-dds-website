@@ -42,35 +42,34 @@ const Products = () => (
         >
             <Introduction />
         </motion.div>
-    <ProductsWrapper>
+        <ProductsWrapper>
+            <motion.div
+                initial="hide"
+                exit="hide"
+                whileInView="show"
+                variants={animationVariant}
+            >
+                <ZoomWhitening />
+            </motion.div>
 
-        <motion.div
-            initial="hide"
-            exit="hide"
-            whileInView="show"
-            variants={animationVariant}
-        >
-            <ZoomWhitening />
-        </motion.div>
+            <motion.div
+                initial="hide"
+                exit="hide"
+                whileInView="show"
+                variants={animationVariant}
+            >
+                <IntraoralScanner />
+            </motion.div>
 
-        <motion.div
-            initial="hide"
-            exit="hide"
-            whileInView="show"
-            variants={animationVariant}
-        >
-            <IntraoralScanner />
-        </motion.div>
-
-        <motion.div
-            initial="hide"
-            exit="hide"
-            whileInView="show"
-            variants={animationVariant}
-        >
-            <DigitalXray />
-        </motion.div>
-    </ProductsWrapper>
+            <motion.div
+                initial="hide"
+                exit="hide"
+                whileInView="show"
+                variants={animationVariant}
+            >
+                <DigitalXray />
+            </motion.div>
+        </ProductsWrapper>
     </>
 )
 

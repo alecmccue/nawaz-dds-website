@@ -10,6 +10,15 @@ export const ViewAllReviewsWrapper = styled.div`
     padding: 0 1rem;
     margin-top: 2rem;
   }
+
+  @media screen and (max-width: 960px) {
+    padding: 0 7rem;
+    margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+  }
 `
 
 export const ViewAllButtonWrapper = styled.div`

@@ -20,7 +20,6 @@ const Intro = () => {
         isDirectionsModalOpen
     } = useGoogleMapModal()
 
-
     return (
         <>
             <BackgroundImage>

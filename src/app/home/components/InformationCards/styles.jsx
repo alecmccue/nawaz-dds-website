@@ -9,9 +9,10 @@ export const CardWrapper = styled.div`
   padding: 5rem;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     padding: 4rem 1.5rem;
+    align-items: center;
   }
 `
 
@@ -30,8 +31,9 @@ export const InformationCard = styled(Card)`
     background-color: whitesmoke;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     width: 100%;
+    max-width: 40rem;
   }
 `
 export const Border = styled.div`
