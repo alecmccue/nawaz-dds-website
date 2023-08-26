@@ -34,7 +34,7 @@ export const CareCreditSignUpWrapper = styled.div`
   padding: 1rem;
   max-width: 25rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     width: 100%;
   }
 `;
@@ -43,9 +43,8 @@ export const CareCreditWrapper = styled.div`
   align-items: center;
   display: flex;
   gap: 5rem;
-  padding: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     flex-direction: column;
     gap: 3rem;
     padding: 0;
@@ -58,14 +57,16 @@ export const InsuranceBanner = styled.div`
   background-color: azure;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  align-items: center;
   display: flex;
   flex-shrink: 0;
   height: 30rem;
   width: 100%;
-  align-items: center;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     background: url(/insurance-banner-mobile.jpg);
+    justify-content: center;
+    padding: 1rem;
   }
 `
 
@@ -75,10 +76,10 @@ export const InsuranceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   width: 100%;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     padding: 4rem 2rem;
     gap: 1rem;
   }
@@ -93,7 +94,7 @@ export const IntroWrapper = styled.div`
   text-align: center;
   margin-left: 4rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     margin-left: 0;
     width: 100%;
     padding: 0 1.5rem;
