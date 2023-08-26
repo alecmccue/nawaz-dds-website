@@ -17,7 +17,7 @@ const MobileServicesMenuButton = (props) => {
             if(element) {
                 element.scrollIntoView({ behavior: "smooth", block: "start" });
             }
-        }, 200);
+        }, 300);
     }, [elementId])
 
     return (
