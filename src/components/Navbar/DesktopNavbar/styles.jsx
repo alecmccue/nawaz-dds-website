@@ -1,5 +1,13 @@
 import styled from "@emotion/styled";
-import { MenuItem } from "@mui/material";
+import { MenuItem, Popper } from "@mui/material";
+
+export const DropdownMenu = styled(Popper)`
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 0 0 0.2rem 0.2rem;
+  z-index: 1200;
+  padding: 0.5rem 0;
+`
 
 export const DropdownMenuItem = styled(MenuItem)`
   padding: 0;

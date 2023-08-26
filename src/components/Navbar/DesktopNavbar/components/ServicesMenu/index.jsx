@@ -1,20 +1,42 @@
 import React from "react";
 import ServicesMenuButton from "@/components/Navbar/DesktopNavbar/components/ServicesMenuButton";
-import { DropdownMenuItem } from "@/components/Navbar/DesktopNavbar/styles";
-import { Menu } from "@mui/material";
+import { DropdownMenu, DropdownMenuItem } from "@/components/Navbar/DesktopNavbar/styles";
+import { motion } from "framer-motion";
 
-const ServicesMenu = ({ anchorEl, handleClose }) => {
-    return (
-        <Menu
-            anchorEl={anchorEl}
-            disableAutoFocusItem
-            disablePortal
-            hideBackdrop
-            id="services-menu"
-            MenuListProps={{ onMouseLeave: handleClose }}
-            onClose={handleClose}
-            open={Boolean(anchorEl)}
-            style={{ zIndex: -1 }}
+const animationVariant2 = {
+    hide: {
+        opacity: 0,
+        scale: 0.8,
+    },
+    show: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            duration: 0.2,
+        },
+    },
+    exit: {
+        opacity: 0,
+        scale: 0.8,
+        transition: {
+            duration: 0.2,
+        },
+    }
+};
+
+const ServicesMenu = ({ anchorEl, handleClose }) => (
+    <DropdownMenu
+        anchorEl={anchorEl}
+        className="nunito"
+        id="services-menu"
+        onClose={handleClose}
+        open={Boolean(anchorEl)}
+    >
+        <motion.div
+            initial="hide"
+            exit="exit"
+            whileInView="show"
+            variants={animationVariant2}
         >
             <DropdownMenuItem>
                 <ServicesMenuButton
@@ -80,8 +102,8 @@ const ServicesMenu = ({ anchorEl, handleClose }) => {
                     to="/services"
                 />
             </DropdownMenuItem>
-        </Menu>
-    );
-};
+        </motion.div>
+    </DropdownMenu>
+)
 
-export default ServicesMenu;
+export default ServicesMenu
