@@ -14,7 +14,7 @@ const Intro = () => (
             className="nunito"
             style={{ fontSize: "1.4rem", maxWidth: "60rem", textAlign: "center" }}
         >
-            At Family & Cosmetic dental, our dedication lies in ensuring your time
+            At Family & Cosmetic Dentistry, our dedication lies in ensuring your time
             with us is enjoyable, starting from the primary assessment to the
             financial procedures. We are pleased to be in-network with all PPO
             insurance plans, ensuring that you can fully utilize your insurance

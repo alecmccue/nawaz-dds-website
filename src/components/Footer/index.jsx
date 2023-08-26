@@ -31,7 +31,7 @@ const Footer = () => {
             <FooterWrapper component="footer">
                 <UpperWrapper>
                     <ColumnWrapper style={{ marginTop: "1rem" }}>
-                        <FCDLogo src="/FCD_logo.png" alt="logo" />
+                        <FCDLogo src="/fcd-logo.png" alt="logo" />
                         <SocialWrapper>
                             <Instagram />
                             <GoogleReviews />

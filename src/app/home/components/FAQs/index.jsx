@@ -15,7 +15,7 @@ const FAQs = () => {
         {
             question: "How Can I Schedule an Appointment?",
             answer:
-                "Scheduling an appointment at our dentist office is simple and convenient. You can either call us at (703)-430-3838, or you can request an appointment on the website, and we will call you back to confirm your appointment.",
+                "Scheduling an appointment at our dental office is simple and convenient. You can either call us at (703)-430-3838, or you can request an appointment on the website, and we will call you back to confirm your appointment.",
         },
         {
             question: "What Insurances Do You Accept?",

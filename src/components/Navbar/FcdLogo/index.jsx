@@ -11,7 +11,7 @@ const FcdLogo = (props) => {
 
     return (
         <div onClick={handleClick}>
-            <FcdLogoImage src="/FCD_logo.png" alt="FC&D Logo" width={width} />
+            <FcdLogoImage src="/fcd-logo.png" alt="FC&D Logo" width={width} />
         </div>
     );
 };

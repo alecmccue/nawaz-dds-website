@@ -92,7 +92,7 @@ const RequestAppointment = () => {
                     <Title className="arvo">Request Appointment</Title>
                     <Instructions className="arvo">
                         Fill out the form to request an appointment at Family & Cosmetic
-                        Dental.
+                        Dentistry.
                         <br />
                         Note: This form does not confirm an appointment; the front desk will
                         contact you to confirm your specific appointment date and time.

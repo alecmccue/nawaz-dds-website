@@ -6,9 +6,9 @@ const useScrollToRoute = () => {
 
     const handleClick = (elementId, handleClose, to) => {
         if(!pathName.includes("/services")) {
-            router.push(`${to}?id=${elementId}`);
+            router.push(`${to}#${elementId}`);
         } else {
-            router.replace(`${to}?id=${elementId}`)
+            router.replace(`${to}#${elementId}`)
         }
 
         handleClose();

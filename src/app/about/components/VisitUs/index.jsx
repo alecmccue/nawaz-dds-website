@@ -41,7 +41,7 @@ const VisitUs = () => (
             <RightColumn>
                 <Typography style={{ fontSize: "3rem" }} className="poppins">Visit Us</Typography>
                 <Typography style={{ fontSize: "1.5rem" }} className="nunito">
-                    We're convieniently located in the Potomic Falls area. Find us
+                    We're conveniently located in the Potomac Falls area. Find us
                     straight ahead on the entry level floor of the building. Free parking
                     is available.
                 </Typography>
