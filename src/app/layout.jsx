@@ -2,24 +2,32 @@ import "./globals.css";
 import Providers from "@/theme/theme-provider";
 
 export const metadata = {
-  title:"Family And Cosmetic Dentistry",
+  title: "Family And Cosmetic Dentistry",
   openGraph: {
     title: "Family And Cosmetic Dentistry",
-    description: "Family And Cosmetic Dentistry is your Trusted Local Dentist in Sterling",
-    url:"https://www.nawazdds.com/",
+    description:
+      "Family And Cosmetic Dentistry is your Trusted Local Dentist in Sterling",
+    url: "https://www.nawazdds.com/",
   },
-  description:"Family And Cosmetic Dentistry is your Trusted Local Dentist in Sterling, VA. At our cozy and modern dental practice, we prioritize your oral health and comfort above all else.",
+  description:
+    "Family And Cosmetic Dentistry is your Trusted Local Dentist in Sterling, VA. At our cozy and modern dental practice, we prioritize your oral health and comfort above all else.",
   keywords: ["Dentist", "Healthcare", "Virginia", "Local"],
-  metadataBase: new URL('https://nawazdds.com'),
-}
+  metadataBase: new URL("https://nawazdds.com"),
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <p>
+          Family And Cosmetic Dentistry is your Trusted Local Dentist in
+          Sterling, VA. At our cozy and modern dental practice, we prioritize
+          your oral health and comfort above all else
+        </p>
+      </head>
       <body>
-        <Providers>
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -50,7 +50,7 @@ const MeetNawaz = () => (
                             }} className="nunito"
                         >
                             <li>BS in Biology at George Mason University</li>
-                            <li>DDS, Virginia Commonwealth University</li>
+                            <li>DDS, Virginia Commonwealth University School of Dentistry</li>
                         </ul>
                     </div>
                     <div>

@@ -77,7 +77,7 @@ const Invisalign = () => (
                     </ListItem>
 
                     <AccordionDetailsHeader className="poppins">
-                        Confortable:
+                        Comfortable:
                     </AccordionDetailsHeader>
                     <ListItem>
                         <ListItemText
