@@ -18,14 +18,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <p>
-          Family And Cosmetic Dentistry is your Trusted Local Dentist in
-          Sterling, VA. At our cozy and modern dental practice, we prioritize
-          your oral health and comfort above all else
-        </p>
-      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
